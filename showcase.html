@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>发现海南 · Discover Hainan — 旅游 · 学习 · 工作 · 生活</title>
+<style>
+  :root {
+    --gold: #c8963e; --gold-light: #e8c97a;
+    --teal: #0d9488; --navy: #0f172a;
+    --white: #f8fafc; --gray-500: #64748b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: var(--navy); color: #fff; overflow-x: hidden;
+  }
+
+  /* ── Full-screen slides ── */
+  .slide {
+    width: 100vw; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: hidden;
+    scroll-snap-align: start;
+  }
+  .slides { scroll-snap-type: y mandatory; overflow-y: scroll; height: 100vh; }
+
+  .slide-bg {
+    position: absolute; inset: 0;
+    background-size: cover; background-position: center;
+    filter: brightness(0.35);
+    transform: scale(1.05);
+    transition: transform 8s ease;
+  }
+  .slide.active .slide-bg { transform: scale(1); }
+
+  .slide-content {
+    position: relative; z-index: 1; text-align: center;
+    padding: 40px; max-width: 800px;
+  }
+
+  /* ── Badge ── */
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18);
+    padding: 6px 18px; border-radius: 24px; font-size: 0.8rem;
+    font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 24px; backdrop-filter: blur(8px);
+  }
+  .badge .dot { width: 7px; height: 7px; background: #4ade80; border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  /* ── Typography ── */
+  .emoji-main { font-size: 4rem; margin-bottom: 12px; display: block; }
+  .slide-title { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.15; margin-bottom: 12px; }
+  .slide-title em { font-style: normal; color: var(--gold-light); }
+  .slide-title-cn { font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: 700; color: var(--gold-light); margin-bottom: 20px; letter-spacing: 2px; }
+  .slide-sub { font-size: 1.05rem; color: rgba(255,255,255,0.75); max-width: 560px; margin: 0 auto 24px; line-height: 1.7; }
+  .slide-sub-cn { font-size: 0.92rem; color: rgba(255,255,255,0.55); max-width: 560px; margin: 0 auto 32px; line-height: 1.7; }
+
+  /* ── Stat cards ── */
+  .stat-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .stat {
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px; padding: 20px 24px; min-width: 140px;
+    backdrop-filter: blur(4px); transition: transform 0.3s;
+  }
+  .stat:hover { transform: translateY(-4px); }
+  .stat .num { font-size: 1.8rem; font-weight: 800; color: var(--gold-light); line-height: 1; }
+  .stat .label { font-size: 0.72rem; color: rgba(255,255,255,0.5); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .stat .label-cn { font-size: 0.72rem; color: rgba(255,255,255,0.7); margin-top: 2px; }
+
+  /* ── Check-list ── */
+  .checks { list-style: none; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
+  .checks li {
+    font-size: 0.9rem; color: rgba(255,255,255,0.8);
+    display: flex; align-items: center; gap: 8px; flex-direction: column;
+  }
+  .checks li::before { content: '✓'; color: var(--gold-light); font-weight: 700; margin-bottom: 2px; }
+  .checks li .cn { font-size: 0.78rem; color: rgba(255,255,255,0.55); }
+  .checks li.en { display: flex; align-items: center; gap: 8px; flex-direction: row; }
+  .checks li.en::before { content: '✓'; color: var(--gold-light); font-weight: 700; }
+
+  /* ── Nav dots ── */
+  .dots {
+    position: fixed; right: 24px; top: 50%; transform: translateY(-50%);
+    display: flex; flex-direction: column; gap: 14px; z-index: 10;
+  }
+  .dots button {
+    width: 12px; height: 12px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.4);
+    background: transparent; cursor: pointer; transition: all 0.3s;
+  }
+  .dots button.active { background: var(--gold-light); border-color: var(--gold-light); transform: scale(1.3); }
+
+  /* ── Progress bar ── */
+  .progress-bar {
+    position: fixed; bottom: 0; left: 0; height: 3px;
+    background: var(--gold-light); z-index: 10; transition: width 0.5s linear;
+  }
+
+  /* ── CTA button ── */
+  .cta-btn {
+    display: inline-block; background: var(--gold); color: var(--navy);
+    padding: 14px 32px; border-radius: 28px; font-weight: 700;
+    text-decoration: none; font-size: 0.95rem; margin-top: 32px;
+    transition: all 0.3s;
+  }
+  .cta-btn:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+  /* ── Mobile ── */
+  @media (max-width: 768px) {
+    .stat-row { flex-direction: column; align-items: center; }
+    .stat { min-width: auto; width: 80%; }
+    .checks { flex-direction: column; align-items: center; }
+    .dots { display: none; }
+    .emoji-main { font-size: 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="slides" id="slides">
+
+  <!-- Slide 0: Title -->
+  <div class="slide active" data-index="0">
+    <div class="slide-bg" style="background:linear-gradient(160deg,#0f172a,#0d3b3b,#0f766e)"></div>
+    <div class="slide-content">
+      <div class="badge"><span class="dot"></span> Hainan Free Trade Port · 2026 · 海南自由贸易港</div>
+      <h1 class="slide-title">Discover <em>Hainan</em></h1>
+      <div class="slide-title-cn">发现海南</div>
+      <p class="slide-sub">China's only tropical island province. The world's largest Free Trade Port.<br>86-country visa-free. 15% tax. Zero tariffs.</p>
+      <p class="slide-sub-cn">中国唯一的热带岛屿省份，全球最大的自由贸易港。<br>86 国免签 · 15% 个税封顶 · 零关税。</p>
+      <div class="stat-row">
+        <div class="stat"><div class="num">86</div><div class="label">Visa-Free</div><div class="label-cn">免签国</div></div>
+        <div class="stat"><div class="num">15%</div><div class="label">Tax Cap</div><div class="label-cn">个税封顶</div></div>
+        <div class="stat"><div class="num">0%</div><div class="label">Tariffs</div><div class="label-cn">关税</div></div>
+        <div class="stat"><div class="num">25°C</div><div class="label">Year-Round</div><div class="label-cn">全年均温</div></div>
+      </div>
+      <div style="margin-top:40px;font-size:0.85rem;opacity:0.5;">Scroll ↓ 向下滑动</div>
+    </div>
+  </div>
+
+  <!-- Slide 1: Tourism -->
+  <div class="slide" data-index="1">
+    <div class="slide-bg" style="background-image:url('img_0154faecdd9673aa.png')"></div>
+    <div class="slide-content">
+      <div class="badge"><span class="dot"></span> 01 — Tourism · 旅游</div>
+      <span class="emoji-main">🏝️</span>
+      <h2 class="slide-title">Arrive Without a <em>Visa</em></h2>
+      <div class="slide-title-cn">免签入境</div>
+      <p class="slide-sub">86 countries. 30 days. No paperwork. Just your passport.<br>Three international airports. Cruise ships welcome. 1,900km of coastline.</p>
+      <p class="slide-sub-cn">86 国免签 30 天，无需繁琐手续，一本护照即可。<br>三大国际机场、邮轮直达、1900 公里海岸线。</p>
+      <ul class="checks">
+        <li class="en">86-country visa-free (30 days)<span class="cn">86 国免签 30 天</span></li>
+        <li class="en">144-hr transit via HK &amp; Macau<span class="cn">港澳 144 小时过境</span></li>
+        <li class="en">15-day cruise visa-free<span class="cn">邮轮 15 天免签</span></li>
+        <li class="en">25°C year-round paradise<span class="cn">全年 25°C 天堂</span></li>
+      </ul>
+      <a href="https://en.hnftp.gov.cn" target="_blank" class="cta-btn">Plan Your Trip → 规划行程</a>
+    </div>
+  </div>
+
+  <!-- Slide 2: Study -->
+  <div class="slide" data-index="2">
+    <div class="slide-bg" style="background-image:url('img_0e8fca3c517df7ad.png')"></div>
+    <div class="slide-content">
+      <div class="badge">02 — Study · 学习</div>
+      <span class="emoji-main">🎓</span>
+      <h2 class="slide-title">Learn in <em>Paradise</em></h2>
+      <div class="slide-title-cn">在热带天堂求学</div>
+      <p class="slide-sub">Hainan University — English-taught degrees with Belt &amp; Road scholarships.<br>X1 student visa. International campus community. 25°C year-round.</p>
+      <p class="slide-sub-cn">海南大学——英文授课学位 + 一带一路奖学金。<br>X1 学生签证，国际化校园社区，全年 25°C。</p>
+      <ul class="checks">
+        <li class="en">UG &amp; PG English programmes<span class="cn">本硕英文课程</span></li>
+        <li class="en">Belt &amp; Road scholarships<span class="cn">一带一路奖学金</span></li>
+        <li class="en">International student support<span class="cn">国际学生支持</span></li>
+        <li class="en">Tropical island campus<span class="cn">热带海岛校园</span></li>
+      </ul>
+      <a href="https://www.hainanu.edu.cn" target="_blank" class="cta-btn">Explore Programmes → 了解课程</a>
+    </div>
+  </div>
+
+  <!-- Slide 3: Work -->
+  <div class="slide" data-index="3">
+    <div class="slide-bg" style="background-image:url('img_d17c9e65f87275aa.png')"></div>
+    <div class="slide-content">
+      <div class="badge"><span class="dot"></span> 03 — Work · 工作</div>
+      <span class="emoji-main">💼</span>
+      <h2 class="slide-title"><em>15%</em> Tax. One Island.</h2>
+      <div class="slide-title-cn">15% 个税封顶，一岛尽享</div>
+      <p class="slide-sub">Personal income tax cap at 15% (vs 45% mainland). Zero import tariffs.<br>Streamlined Z visa. Tech, tourism, healthcare, finance — all booming.</p>
+      <p class="slide-sub-cn">个税封顶 15%（内地为 45%），零关税。<br>简化 Z 签。科技、旅游、医疗、金融全面腾飞。</p>
+      <div class="stat-row" style="margin-bottom:28px;">
+        <div class="stat"><div class="num">15%</div><div class="label">Income Tax</div><div class="label-cn">个税</div></div>
+        <div class="stat"><div class="num">15%</div><div class="label">Corporate Tax</div><div class="label-cn">企业所得税</div></div>
+        <div class="stat"><div class="num">0%</div><div class="label">Tariffs</div><div class="label-cn">关税</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 4: Life -->
+  <div class="slide" data-index="4">
+    <div class="slide-bg" style="background-image:url('img_e8e884c8789ab1a4.png')"></div>
+    <div class="slide-content">
+      <div class="badge">04 — Life · 生活</div>
+      <span class="emoji-main">🏡</span>
+      <h2 class="slide-title">Make It <em>Home</em></h2>
+      <div class="slide-title-cn">在此安家</div>
+      <p class="slide-sub">74+ international hospitals. Visa/Mastercard linked to WeChat &amp; Alipay.<br>International schools. Q1/Q2 family reunion visas. 12345 hotline in 4 languages.</p>
+      <p class="slide-sub-cn">74+ 家国际医院。微信/支付宝绑定 Visa/Mastercard。<br>国际学校、Q1/Q2 家庭团聚签证、12345 四语热线。</p>
+      <ul class="checks">
+        <li class="en">74+ international hospitals<span class="cn">74+ 国际医院</span></li>
+        <li class="en">Visa/MC/JCB on WeChat/Alipay<span class="cn">微信支付宝绑外卡</span></li>
+        <li class="en">International schools<span class="cn">国际学校</span></li>
+        <li class="en">Family reunion residence permits<span class="cn">家庭团聚居留许可</span></li>
+      </ul>
+      <a href="https://en.hnftp.gov.cn" target="_blank" class="cta-btn">Start Your Journey → 开启旅程</a>
+    </div>
+  </div>
+
+  <!-- Slide 5: CTA -->
+  <div class="slide" data-index="5">
+    <div class="slide-bg" style="background:linear-gradient(160deg,#0f766e,#0d3b3b,#0f172a)"></div>
+    <div class="slide-content">
+      <span class="emoji-main">🌴</span>
+      <h2 class="slide-title">Why <em>Hainan</em>?</h2>
+      <div class="slide-title-cn">为什么是海南？</div>
+      <p class="slide-sub">86 countries visa-free. Zero tariffs. 15% tax cap.<br>One tropical island. Four paths. Infinite opportunities.</p>
+      <p class="slide-sub-cn">86 国免签、零关税、15% 个税封顶。<br>一座热带岛屿，四条路径，无限机遇。</p>
+      <div class="stat-row" style="margin-bottom:20px;">
+        <div class="stat"><div class="num">🏝️</div><div class="label">Tourism</div><div class="label-cn">旅游</div></div>
+        <div class="stat"><div class="num">🎓</div><div class="label">Study</div><div class="label-cn">学习</div></div>
+        <div class="stat"><div class="num">💼</div><div class="label">Work</div><div class="label-cn">工作</div></div>
+        <div class="stat"><div class="num">🏡</div><div class="label">Life</div><div class="label-cn">生活</div></div>
+      </div>
+      <a href="https://fdb56b09.why-hainan.pages.dev" target="_blank" class="cta-btn">Visit WhyHainan.com → 访问网站</a>
+      <div style="margin-top:20px;font-size:0.8rem;opacity:0.4;">Share with anyone who should know about Hainan 🌴 分享给每一位应该了解海南的人</div>
+    </div>
+  </div>
+</div>
+
+<!-- Nav dots -->
+<div class="dots" id="dots"></div>
+<div class="progress-bar" id="progress"></div>
+
+<script>
+  const slidesEl = document.getElementById('slides');
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.getElementById('dots');
+  const progress = document.getElementById('progress');
+  const total = slides.length;
+
+  // Build dots
+  for (let i = 0; i < total; i++) {
+    const btn = document.createElement('button');
+    btn.title = `Slide ${i+1}`;
+    btn.addEventListener('click', () => {
+      slides[i].scrollIntoView({ behavior: 'smooth' });
+    });
+    dots.appendChild(btn);
+  }
+  const dotBtns = dots.querySelectorAll('button');
+
+  function updateActive() {
+    const scrollTop = slidesEl.scrollTop;
+    const h = slidesEl.clientHeight;
+    const idx = Math.round(scrollTop / h);
+    const clamped = Math.max(0, Math.min(total - 1, idx));
+
+    slides.forEach(s => s.classList.remove('active'));
+    slides[clamped].classList.add('active');
+
+    dotBtns.forEach((b, i) => b.classList.toggle('active', i === clamped));
+
+    const pct = ((clamped + 1) / total) * 100;
+    progress.style.width = pct + '%';
+  }
+
+  slidesEl.addEventListener('scroll', updateActive, { passive: true });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+      e.preventDefault();
+      const h = slidesEl.clientHeight;
+      const next = Math.min(slidesEl.scrollTop + h, slidesEl.scrollHeight - h);
+      slidesEl.scrollTo({ top: next, behavior: 'smooth' });
+    } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+      e.preventDefault();
+      const h = slidesEl.clientHeight;
+      const prev = Math.max(slidesEl.scrollTop - h, 0);
+      slidesEl.scrollTo({ top: prev, behavior: 'smooth' });
+    }
+  });
+
+  // Init
+  updateActive();
+
+  // Auto-advance every 8s
+  let autoTimer = setInterval(() => {
+    const h = slidesEl.clientHeight;
+    const current = Math.round(slidesEl.scrollTop / h);
+    if (current >= total - 1) {
+      slidesEl.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      slidesEl.scrollTo({ top: (current + 1) * h, behavior: 'smooth' });
+    }
+  }, 8000);
+
+  // Pause auto on user interaction
+  slidesEl.addEventListener('click', () => {
+    clearInterval(autoTimer);
+    autoTimer = setInterval(() => {
+      const h = slidesEl.clientHeight;
+      const current = Math.round(slidesEl.scrollTop / h);
+      if (current >= total - 1) {
+        slidesEl.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        slidesEl.scrollTo({ top: (current + 1) * h, behavior: 'smooth' });
+      }
+    }, 8000);
+  });
+
+  // Touch swipe detection
+  let touchStartY = 0;
+  slidesEl.addEventListener('touchstart', (e) => {
+    touchStartY = e.touches[0].clientY;
+  }, { passive: true });
+  slidesEl.addEventListener('touchend', (e) => {
+    const diff = touchStartY - e.changedTouches[0].clientY;
+    const h = slidesEl.clientHeight;
+    if (Math.abs(diff) > 50) {
+      const direction = diff > 0 ? 1 : -1;
+      const current = Math.round(slidesEl.scrollTop / h);
+      const target = Math.max(0, Math.min(total - 1, current + direction));
+      slidesEl.scrollTo({ top: target * h, behavior: 'smooth' });
+    }
+    clearInterval(autoTimer);
+    autoTimer = setInterval(() => {
+      const h = slidesEl.clientHeight;
+      const current = Math.round(slidesEl.scrollTop / h);
+      if (current >= total - 1) {
+        slidesEl.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        slidesEl.scrollTo({ top: (current + 1) * h, behavior: 'smooth' });
+      }
+    }, 8000);
+  }, { passive: true });
+</script>
+</body>
+</html>

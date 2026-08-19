@@ -1,0 +1,545 @@
+{
+  "project": "Ouwen (欧闻) — Hainan Foreigner Daily Guide",
+  "description": "Bilingual (EN primary + 中文) daily content calendar covering the 4 stages of a foreigner's Hainan journey. Each entry = pain point → Ouwen solution → authoritative official source.",
+  "language": "EN (primary) + 中文 (bilingual)",
+  "stages": {
+    "1": {
+      "key": "before",
+      "label": "Before You Fly",
+      "emoji": "✈️",
+      "cn": "行前准备与抵达初期"
+    },
+    "2": {
+      "key": "settle",
+      "label": "Landing & Settling",
+      "emoji": "🛬",
+      "cn": "在琼安家与基础建立"
+    },
+    "3": {
+      "key": "daily",
+      "label": "Daily Life & Belonging",
+      "emoji": "🌴",
+      "cn": "日常生活与社交融入"
+    },
+    "4": {
+      "key": "grow",
+      "label": "Growth & Roots",
+      "emoji": "🏡",
+      "cn": "长期发展与家庭扎根"
+    }
+  },
+  "calendar": [
+    {
+      "day": 1,
+      "stage": 1,
+      "emoji": "🛂",
+      "title": "Do I even need a visa? 86 countries don't.",
+      "title_cn": "我需要签证吗？86 个国家不需要",
+      "pain": "Uncertain which visa type applies and how long it takes.",
+      "pain_cn": "不确定适用哪种签证类型，也不清楚需要多长时间。",
+      "solution": "86 countries enter visa-free for 30 days (tourism, business, family, medical, exhibitions, sports). For work use Z, study X1/X2, family Q1/Q2.",
+      "solution_cn": "86 国人员免签入境 30 天（旅游/商务/探亲/医疗/会展/体育）。工作用 Z 签，学习用 X1/X2，家庭团聚用 Q1/Q2。",
+      "source": {
+        "name": "Hainan FTP International Service Portal",
+        "name_cn": "海南自贸港国际服务门户",
+        "url": "https://en.hainan.gov.cn"
+      }
+    },
+    {
+      "day": 2,
+      "stage": 1,
+      "emoji": "📋",
+      "title": "The Z-visa document checklist, decoded.",
+      "title_cn": "Z 字签证材料清单，逐条拆解",
+      "pain": "Application materials feel complicated and unclear.",
+      "pain_cn": "申请材料繁琐、要求不清晰。",
+      "solution": "One-window service: work permit + residence permit together. We give you a standardised checklist and track progress.",
+      "solution_cn": "「一窗通办」：工作许可与居留许可一起办。我们提供标准化清单并全程跟踪进度。",
+      "source": {
+        "name": "Hainan Policy Query (English)",
+        "name_cn": "海南政策查询（英文版）",
+        "url": "https://policy.hnftp.gov.cn"
+      }
+    },
+    {
+      "day": 3,
+      "stage": 1,
+      "emoji": "🏨",
+      "title": "Where do I stay before I find 'home'?",
+      "title_cn": "在找到「家」之前，我住哪里？",
+      "pain": "Hard to find short/long-term housing suited to foreigners from abroad.",
+      "pain_cn": "人在境外，很难找到适合外国人的短期/长期住房。",
+      "solution": "'Arrival Package': airport pickup, transitional housing at partner hotels/apartments, initial essentials setup.",
+      "solution_cn": "「安心抵达套餐」：接机、合作酒店/公寓过渡住宿、初期生活用品配置。",
+      "source": {
+        "name": "en.hainan.gov.cn — Living services",
+        "name_cn": "海南政府网 — 生活服务",
+        "url": "https://en.hainan.gov.cn"
+      }
+    },
+    {
+      "day": 4,
+      "stage": 1,
+      "emoji": "💴",
+      "title": "Pre-load e-CNY before you even land.",
+      "title_cn": "落地前就预充值数字人民币",
+      "pain": "Worried about paying on arrival; unsure how to exchange money or open accounts.",
+      "pain_cn": "担心抵达时无法支付；不确定如何兑换货币或开户。",
+      "solution": "Pre-charge a digital-yuan (e-CNY) wallet from abroad — 210+ countries register by phone, anonymous wallet, no Chinese bank card needed.",
+      "solution_cn": "从境外预充值数字人民币钱包——支持 210+ 国家手机号注册、匿名钱包、无需境内银行卡。",
+      "source": {
+        "name": "PBOC — e-CNY for inbound visitors",
+        "name_cn": "人民银行 — 入境旅客数字人民币",
+        "url": "https://www.pbc.gov.cn"
+      }
+    },
+    {
+      "day": 5,
+      "stage": 1,
+      "emoji": "💳",
+      "title": "Visa, Mastercard, JCB — now work on WeChat & Alipay.",
+      "title_cn": "Visa、Mastercard、JCB——微信支付宝都能用了",
+      "pain": "Fear that only Chinese bank cards are accepted.",
+      "pain_cn": "担心只接受中国银行卡。",
+      "solution": "WeChat Pay & Alipay accept Visa / Mastercard / JCB / Amex / Discover. Foreign phone numbers supported.",
+      "solution_cn": "微信支付与支付宝支持 Visa/Mastercard/JCB/Amex/Discover，并支持境外手机号。",
+      "source": {
+        "name": "PBOC — Payment Guide for Foreigners",
+        "name_cn": "人民银行 — 外籍来华支付指南",
+        "url": "https://www.pbc.gov.cn"
+      }
+    },
+    {
+      "day": 6,
+      "stage": 1,
+      "emoji": "🗣️",
+      "title": "The language barrier starts before takeoff.",
+      "title_cn": "语言障碍，从起飞前就开始了",
+      "pain": "Worried about communicating in Chinese upon arrival.",
+      "pain_cn": "担心抵达后无法用中文沟通。",
+      "solution": "12345 hotline serves EN / RU / JA / KO; bilingual signage is mandated at airports and transport hubs.",
+      "solution_cn": "12345 热线提供英/俄/日/韩服务；机场及交通枢纽强制设置双语标识。",
+      "source": {
+        "name": "en.hainan.gov.cn",
+        "name_cn": "海南政府网",
+        "url": "https://en.hainan.gov.cn"
+      }
+    },
+    {
+      "day": 7,
+      "stage": 1,
+      "emoji": "✈️",
+      "title": "Three airports, direct from everywhere.",
+      "title_cn": "三大机场，全球直飞",
+      "pain": "Unfamiliar with entry ports and transport.",
+      "pain_cn": "不熟悉入境口岸和交通方式。",
+      "solution": "Haikou Meilan, Sanya Phoenix, Bo'ao airports — plus 144-hour transit via HK/Macau and 15-day cruise access.",
+      "solution_cn": "海口美兰、三亚凤凰、博鳌机场——另有经港/澳 144 小时过境免签及 15 天邮轮免签。",
+      "source": {
+        "name": "National Immigration Administration",
+        "name_cn": "国家移民管理局",
+        "url": "https://www.nia.gov.cn"
+      }
+    },
+    {
+      "day": 8,
+      "stage": 2,
+      "emoji": "🏛️",
+      "title": "Register your stay within 24 hours — or get fined.",
+      "title_cn": "24 小时内登记住宿，否则罚款",
+      "pain": "Mandatory temporary residence registration is confusing and time-sensitive.",
+      "pain_cn": "临时住宿登记是强制的，流程复杂且时效性强。",
+      "solution": "Our 'Maker Ambassador' walks with you to the local police station, with translation, done in one visit.",
+      "solution_cn": "我们的「创客业务员」陪你到派出所，带翻译，一次办完。",
+      "source": {
+        "name": "Hainan Public Security (entry-exit)",
+        "name_cn": "海南省公安厅（出入境）",
+        "url": "https://en.hainan.gov.cn"
+      }
+    },
+    {
+      "day": 9,
+      "stage": 2,
+      "emoji": "🏦",
+      "title": "Open a bank account without the headache.",
+      "title_cn": "无痛开设银行账户",
+      "pain": "Local bank account requires work proof, address proof — a maze.",
+      "pain_cn": "本地开户需工作证明、地址证明，像走迷宫。",
+      "solution": "'Life Concierge' prepares documents, escorts you to partner banks for priority EF-account opening + linked e-CNY wallet.",
+      "solution_cn": "「生活管家」备好材料，陪你去合作银行优先开设 EF 账户并绑定数字人民币钱包。",
+      "source": {
+        "name": "PBOC Hainan Branch — EF Account",
+        "name_cn": "人民银行海南分行 — EF 账户",
+        "url": "https://www.pbc.gov.cn"
+      }
+    },
+    {
+      "day": 10,
+      "stage": 2,
+      "emoji": "📱",
+      "title": "SIM card & broadband — explained in English.",
+      "title_cn": "手机卡与宽带——英文讲解",
+      "pain": "Can't understand mobile/broadband plans and contracts.",
+      "pain_cn": "看不懂手机/宽带套餐与合同条款。",
+      "solution": "We help you choose a plan, explain the fine print, and set everything up.",
+      "solution_cn": "我们帮你选套餐、讲解细则、并完成全部开通。",
+      "source": {
+        "name": "Hainan FTP Intl Service Portal",
+        "name_cn": "海南自贸港国际服务门户",
+        "url": "https://en.hainan.gov.cn"
+      }
+    },
+    {
+      "day": 11,
+      "stage": 2,
+      "emoji": "🧾",
+      "title": "The perks you're missing: duty-free, 15% tax, startup cash.",
+      "title_cn": "你错过的福利：免税、15% 税率、创业补贴",
+      "pain": "Half-knowing Hainan's special policies, unable to use them.",
+      "pain_cn": "对海南特殊政策一知半解，无法真正用起来。",
+      "solution": "'Policy Expert': online knowledge base + offline salons + 1-on-1 reading of the incentives that apply to YOU.",
+      "solution_cn": "「政策专家」：线上知识库 + 线下沙龙 + 一对一解读适用于你的优惠。",
+      "source": {
+        "name": "policy.hnftp.gov.cn (EN)",
+        "name_cn": "海南政策查询（英文版）",
+        "url": "https://policy.hnftp.gov.cn"
+      }
+    },
+    {
+      "day": 12,
+      "stage": 2,
+      "emoji": "🚕",
+      "title": "Getting around Hainan: a 5-minute crash course.",
+      "title_cn": "海南出行：5 分钟速成",
+      "pain": "Unfamiliar with buses, ride-hailing, and driving rules.",
+      "pain_cn": "不熟悉公交、网约车与驾驶规则。",
+      "solution": "Local transit app tutorials, temporary driving-permit assistance, partner car-rental recommendations.",
+      "solution_cn": "本地出行 APP 教程、临时驾照办理协助、合作租车推荐。",
+      "source": {
+        "name": "Hainan Transport Bureau",
+        "name_cn": "海南省交通运输厅",
+        "url": "https://en.hainan.gov.cn"
+      }
+    },
+    {
+      "day": 13,
+      "stage": 2,
+      "emoji": "🏠",
+      "title": "Renting as a foreigner: avoid the 7 traps.",
+      "title_cn": "外国人租房：避开 7 个坑",
+      "pain": "Opaque rental market, risk of fake landlords and deposit disputes.",
+      "pain_cn": "租房市场不透明，有假房东与押金纠纷风险。",
+      "solution": "'Settling Advisor' works with licensed agents, verifies property deeds, and walks you through the contract.",
+      "solution_cn": "「安居顾问」对接持牌中介、核实房产证、逐条讲解合同。",
+      "source": {
+        "name": "Hainan Housing authority",
+        "name_cn": "海南省住建部门",
+        "url": "https://en.hainan.gov.cn"
+      }
+    },
+    {
+      "day": 14,
+      "stage": 2,
+      "emoji": "⏱️",
+      "title": "Visa renewal & extension — don't miss the deadline.",
+      "title_cn": "签证续签延期——别错过期限",
+      "pain": "Complex renewal/extension timelines; risk of overstay.",
+      "pain_cn": "续签/延期流程复杂，存在逾期风险。",
+      "solution": "We track your expiry dates and push proactive renewal reminders.",
+      "solution_cn": "我们跟踪你的到期日，主动推送续签提醒。",
+      "source": {
+        "name": "National Immigration Administration",
+        "name_cn": "国家移民管理局",
+        "url": "https://www.nia.gov.cn"
+      }
+    },
+    {
+      "day": 15,
+      "stage": 3,
+      "emoji": "💳",
+      "title": "Pay everywhere with one phone.",
+      "title_cn": "一部手机走天下",
+      "pain": "Many merchants only accept WeChat/Alipay; cash is awkward.",
+      "pain_cn": "很多商户只收微信/支付宝，现金很不方便。",
+      "solution": "We build a digital-yuan-friendly merchant network with in-app consumption guides & discounts.",
+      "solution_cn": "我们打造数字人民币友好商户网络，APP 内提供消费指南与优惠。",
+      "source": {
+        "name": "PBOC payment guide",
+        "name_cn": "人民银行支付指南",
+        "url": "https://www.pbc.gov.cn"
+      }
+    },
+    {
+      "day": 16,
+      "stage": 3,
+      "emoji": "🏥",
+      "title": "See a doctor without the language barrier.",
+      "title_cn": "看病无障碍",
+      "pain": "Hard to book appointments, communicate with doctors, buy medicine.",
+      "pain_cn": "预约难、与医生沟通难、买药难。",
+      "solution": "'Health Escort': partner international clinics list, booking help, phone-interpreter medical accompaniment.",
+      "solution_cn": "「健康护航」：合作国际诊所清单、预约协助、电话翻译陪诊。",
+      "source": {
+        "name": "Haikou People's Hospital Intl Centre",
+        "name_cn": "海口市人民医院国际医疗部",
+        "url": "https://en.hainan.gov.cn"
+      }
+    },
+    {
+      "day": 17,
+      "stage": 3,
+      "emoji": "🤝",
+      "title": "Make real friends, not just contacts.",
+      "title_cn": "交真朋友，而不只是联系人",
+      "pain": "No local circle; culture shock; loneliness.",
+      "pain_cn": "没有本地圈子；文化冲击；孤独感。",
+      "solution": "'Community Connector': cultural events, language-exchange corners, interest clubs (cycling, food), expat forum.",
+      "solution_cn": "「社群连接器」：文化活动、语言交换角、兴趣俱乐部（骑行、美食）、外籍论坛。",
+      "source": {
+        "name": "Ouwen App community",
+        "name_cn": "欧闻 APP 社群",
+        "url": "https://en.hainan.gov.cn"
+      }
+    },
+    {
+      "day": 18,
+      "stage": 3,
+      "emoji": "🍜",
+      "title": "What (and where) to eat in Hainan.",
+      "title_cn": "在海南吃什么、去哪吃",
+      "pain": "Unfamiliar with local food and dining etiquette.",
+      "pain_cn": "不熟悉本地美食与用餐礼仪。",
+      "solution": "Curated dining guides, bilingual menus at partner restaurants, food tours.",
+      "solution_cn": "精选美食指南、合作餐厅双语菜单、美食之旅。",
+      "source": {
+        "name": "Explore Hainan",
+        "name_cn": "探索海南",
+        "url": "https://en.explorehainan.com"
+      }
+    },
+    {
+      "day": 19,
+      "stage": 3,
+      "emoji": "🛍️",
+      "title": "Duty-free shopping: how to actually use it.",
+      "title_cn": "免税购物：怎么真正用起来",
+      "pain": "Don't understand duty-free rules and quotas.",
+      "pain_cn": "不懂免税规则与额度。",
+      "solution": "Step-by-step duty-free guide, quota calculator, partner store discounts.",
+      "solution_cn": "分步免税指南、额度计算器、合作门店优惠。",
+      "source": {
+        "name": "Hainan Duty Free official",
+        "name_cn": "海南免税官方",
+        "url": "https://en.hainan.gov.cn"
+      }
+    },
+    {
+      "day": 20,
+      "stage": 3,
+      "emoji": "🏥",
+      "title": "Health insurance: what foreigners actually need.",
+      "title_cn": "医疗保险：外国人真正需要什么",
+      "pain": "Unclear what commercial/accident insurance to buy.",
+      "pain_cn": "不清楚该买什么商业/意外保险。",
+      "solution": "Guidance on international medical insurance, direct-bill hospitals, and essential coverage.",
+      "solution_cn": "国际医疗保险指引、直付医院、必要保障建议。",
+      "source": {
+        "name": "Hainan medical authorities",
+        "name_cn": "海南医疗主管部门",
+        "url": "https://en.hainan.gov.cn"
+      }
+    },
+    {
+      "day": 21,
+      "stage": 3,
+      "emoji": "🚗",
+      "title": "Driving in Hainan with a foreign license.",
+      "title_cn": "用外国驾照在海南开车",
+      "pain": "Uncertain about license recognition and temporary permits.",
+      "pain_cn": "不确定驾照互认与临时驾照规定。",
+      "solution": "Assistance with temporary driving permits, rental partners, and local traffic rules in English.",
+      "solution_cn": "临时驾照办理协助、合作租车、英文本地交规。",
+      "source": {
+        "name": "Hainan Transport Bureau",
+        "name_cn": "海南省交通运输厅",
+        "url": "https://en.hainan.gov.cn"
+      }
+    },
+    {
+      "day": 22,
+      "stage": 4,
+      "emoji": "💼",
+      "title": "Register a company in Hainan — the smart way.",
+      "title_cn": "在海南注册公司——聪明的方式",
+      "pain": "Company registration, tax, social security, legal — high cost and complexity.",
+      "pain_cn": "公司注册、税务、社保、法务——成本高、流程复杂。",
+      "solution": "'Business Partner': company registration → EF-account opening → bookkeeping/tax → talent-subsidy application, one-stop.",
+      "solution_cn": "「企业服务伙伴」：注册公司 → 开 EF 账户 → 记账报税 → 人才补贴申请，一站式。",
+      "source": {
+        "name": "en.hainan.gov.cn — invest",
+        "name_cn": "海南政府网 — 投资",
+        "url": "https://en.hainan.gov.cn"
+      }
+    },
+    {
+      "day": 23,
+      "stage": 4,
+      "emoji": "💰",
+      "title": "15% tax cap: are you eligible?",
+      "title_cn": "15% 个税封顶：你符合条件吗？",
+      "pain": "Unclear how to qualify for the 15% personal income tax incentive.",
+      "pain_cn": "不清楚如何符合 15% 个税优惠。",
+      "solution": "Eligibility check: ≥183 days/year in Hainan (≥90 actual). We help you structure and file.",
+      "solution_cn": "资格核查：在海南每年累计居住 ≥183 天（实际 ≥90 天）。我们帮你规划与申报。",
+      "source": {
+        "name": "policy.hnftp.gov.cn",
+        "name_cn": "海南政策查询",
+        "url": "https://policy.hnftp.gov.cn"
+      }
+    },
+    {
+      "day": 24,
+      "stage": 4,
+      "emoji": "🏫",
+      "title": "International schools: pick the right one.",
+      "title_cn": "国际学校：选对的那一所",
+      "pain": "Tight seats, complex application, unclear curriculum choices.",
+      "pain_cn": "名额紧张、申请复杂、课程选择不清。",
+      "solution": "'Education Planning': school comparison, admission assistance, policy interpretation, parent meetups.",
+      "solution_cn": "「教育规划」：学校对比、入学协助、政策解读、家长见面会。",
+      "source": {
+        "name": "Hainan Education Dept",
+        "name_cn": "海南省教育厅",
+        "url": "https://en.hainan.gov.cn"
+      }
+    },
+    {
+      "day": 25,
+      "stage": 4,
+      "emoji": "🏠",
+      "title": "Buying property as a foreigner — the rules.",
+      "title_cn": "外国人买房——规则是什么",
+      "pain": "Special purchase policy, complex process, legal/tax issues.",
+      "pain_cn": "购房政策特殊、流程复杂、有法律税务问题。",
+      "solution": "'Settling Advisor' with compliant agents, purchase/rent policy interpretation, transaction accompaniment.",
+      "solution_cn": "「安居顾问」对接合规中介、购房/租房政策解读、交易陪同。",
+      "source": {
+        "name": "Hainan Housing authority",
+        "name_cn": "海南省住建部门",
+        "url": "https://en.hainan.gov.cn"
+      }
+    },
+    {
+      "day": 26,
+      "stage": 4,
+      "emoji": "🌐",
+      "title": "Send money home, the compliant way.",
+      "title_cn": "合规地把钱汇回家",
+      "pain": "Cross-border salary repatriation and asset management face FX controls.",
+      "pain_cn": "跨境工资汇回与资产管理受外汇管制。",
+      "solution": "'Cross-border Finance Bridge': EF-account-based salary outflow & settlement, small-amount instant FX swap.",
+      "solution_cn": "「跨境金融桥梁」：基于 EF 账户的工资汇出与结算、小额即时外汇兑换。",
+      "source": {
+        "name": "PBOC Hainan Branch — EF Account",
+        "name_cn": "人民银行海南分行 — EF 账户",
+        "url": "https://www.pbc.gov.cn"
+      }
+    },
+    {
+      "day": 27,
+      "stage": 4,
+      "emoji": "👨‍👩‍👧",
+      "title": "Bring your family to Hainan.",
+      "title_cn": "把家人带到海南",
+      "pain": "Family reunification visas and dependents' status are confusing.",
+      "pain_cn": "家庭团聚签证与家属身份令人困惑。",
+      "solution": "Q1/Q2 residence permits for spouse, parents, children; dependents can join your work/residence permit.",
+      "solution_cn": "配偶/父母/子女可办理 Q1/Q2 居留许可；家属可随你的工作/居留许可来琼。",
+      "source": {
+        "name": "National Immigration Administration",
+        "name_cn": "国家移民管理局",
+        "url": "https://www.nia.gov.cn"
+      }
+    },
+    {
+      "day": 28,
+      "stage": 4,
+      "emoji": "🧭",
+      "title": "From visitor to permanent resident — the roadmap.",
+      "title_cn": "从访客到永居——完整路线图",
+      "pain": "No clear long-term path from first landing to permanent residency.",
+      "pain_cn": "从首次入境到永久居留，没有清晰的长远路径。",
+      "solution": "A personalised long-term roadmap: residence → work permit → talent status → permanent residence eligibility.",
+      "solution_cn": "个性化长远路线图：居留 → 工作许可 → 人才身份 → 永居资格。",
+      "source": {
+        "name": "en.hainan.gov.cn — talent",
+        "name_cn": "海南政府网 — 人才",
+        "url": "https://en.hainan.gov.cn"
+      }
+    },
+    {
+      "day": 29,
+      "stage": 1,
+      "emoji": "💊",
+      "title": "Medicines & vaccinations: pack smart before you fly",
+      "title_cn": "药品与疫苗：起飞前聪明打包",
+      "pain": "Unsure which medicines you can bring into China, and whether you need vaccinations or health documents.",
+      "pain_cn": "不确定哪些药品能带入中国，是否需要疫苗或健康证明。",
+      "solution": "Ouwen's pre-trip health checklist: carry a doctor's note + prescription for personal meds, declare controlled items at customs, and confirm which vaccinations are recommended for your itinerary.",
+      "solution_cn": "欧闻行前健康清单：个人药品携带医生证明 + 处方、受控物品在海关申报、确认行程推荐疫苗。",
+      "source": {
+        "name": "General Administration of Customs (China)",
+        "name_cn": "中国海关总署",
+        "url": "https://www.customs.gov.cn"
+      }
+    },
+    {
+      "stage": 2,
+      "title": "Don't forget the medical check for your residence permit",
+      "title_cn": "办居留许可，别忘了体检",
+      "emoji": "🩺",
+      "pain": "Your work or residence permit application stalls because you didn't complete the required physical examination at a designated hospital.",
+      "pain_cn": "工作或居留许可申请卡住，因为你没在指定医院完成必需的体检。",
+      "solution": "Ouwen books your appointment at the designated International Travel Healthcare Center, walks you through each item, and delivers the sealed Foreigner Physical Examination Record on time.",
+      "solution_cn": "欧闻帮你预约指定国际旅行卫生保健中心、逐项陪同体检、按时拿到密封的《外国人体格检查记录》。",
+      "source": {
+        "name": "National Immigration Administration",
+        "name_cn": "国家移民管理局",
+        "url": "https://www.nia.gov.cn"
+      },
+      "day": 30
+    },
+    {
+      "stage": 3,
+      "title": "Typhoon season: read the warning signals & stay safe",
+      "title_cn": "台风季：读懂预警信号、安全避险",
+      "emoji": "🌀",
+      "pain": "Typhoons hit Hainan often in summer and autumn, and foreigners don't know what the colored warning signals mean or how to prepare.",
+      "pain_cn": "海南夏秋台风频繁，外籍人士看不懂蓝/黄/橙/红预警信号的含义，也不知道如何防范。",
+      "solution": "Ouwen sends bilingual typhoon alerts and a step-by-step safety checklist: what each blue/yellow/orange/red signal means, what to stock, and when to stay indoors.",
+      "solution_cn": "欧闻推送双语台风预警和分步安全清单：各级信号含义、该储备什么物资、何时应留在室内。",
+      "source": {
+        "name": "Hainan Provincial Government — Emergency Management",
+        "name_cn": "海南省政府 — 应急管理",
+        "url": "https://en.hainan.gov.cn"
+      },
+      "day": 31
+    },
+    {
+      "stage": 4,
+      "title": "Corporate income tax at 15%: does your business qualify?",
+      "title_cn": "企业所得税 15%：你的企业符合条件吗？",
+      "emoji": "🏢",
+      "pain": "Entrepreneurs don't know whether their business falls under Hainan's 'encouraged industries' and can pay only 15% corporate income tax instead of the standard 25%.",
+      "pain_cn": "创业者不清楚自己的企业是否属于海南「鼓励类产业」，能否只缴 15% 企业所得税（而非标准 25%）。",
+      "solution": "Ouwen checks your business scope against the encouraged-industries catalogue, confirms the substantive-operation requirement, and helps you file for the 15% rate.",
+      "solution_cn": "欧闻对照鼓励类产业目录核查你的经营范围、确认实质性运营要求，并协助申报 15% 优惠税率。",
+      "source": {
+        "name": "Hainan Policy Query (English)",
+        "name_cn": "海南政策查询（英文版）",
+        "url": "https://policy.hnftp.gov.cn"
+      },
+      "day": 32
+    }
+  ]
+}
