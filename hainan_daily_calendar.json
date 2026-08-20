@@ -556,22 +556,6 @@
         "url": "https://www.customs.gov.cn"
       },
       "day": 33
-    },
-    {
-      "stage": 1,
-      "title": "TEST ENTRY - IGNORE",
-      "title_cn": "测试条目-忽略",
-      "emoji": "🧪",
-      "pain": "Test pain.",
-      "pain_cn": "测试痛点。",
-      "solution": "Test solution.",
-      "solution_cn": "测试方案。",
-      "source": {
-        "name": "General Administration of Customs",
-        "name_cn": "中国海关总署",
-        "url": "https://www.customs.gov.cn"
-      },
-      "day": 34
     }
   ]
 }
