@@ -556,6 +556,22 @@
         "url": "https://www.customs.gov.cn"
       },
       "day": 33
+    },
+    {
+      "stage": 2,
+      "emoji": "🪪",
+      "title": "Z visa in hand? Swap it for a residence permit within 30 days.",
+      "title_cn": "Z 签已到手？30 天内换成居留许可",
+      "pain": "You entered on a Z visa but don't realize it must be converted into a residence permit within 30 days of entry — miss the window and you're overstaying.",
+      "pain_cn": "你持 Z 签入境，却不知道必须在入境 30 天内把它换成居留许可——错过期限就属于逾期滞留。",
+      "solution": "Ouwen books your Exit-Entry Administration appointment, prepares the full dossier (work permit card, medical record, housing registration), and gets your residence permit issued before the deadline.",
+      "solution_cn": "欧闻帮你预约出入境管理局、备齐全套材料（工作许可证、体检记录、住宿登记），在期限内办妥居留许可。",
+      "source": {
+        "name": "National Immigration Administration",
+        "name_cn": "国家移民管理局",
+        "url": "https://www.nia.gov.cn"
+      },
+      "day": 34
     }
   ]
 }
