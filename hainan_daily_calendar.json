@@ -540,6 +540,22 @@
         "url": "https://policy.hnftp.gov.cn"
       },
       "day": 32
+    },
+    {
+      "stage": 1,
+      "title": "Cash & customs: what you must declare when entering Hainan",
+      "title_cn": "现金与海关：入境海南必须申报什么",
+      "emoji": "🛃",
+      "pain": "Foreigners don't know the cash limits and which items must be declared at Chinese customs, risking fines or confiscation.",
+      "pain_cn": "外籍人士不清楚入境现金限额和哪些物品必须向海关申报，有被罚款或没收的风险。",
+      "solution": "Ouwen's pre-flight customs checklist: declare RMB cash of ¥20,000+ or foreign currency of USD 5,000+, and know the red/green channel rules before you board.",
+      "solution_cn": "欧闻行前海关清单：人民币现金 ≥2 万或外币 ≥5000 美元须主动申报，并提前搞清红绿通道规则。",
+      "source": {
+        "name": "General Administration of Customs (China)",
+        "name_cn": "中国海关总署",
+        "url": "https://www.customs.gov.cn"
+      },
+      "day": 33
     }
   ]
 }
