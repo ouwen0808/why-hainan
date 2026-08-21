@@ -64,6 +64,30 @@
   .stage-tab .st-label { font-size: 0.95rem; font-weight: 700; color: var(--navy); }
   .stage-tab .st-cn { font-size: 0.75rem; color: var(--gray-500); }
 
+  /* Search */
+  .search-bar { max-width: 1000px; margin: 24px auto 0; padding: 0 24px; }
+  .search-inner { position: relative; display: flex; align-items: center; }
+  .search-inner .icon { position: absolute; left: 16px; font-size: 1.05rem; pointer-events: none; }
+  .search-input {
+    width: 100%; padding: 14px 52px 14px 46px; font-size: 0.98rem;
+    font-family: inherit; color: var(--gray-900); background: #fff;
+    border: 1px solid var(--gray-200); border-radius: 28px; outline: none;
+    transition: all 0.2s; box-shadow: var(--shadow);
+  }
+  .search-input:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(13,148,136,0.15); }
+  .search-input::placeholder { color: var(--gray-500); }
+  .search-clear {
+    position: absolute; right: 10px; width: 34px; height: 34px; border-radius: 50%;
+    border: none; background: var(--gray-200); color: var(--gray-700); font-size: 1rem;
+    cursor: pointer; display: none; align-items: center; justify-content: center;
+    transition: all 0.2s;
+  }
+  .search-clear:hover { background: var(--gray-500); color: #fff; }
+  .search-clear.visible { display: flex; }
+  .search-hint { max-width: 1000px; margin: 8px auto 0; padding: 0 24px; font-size: 0.75rem; color: var(--gray-500); }
+  .no-results { text-align: center; padding: 48px 24px; color: var(--gray-500); }
+  .no-results .big { font-size: 2.4rem; display: block; margin-bottom: 10px; }
+
   /* Feed */
   .feed { max-width: 1000px; margin: 24px auto 0; padding: 0 24px; }
   .feed-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
@@ -126,6 +150,15 @@
   </div>
 </div>
 
+<div class="search-bar">
+  <div class="search-inner">
+    <span class="icon">🔍</span>
+    <input type="text" id="searchInput" class="search-input" placeholder="搜索关键词（英文/中文）—— 签证、租房、支付、医疗、税务…" autocomplete="off">
+    <button class="search-clear" id="searchClear" aria-label="清空搜索">✕</button>
+  </div>
+</div>
+<div class="search-hint">支持搜索标题、痛点、方案、来源 · Search titles, pain points, solutions &amp; sources</div>
+
 <div class="stage-tabs" id="stageTabs"></div>
 
 <div class="feed">
@@ -170,6 +203,10 @@
   // Stage tabs
   const tabsEl = document.getElementById('stageTabs');
   const order = [1,2,3,4];
+  // 当前筛选状态
+  let activeStage = 'all'; // 'all' | 1 | 2 | 3 | 4
+  let searchQuery = '';
+
   order.forEach(n => {
     const s = stages[String(n)];
     const btn = document.createElement('button');
@@ -190,46 +227,91 @@
   function renderFeed(items) {
     const feed = document.getElementById('feed');
     feed.innerHTML = '';
-    items.forEach(item => {
-      const s = stages[String(item.stage)];
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `
-        <div class="card-top">
-          <div class="card-emoji">${item.emoji}</div>
-          <div class="card-body">
-            <div class="card-meta">
-              <span class="day-badge">Day ${item.day}</span>
-              <span class="stage-badge s${item.stage}">Stage ${item.stage} · ${s.label}</span>
+    if (items.length === 0) {
+      const empty = document.createElement('div');
+      empty.className = 'no-results';
+      empty.innerHTML = `<span class="big">🔍</span>没有找到匹配的结果<br>No results found for "<strong></strong>"`;
+      empty.querySelector('strong').textContent = searchQuery || '';
+      feed.appendChild(empty);
+    } else {
+      items.forEach(item => {
+        const s = stages[String(item.stage)];
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <div class="card-top">
+            <div class="card-emoji">${item.emoji}</div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="day-badge">Day ${item.day}</span>
+                <span class="stage-badge s${item.stage}">Stage ${item.stage} · ${s.label}</span>
+              </div>
+              <h4>${item.title}${item.title_cn ? '<div class="cn-title">' + item.title_cn + '</div>' : ''}</h4>
+              <div class="row"><b class="pain">痛点</b><span>${item.pain}${item.pain_cn ? '<div class="cn-line">' + item.pain_cn + '</div>' : ''}</span></div>
+              <div class="row"><b class="sol">方案</b><span>${item.solution}${item.solution_cn ? '<div class="cn-line">' + item.solution_cn + '</div>' : ''}</span></div>
+              <div class="src">🔗 <a href="${item.source.url}" target="_blank" rel="noopener">${item.source.name}</a>${item.source.name_cn ? ' · ' + item.source.name_cn : ''}</div>
             </div>
-            <h4>${item.title}${item.title_cn ? '<div class="cn-title">' + item.title_cn + '</div>' : ''}</h4>
-            <div class="row"><b class="pain">痛点</b><span>${item.pain}${item.pain_cn ? '<div class="cn-line">' + item.pain_cn + '</div>' : ''}</span></div>
-            <div class="row"><b class="sol">方案</b><span>${item.solution}${item.solution_cn ? '<div class="cn-line">' + item.solution_cn + '</div>' : ''}</span></div>
-            <div class="src">🔗 <a href="${item.source.url}" target="_blank" rel="noopener">${item.source.name}</a>${item.source.name_cn ? ' · ' + item.source.name_cn : ''}</div>
-          </div>
-        </div>`;
-      feed.appendChild(card);
-    });
+          </div>`;
+        feed.appendChild(card);
+      });
+    }
     document.getElementById('feedCount').textContent = `${items.length} guides`;
+  }
+
+  // 综合筛选：阶段 + 搜索关键词
+  function applyFilters() {
+    let items = calendar;
+    if (activeStage !== 'all') {
+      items = items.filter(c => c.stage === activeStage);
+    }
+    if (searchQuery.trim()) {
+      const q = searchQuery.trim().toLowerCase();
+      items = items.filter(c => {
+        const haystack = [
+          c.title, c.title_cn, c.pain, c.pain_cn,
+          c.solution, c.solution_cn, c.source && c.source.name,
+          c.source && c.source.name_cn, c.emoji
+        ].filter(Boolean).join(' ').toLowerCase();
+        return haystack.includes(q);
+      });
+    }
+    renderFeed(items);
+    // 更新标题
+    if (searchQuery.trim()) {
+      const stageLabel = activeStage === 'all' ? '全部' : `Stage ${activeStage}`;
+      document.getElementById('feedTitle').textContent = `搜索结果："${searchQuery.trim()}"（${stageLabel}）`;
+    } else if (activeStage === 'all') {
+      document.getElementById('feedTitle').textContent = 'All Guides — Full 28-Day Journey';
+    } else {
+      const s = stages[String(activeStage)];
+      document.getElementById('feedTitle').textContent = `Stage ${activeStage} — ${s.label} (${s.cn})`;
+    }
   }
 
   function filterByStage(n, btn) {
     document.querySelectorAll('.stage-tab').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    if (n === 'all') {
-      renderFeed(calendar);
-      document.getElementById('feedTitle').textContent = 'All Guides — Full 28-Day Journey';
-    } else {
-      const filtered = calendar.filter(c => c.stage === n);
-      const s = stages[String(n)];
-      renderFeed(filtered);
-      document.getElementById('feedTitle').textContent = `Stage ${n} — ${s.label} (${s.cn})`;
-    }
+    activeStage = n;
+    applyFilters();
   }
 
+  // 搜索框事件
+  const searchInput = document.getElementById('searchInput');
+  const searchClear = document.getElementById('searchClear');
+  searchInput.addEventListener('input', () => {
+    searchQuery = searchInput.value;
+    searchClear.classList.toggle('visible', !!searchQuery);
+    applyFilters();
+  });
+  searchClear.addEventListener('click', () => {
+    searchInput.value = '';
+    searchQuery = '';
+    searchClear.classList.remove('visible');
+    applyFilters();
+  });
+
   // Initial render
-  renderFeed(calendar);
-  document.getElementById('feedTitle').textContent = 'All Guides — Full 28-Day Journey';
+  applyFilters();
 })();
 </script>
 </body>
