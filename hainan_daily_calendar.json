@@ -572,6 +572,22 @@
         "url": "https://www.nia.gov.cn"
       },
       "day": 34
+    },
+    {
+      "stage": 3,
+      "title": "Ride the island-loop high-speed rail: 3 hours, 653 km, one ticket.",
+      "title_cn": "坐环岛高铁：3 小时、653 公里、一张票",
+      "emoji": "🚄",
+      "pain": "Foreigners don't realize Hainan has a high-speed rail loop linking Haikou, Sanya and every major city, so they overpay for taxis or flights just to cross the island.",
+      "pain_cn": "外籍人士不知道海南有一条环岛高铁连接海口、三亚等各大城市，结果只能花高价打车或坐飞机跨岛。",
+      "solution": "Ouwen's transport guide shows you how to book with a foreign passport, read the Haikou East / Sanya route maps and stations, and pick which stretch of the island to explore on a day trip.",
+      "solution_cn": "欧闻出行指南教你用外国护照购票、看懂海口东/三亚等线路与站点，并推荐适合一日游的环岛路段。",
+      "source": {
+        "name": "Hainan Provincial Government",
+        "name_cn": "海南省政府网",
+        "url": "https://en.hainan.gov.cn"
+      },
+      "day": 35
     }
   ]
 }
