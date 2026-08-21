@@ -44,6 +44,20 @@
   .nav-links a:hover { color: var(--teal); }
   .nav-cta { background: var(--teal); color: #fff !important; padding: 8px 20px; border-radius: 24px; font-weight: 600; }
   .nav-cta:hover { background: var(--teal-dark) !important; }
+  .nav-search { display: flex; align-items: center; gap: 6px; }
+  .nav-search input {
+    padding: 8px 14px; border: 1px solid var(--gray-200); border-radius: 20px;
+    font-size: 0.85rem; font-family: inherit; width: 170px; outline: none;
+    background: #fff; color: var(--gray-900); transition: all 0.2s;
+  }
+  .nav-search input:focus { border-color: var(--teal); width: 210px; }
+  .nav-search input::placeholder { color: var(--gray-500); }
+  .nav-search button {
+    background: var(--teal); color: #fff; border: none; border-radius: 20px;
+    width: 34px; height: 34px; cursor: pointer; font-size: 0.9rem; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center; transition: background 0.2s;
+  }
+  .nav-search button:hover { background: var(--teal-dark); }
 
   /* Sections */
   section { padding: 100px 24px; }
@@ -204,6 +218,10 @@
 <nav class="nav">
   <div class="nav-inner">
     <a href="#" class="nav-logo">🌴 Why<span>Hainan</span><span style="font-size:0.7em;color:var(--gray-500);margin-left:6px;">为什么选海南</span></a>
+    <form class="nav-search" action="daily-guide.html" method="get">
+      <input type="text" name="q" placeholder="搜索指南 · Search…" autocomplete="off">
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
     <ul class="nav-links">
       <li><a href="#policy">Policy 政策</a></li>
       <li><a href="#living">Living 生活</a></li>
