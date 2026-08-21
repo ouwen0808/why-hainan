@@ -310,6 +310,15 @@
     applyFilters();
   });
 
+  // 支持从 URL 参数 ?q=xxx 进入时自动搜索（供主页/动画页搜索框跳转）
+  const urlParams = new URLSearchParams(window.location.search);
+  const qParam = (urlParams.get('q') || '').trim();
+  if (qParam) {
+    searchInput.value = qParam;
+    searchQuery = qParam;
+    searchClear.classList.add('visible');
+  }
+
   // Initial render
   applyFilters();
 })();
