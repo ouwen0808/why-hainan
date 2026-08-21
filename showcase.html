@@ -372,5 +372,62 @@
     }, 8000);
   }, { passive: true });
 </script>
+<!-- Baidu Analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?cbd9f20e49647beb8f3a6664ca43d813";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- Action Toolbar -->
+<style>
+  .ow-tools { position: fixed; right: 16px; bottom: 16px; z-index: 9999; display: flex; flex-direction: column; gap: 10px; }
+  .ow-tools button { position: relative; width: 48px; height: 48px; border-radius: 50%; border: none; cursor: pointer; background: #0d9488; color: #fff; font-size: 19px; box-shadow: 0 4px 14px rgba(0,0,0,0.28); display: flex; align-items: center; justify-content: center; transition: transform .15s, background .15s; }
+  .ow-tools button:hover { background: #0f766e; transform: scale(1.08); }
+  .ow-tools .ow-tip { position: absolute; right: 58px; top: 50%; transform: translateY(-50%); background: #0f172a; color: #fff; padding: 5px 11px; border-radius: 8px; font-size: 12px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .2s; }
+  .ow-tools button:hover .ow-tip { opacity: 1; }
+</style>
+<div class="ow-tools">
+  <button id="owShare"><span class="ow-tip">Share · 转发</span>📤</button>
+  <button id="owCopy"><span class="ow-tip">Copy link · 复制链接</span>🔗</button>
+  <button id="owDownload"><span class="ow-tip">Download guide · 下载指南</span>⬇️</button>
+</div>
+<script>
+(function(){
+  var page = (location.pathname.split('/').pop() || 'index').replace('.html','');
+  function track(cat, act, label){ try { if (window._hmt) _hmt.push(['_trackEvent', cat, act, label]); } catch(e){} }
+  function copyText(t){
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(t).then(function(){ return true; }, function(){ return false; });
+    }
+    var ta = document.createElement('textarea'); ta.value = t; document.body.appendChild(ta);
+    ta.select(); var ok = false; try { ok = document.execCommand('copy'); } catch(e){}
+    document.body.removeChild(ta); return Promise.resolve(ok);
+  }
+  document.getElementById('owShare').addEventListener('click', function(){
+    track('share', 'click', page);
+    if (navigator.share) {
+      navigator.share({ title: document.title, url: location.href }).catch(function(){});
+    } else {
+      copyText(location.href).then(function(ok){ alert(ok ? 'Link copied — paste to share! 链接已复制，粘贴即可分享' : 'Copy failed 复制失败'); });
+    }
+  });
+  document.getElementById('owCopy').addEventListener('click', function(){
+    track('copy', 'click', page);
+    copyText(location.href).then(function(ok){ alert(ok ? 'Link copied! 链接已复制' : 'Copy failed 复制失败'); });
+  });
+  document.getElementById('owDownload').addEventListener('click', function(){
+    track('download', 'click', page);
+    var a = document.createElement('a');
+    a.href = 'hainan-quick-guide.html';
+    a.download = 'hainan-quick-guide.html';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  });
+})();
+</script>
 </body>
 </html>
