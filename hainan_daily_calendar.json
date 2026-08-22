@@ -588,6 +588,22 @@
         "url": "https://en.hainan.gov.cn"
       },
       "day": 35
+    },
+    {
+      "stage": 4,
+      "title": "Get certified as a Hainan high-level talent (A/B/C) — and unlock real perks",
+      "title_cn": "认定海南高层次人才（A/B/C 类）——解锁真福利",
+      "emoji": "🏅",
+      "pain": "Foreign professionals don't know they can be certified as Hainan high-level talent, so they miss out on housing subsidies, tax incentives, and school-priority perks.",
+      "pain_cn": "外籍专业人士不知道自己能认定海南高层次人才，白白错过住房补贴、税收优惠和子女入学优先等福利。",
+      "solution": "Ouwen checks your qualifications against the A/B/C classification catalogue, files the talent certification for you, and helps you claim the matching housing, tax and education benefits.",
+      "solution_cn": "欧闻对照 A/B/C 分类目录核查你的资质、代办人才认定，并协助申领对应的住房、税收与教育福利。",
+      "source": {
+        "name": "Hainan FTP International Service Portal — Talent",
+        "name_cn": "海南自贸港国际服务门户 — 人才",
+        "url": "https://en.hainan.gov.cn"
+      },
+      "day": 36
     }
   ]
 }
