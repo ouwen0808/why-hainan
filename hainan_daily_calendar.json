@@ -604,6 +604,22 @@
         "url": "https://en.hainan.gov.cn"
       },
       "day": 36
+    },
+    {
+      "stage": 1,
+      "title": "Bringing your pet to Hainan? Start the paperwork 30+ days early.",
+      "title_cn": "带宠物来海南？至少提前 30 天备材料",
+      "emoji": "🐾",
+      "pain": "Foreigners relocating with a dog or cat don't realize China requires an ISO microchip, an up-to-date rabies vaccine, and an official health certificate, plus entry through a designated port — or their pet gets quarantined.",
+      "pain_cn": "带猫狗来琼的外籍人士不知道中国要求 ISO 芯片、有效狂犬疫苗和官方健康证明，且须从指定口岸入境——否则宠物会被隔离。",
+      "solution": "Ouwen's pet-arrival checklist maps every requirement by origin country, tells you which ports accept pets, and prepares the full certificate pack before you fly.",
+      "solution_cn": "欧闻宠物入境清单按来源国逐项列出要求、告知哪些口岸可携宠入境，并在起飞前备齐全套证明。",
+      "source": {
+        "name": "General Administration of Customs (China)",
+        "name_cn": "中国海关总署",
+        "url": "https://www.customs.gov.cn"
+      },
+      "day": 37
     }
   ]
 }
