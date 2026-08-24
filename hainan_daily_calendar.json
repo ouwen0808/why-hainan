@@ -620,6 +620,22 @@
         "url": "https://www.customs.gov.cn"
       },
       "day": 37
+    },
+    {
+      "day": 38,
+      "stage": 2,
+      "emoji": "🛡️",
+      "title": "Your employment injury insurance starts on Day 1 — even during probation.",
+      "title_cn": "工伤保险入职第一天就生效——试用期也算",
+      "pain": "Foreigners working in Hainan don't know they are entitled to social insurance from their first work day, and assume their employer handles everything automatically.",
+      "pain_cn": "在海南工作的外籍人士不知道从第一天起就享有社会保险，以为雇主会自动办理。",
+      "solution": "Ouwen walks you through Hainan's five-insurance system (pension, medical, unemployment, work injury, maternity), your employer's 30-day registration obligation, and how to verify your coverage online.",
+      "solution_cn": "欧闻带你了解海南五险（养老、医疗、失业、工伤、生育）体系、雇主的30天参保义务，以及如何在线核查自己的参保状态。",
+      "source": {
+        "name": "Hainan Provincial Human Resources and Social Security Department",
+        "name_cn": "海南省人力资源和社会保障厅",
+        "url": "https://en.hainan.gov.cn"
+      }
     }
   ]
 }
