@@ -636,6 +636,22 @@
         "name_cn": "海南省人力资源和社会保障厅",
         "url": "https://en.hainan.gov.cn"
       }
+    },
+    {
+      "stage": 3,
+      "title": "Garbage sorting in Hainan: the 4 bins you must learn",
+      "title_cn": "海南垃圾分类：必须学会的 4 类垃圾桶",
+      "emoji": "🗑️",
+      "pain": "Haikou, Sanya and other cities now enforce mandatory household waste sorting with fines, but most foreigners don't know the four categories (recyclable, kitchen, hazardous, other) or their district's rules.",
+      "pain_cn": "海口、三亚等城市已强制实行生活垃圾分类并设有罚款，但多数外籍人士不清楚四分类（可回收、厨余、有害、其他）和所在区的规定。",
+      "solution": "Ouwen's bilingual sorting chart plus a neighborhood guide tells you which bin each item belongs in, the collection schedule, and your district's specific rules — so you never risk a fine.",
+      "solution_cn": "欧闻双语分类表 + 社区指南告诉你每样垃圾该扔哪个桶、收运时间以及你所在区的具体规定——从此不再担心被罚款。",
+      "source": {
+        "name": "Hainan Provincial Government",
+        "name_cn": "海南省政府网",
+        "url": "https://en.hainan.gov.cn"
+      },
+      "day": 39
     }
   ]
 }
