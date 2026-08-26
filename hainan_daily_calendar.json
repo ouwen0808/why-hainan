@@ -652,6 +652,22 @@
         "url": "https://en.hainan.gov.cn"
       },
       "day": 39
+    },
+    {
+      "stage": 4,
+      "title": "Annual tax settlement: don't miss the March–June filing window",
+      "title_cn": "个税年度汇算：别错过 3–6 月申报期",
+      "emoji": "💸",
+      "pain": "Foreign residents often don't realize they must file an annual individual income tax reconciliation in China — or that it's the same window where Hainan's 15% incentive gets applied.",
+      "pain_cn": "外籍居民往往不知道中国需要办理个税年度汇算，更不知道这正是海南 15% 优惠落地的同一窗口。",
+      "solution": "Ouwen reminds you every March, determines your resident or non-resident tax status, and helps you complete the annual settlement — applying the 15% Hainan rate where you qualify.",
+      "solution_cn": "欧闻每年 3 月提醒你、判定居民/非居民纳税身份，并协助完成年度汇算——符合条件时同步享受海南 15% 优惠税率。",
+      "source": {
+        "name": "Hainan Policy Query (English)",
+        "name_cn": "海南政策查询（英文版）",
+        "url": "https://policy.hnftp.gov.cn"
+      },
+      "day": 40
     }
   ]
 }
