@@ -668,6 +668,22 @@
         "url": "https://policy.hnftp.gov.cn"
       },
       "day": 40
+    },
+    {
+      "day": 41,
+      "stage": 1,
+      "emoji": "🎫",
+      "title": "Book smart: the new flight-tax refund most visitors miss.",
+      "title_cn": "聪明购票：大多数访客不知道的国际航班离境退税",
+      "pain": "Foreign travellers don't know they can claim back value-added tax on plane tickets purchased in China — and that Hainan has its own additional refund scheme for island-bound flights.",
+      "pain_cn": "外籍旅客不知道可以申请中国境内购买的机票增值税退税，也不知道海南还有针对离岛航班的地方退税政策。",
+      "solution": "Ouwen walks you through the CNY 100k VAT-refund cap for international flights, Hainan's island-departure tax-refund eligibility, and which airlines participate.",
+      "solution_cn": "欧闻带你了解国际航班最高 10 万元增值税退税额度、海南离岛退税条件，以及参与航司名单。",
+      "source": {
+        "name": "State Taxation Administration (China)",
+        "name_cn": "国家税务总局",
+        "url": "https://www.chinatax.gov.cn"
+      }
     }
   ]
 }
