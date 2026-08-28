@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hainan Quick Guide · 海南快速指南</title>
+<script src="config.js"></script>
 <style>
   :root { --teal:#0d9488; --gold:#c8963e; --navy:#0f172a; --gray:#64748b; }
   * { margin:0; padding:0; box-sizing:border-box; }
@@ -24,6 +25,9 @@
 <div class="wrap">
   <h1>🏝️ Hainan Quick Guide <span class="cn">海南快速指南</span></h1>
   <div class="sub">Essential facts for foreigners · 外籍人士必备要点 · Updated Aug 2026</div>
+  <div id="guideCards">
+    <!-- 由后端 API 动态填充；失败时保留以下静态内容 -->
+  </div>
 
   <div class="card">
     <h2>Visa-Free Entry · 免签入境</h2>
@@ -81,5 +85,38 @@
 
   <div class="foot">© 2026 Why Hainan · Built for the world · 为世界而建</div>
 </div>
+<script>
+(function () {
+  var cfg = window.WH_CONFIG || {};
+  if (!cfg.api || !cfg.api.content) return;
+  var wrap = document.getElementById('guideCards');
+  if (!wrap) return;
+  fetch(cfg.api.content)
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function (d) {
+      if (!d.quickGuide || !d.quickGuide.length) return;
+      renderGuide(d.quickGuide);
+    })
+    .catch(function () {
+      return fetch('content_fallback.json')
+        .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(function (d) { if (d.quickGuide && d.quickGuide.length) renderGuide(d.quickGuide); })
+        .catch(function () { /* 保留静态内容 */ });
+    });
+
+  function renderGuide(sections) {
+      wrap.innerHTML = '';
+      sections.forEach(function (s) {
+        var card = document.createElement('div');
+        card.className = 'card';
+        var items = (s.items || []).map(function (it) {
+          return '<li>' + it.content_en + '<span class="cn">' + it.content_cn + '</span></li>';
+        }).join('');
+        card.innerHTML = '<h2>' + s.title_en + ' · ' + s.title_cn + '</h2><ul>' + items + '</ul>';
+        wrap.appendChild(card);
+      });
+  }
+})();
+</script>
 </body>
 </html>
