@@ -494,10 +494,11 @@
       }
     },
     {
+      "day": 30,
       "stage": 2,
+      "emoji": "🩺",
       "title": "Don't forget the medical check for your residence permit",
       "title_cn": "办居留许可，别忘了体检",
-      "emoji": "🩺",
       "pain": "Your work or residence permit application stalls because you didn't complete the required physical examination at a designated hospital.",
       "pain_cn": "工作或居留许可申请卡住，因为你没在指定医院完成必需的体检。",
       "solution": "Ouwen books your appointment at the designated International Travel Healthcare Center, walks you through each item, and delivers the sealed Foreigner Physical Examination Record on time.",
@@ -506,14 +507,14 @@
         "name": "National Immigration Administration",
         "name_cn": "国家移民管理局",
         "url": "https://www.nia.gov.cn"
-      },
-      "day": 30
+      }
     },
     {
+      "day": 31,
       "stage": 3,
+      "emoji": "🌀",
       "title": "Typhoon season: read the warning signals & stay safe",
       "title_cn": "台风季：读懂预警信号、安全避险",
-      "emoji": "🌀",
       "pain": "Typhoons hit Hainan often in summer and autumn, and foreigners don't know what the colored warning signals mean or how to prepare.",
       "pain_cn": "海南夏秋台风频繁，外籍人士看不懂蓝/黄/橙/红预警信号的含义，也不知道如何防范。",
       "solution": "Ouwen sends bilingual typhoon alerts and a step-by-step safety checklist: what each blue/yellow/orange/red signal means, what to stock, and when to stay indoors.",
@@ -522,14 +523,14 @@
         "name": "Hainan Provincial Government — Emergency Management",
         "name_cn": "海南省政府 — 应急管理",
         "url": "https://en.hainan.gov.cn"
-      },
-      "day": 31
+      }
     },
     {
+      "day": 32,
       "stage": 4,
+      "emoji": "🏢",
       "title": "Corporate income tax at 15%: does your business qualify?",
       "title_cn": "企业所得税 15%：你的企业符合条件吗？",
-      "emoji": "🏢",
       "pain": "Entrepreneurs don't know whether their business falls under Hainan's 'encouraged industries' and can pay only 15% corporate income tax instead of the standard 25%.",
       "pain_cn": "创业者不清楚自己的企业是否属于海南「鼓励类产业」，能否只缴 15% 企业所得税（而非标准 25%）。",
       "solution": "Ouwen checks your business scope against the encouraged-industries catalogue, confirms the substantive-operation requirement, and helps you file for the 15% rate.",
@@ -538,14 +539,14 @@
         "name": "Hainan Policy Query (English)",
         "name_cn": "海南政策查询（英文版）",
         "url": "https://policy.hnftp.gov.cn"
-      },
-      "day": 32
+      }
     },
     {
+      "day": 33,
       "stage": 1,
+      "emoji": "🛃",
       "title": "Cash & customs: what you must declare when entering Hainan",
       "title_cn": "现金与海关：入境海南必须申报什么",
-      "emoji": "🛃",
       "pain": "Foreigners don't know the cash limits and which items must be declared at Chinese customs, risking fines or confiscation.",
       "pain_cn": "外籍人士不清楚入境现金限额和哪些物品必须向海关申报，有被罚款或没收的风险。",
       "solution": "Ouwen's pre-flight customs checklist: declare RMB cash of ¥20,000+ or foreign currency of USD 5,000+, and know the red/green channel rules before you board.",
@@ -554,10 +555,10 @@
         "name": "General Administration of Customs (China)",
         "name_cn": "中国海关总署",
         "url": "https://www.customs.gov.cn"
-      },
-      "day": 33
+      }
     },
     {
+      "day": 34,
       "stage": 2,
       "emoji": "🪪",
       "title": "Z visa in hand? Swap it for a residence permit within 30 days.",
@@ -570,14 +571,14 @@
         "name": "National Immigration Administration",
         "name_cn": "国家移民管理局",
         "url": "https://www.nia.gov.cn"
-      },
-      "day": 34
+      }
     },
     {
+      "day": 35,
       "stage": 3,
+      "emoji": "🚄",
       "title": "Ride the island-loop high-speed rail: 3 hours, 653 km, one ticket.",
       "title_cn": "坐环岛高铁：3 小时、653 公里、一张票",
-      "emoji": "🚄",
       "pain": "Foreigners don't realize Hainan has a high-speed rail loop linking Haikou, Sanya and every major city, so they overpay for taxis or flights just to cross the island.",
       "pain_cn": "外籍人士不知道海南有一条环岛高铁连接海口、三亚等各大城市，结果只能花高价打车或坐飞机跨岛。",
       "solution": "Ouwen's transport guide shows you how to book with a foreign passport, read the Haikou East / Sanya route maps and stations, and pick which stretch of the island to explore on a day trip.",
@@ -586,14 +587,14 @@
         "name": "Hainan Provincial Government",
         "name_cn": "海南省政府网",
         "url": "https://en.hainan.gov.cn"
-      },
-      "day": 35
+      }
     },
     {
+      "day": 36,
       "stage": 4,
+      "emoji": "🏅",
       "title": "Get certified as a Hainan high-level talent (A/B/C) — and unlock real perks",
       "title_cn": "认定海南高层次人才（A/B/C 类）——解锁真福利",
-      "emoji": "🏅",
       "pain": "Foreign professionals don't know they can be certified as Hainan high-level talent, so they miss out on housing subsidies, tax incentives, and school-priority perks.",
       "pain_cn": "外籍专业人士不知道自己能认定海南高层次人才，白白错过住房补贴、税收优惠和子女入学优先等福利。",
       "solution": "Ouwen checks your qualifications against the A/B/C classification catalogue, files the talent certification for you, and helps you claim the matching housing, tax and education benefits.",
@@ -602,14 +603,14 @@
         "name": "Hainan FTP International Service Portal — Talent",
         "name_cn": "海南自贸港国际服务门户 — 人才",
         "url": "https://en.hainan.gov.cn"
-      },
-      "day": 36
+      }
     },
     {
+      "day": 37,
       "stage": 1,
+      "emoji": "🐾",
       "title": "Bringing your pet to Hainan? Start the paperwork 30+ days early.",
       "title_cn": "带宠物来海南？至少提前 30 天备材料",
-      "emoji": "🐾",
       "pain": "Foreigners relocating with a dog or cat don't realize China requires an ISO microchip, an up-to-date rabies vaccine, and an official health certificate, plus entry through a designated port — or their pet gets quarantined.",
       "pain_cn": "带猫狗来琼的外籍人士不知道中国要求 ISO 芯片、有效狂犬疫苗和官方健康证明，且须从指定口岸入境——否则宠物会被隔离。",
       "solution": "Ouwen's pet-arrival checklist maps every requirement by origin country, tells you which ports accept pets, and prepares the full certificate pack before you fly.",
@@ -618,8 +619,7 @@
         "name": "General Administration of Customs (China)",
         "name_cn": "中国海关总署",
         "url": "https://www.customs.gov.cn"
-      },
-      "day": 37
+      }
     },
     {
       "day": 38,
@@ -638,10 +638,11 @@
       }
     },
     {
+      "day": 39,
       "stage": 3,
+      "emoji": "🗑️",
       "title": "Garbage sorting in Hainan: the 4 bins you must learn",
       "title_cn": "海南垃圾分类：必须学会的 4 类垃圾桶",
-      "emoji": "🗑️",
       "pain": "Haikou, Sanya and other cities now enforce mandatory household waste sorting with fines, but most foreigners don't know the four categories (recyclable, kitchen, hazardous, other) or their district's rules.",
       "pain_cn": "海口、三亚等城市已强制实行生活垃圾分类并设有罚款，但多数外籍人士不清楚四分类（可回收、厨余、有害、其他）和所在区的规定。",
       "solution": "Ouwen's bilingual sorting chart plus a neighborhood guide tells you which bin each item belongs in, the collection schedule, and your district's specific rules — so you never risk a fine.",
@@ -650,14 +651,14 @@
         "name": "Hainan Provincial Government",
         "name_cn": "海南省政府网",
         "url": "https://en.hainan.gov.cn"
-      },
-      "day": 39
+      }
     },
     {
+      "day": 40,
       "stage": 4,
+      "emoji": "💸",
       "title": "Annual tax settlement: don't miss the March–June filing window",
       "title_cn": "个税年度汇算：别错过 3–6 月申报期",
-      "emoji": "💸",
       "pain": "Foreign residents often don't realize they must file an annual individual income tax reconciliation in China — or that it's the same window where Hainan's 15% incentive gets applied.",
       "pain_cn": "外籍居民往往不知道中国需要办理个税年度汇算，更不知道这正是海南 15% 优惠落地的同一窗口。",
       "solution": "Ouwen reminds you every March, determines your resident or non-resident tax status, and helps you complete the annual settlement — applying the 15% Hainan rate where you qualify.",
@@ -666,8 +667,7 @@
         "name": "Hainan Policy Query (English)",
         "name_cn": "海南政策查询（英文版）",
         "url": "https://policy.hnftp.gov.cn"
-      },
-      "day": 40
+      }
     },
     {
       "day": 41,
@@ -686,6 +686,7 @@
       }
     },
     {
+      "day": 42,
       "stage": 2,
       "emoji": "🔌",
       "title": "Moved in? Set up water, power, gas & internet the right way.",
@@ -698,8 +699,7 @@
         "name": "Hainan Provincial Government — Living Services",
         "name_cn": "海南省政府网 — 生活服务",
         "url": "https://en.hainan.gov.cn"
-      },
-      "day": 42
+      }
     }
   ]
 }
