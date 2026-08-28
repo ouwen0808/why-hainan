@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Ouwen daily guide for foreigners in Hainan — 4 stages, 28 days, authoritative sources.">
 <title>Ouwen × Hainan — Daily Guide for Foreigners</title>
+<script src="config.js"></script>
 <style>
   :root {
     --gold: #c8963e; --gold-light: #e8c97a;
@@ -178,8 +179,36 @@
 
 <script>
 (async function () {
-  const res = await fetch('hainan_daily_calendar.json');
-  const data = await res.json();
+  // 优先从后端 API 拉取，失败则降级到本地 JSON（保证静态托管时页面可用）
+  async function loadData() {
+    try {
+      const cfg = window.WH_CONFIG || {};
+      const [guidesRes, contentRes] = await Promise.all([
+        fetch(cfg.api.guides),
+        fetch(cfg.api.content),
+      ]);
+      if (guidesRes.ok && contentRes.ok) {
+        const guides = await guidesRes.json();
+        const content = await contentRes.json();
+        const stages = {};
+        (content.stages || []).forEach((s) => {
+          stages[String(s.stage_num)] = { key: s.key, label: s.label_en, cn: s.label_cn, emoji: s.emoji };
+        });
+        const calendar = (guides || []).map((g) => ({
+          day: g.day, stage: g.stage_num, emoji: g.emoji,
+          title: g.title_en, title_cn: g.title_cn,
+          pain: g.pain_en, pain_cn: g.pain_cn,
+          solution: g.solution_en, solution_cn: g.solution_cn,
+          source: { name: g.source_name, name_cn: g.source_name_cn, url: g.source_url },
+        }));
+        if (calendar.length) return { calendar, stages };
+      }
+    } catch (e) { /* 降级到本地 JSON */ }
+    const res = await fetch('hainan_daily_calendar.json');
+    return await res.json();
+  }
+
+  const data = await loadData();
   const calendar = data.calendar;
   const stages = data.stages;
 
