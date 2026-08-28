@@ -684,6 +684,22 @@
         "name_cn": "国家税务总局",
         "url": "https://www.chinatax.gov.cn"
       }
+    },
+    {
+      "stage": 2,
+      "emoji": "🔌",
+      "title": "Moved in? Set up water, power, gas & internet the right way.",
+      "title_cn": "搬进新家？正确开通水电气与网络",
+      "pain": "After signing a lease, most foreigners don't know how to transfer utility accounts into their name, read the tiered electricity bills, or pay without a local bank card.",
+      "pain_cn": "签完租房合同后，多数外籍人士不知道如何把水电燃气账户过户到自己名下、看懂阶梯电价账单，或没有本地银行卡该如何缴费。",
+      "solution": "Ouwen transfers your water, power, gas and broadband accounts, explains Hainan's tiered electricity pricing, and sets up WeChat/Alipay auto-pay so every bill is settled on time.",
+      "solution_cn": "欧闻帮你过户水、电、燃气和宽带账户，讲解海南阶梯电价，并开通微信/支付宝自动缴费，让每张账单都按时结清。",
+      "source": {
+        "name": "Hainan Provincial Government — Living Services",
+        "name_cn": "海南省政府网 — 生活服务",
+        "url": "https://en.hainan.gov.cn"
+      },
+      "day": 42
     }
   ]
 }
