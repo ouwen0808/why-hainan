@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="发现海南，中国的热带自由贸易港。86国免签、15%个税封顶、零关税。Discover Hainan, China's tropical Free Trade Port.">
 <title>为什么选海南 · Why Hainan — 中国的热带自由贸易港</title>
+<script src="config.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -249,11 +250,8 @@
       <a href="#policy" class="btn btn-primary">Explore Policies → 了解政策</a>
       <a href="#pathways" class="btn btn-outline">How to Get Here 如何抵达</a>
     </div>
-    <div class="stats">
-      <div class="stat"><div class="num">86</div><div class="label">Countries Visa‑Free</div><div class="label-cn">免签国家</div></div>
-      <div class="stat"><div class="num">15%</div><div class="label">Max Income Tax</div><div class="label-cn">个税封顶</div></div>
-      <div class="stat"><div class="num">0%</div><div class="label">Import Tariffs</div><div class="label-cn">进口关税</div></div>
-      <div class="stat"><div class="num">25°C</div><div class="label">Year‑Round Avg</div><div class="label-cn">全年均温</div></div>
+    <div class="stats" id="heroStats">
+      <!-- 由后端 API 动态填充 -->
     </div>
   </div>
 </section>
@@ -265,25 +263,8 @@
     <h2 class="section-title">The Most Open Region in China<span class="cn">中国最开放的区域</span></h2>
     <p class="section-sub">Hainan Free Trade Port offers policies unmatched anywhere else in the country — built to welcome the world.</p>
     <p class="section-sub cn">海南自由贸易港提供全国独一无二的政策优势，为迎接世界而建。</p>
-    <div class="cards-3">
-      <div class="policy-card">
-        <span class="tag teal">Entry 入境</span>
-        <div class="big-num">86</div>
-        <h3>Visa-Free Countries<span class="cn">免签国家</span></h3>
-        <p>Citizens from 86 nations can enter Hainan without a visa for up to <strong>30 days</strong> — for tourism, business, family visits, medical treatment, exhibitions, and sports.</p>
-      </div>
-      <div class="policy-card">
-        <span class="tag gold">Tax 税收</span>
-        <div class="big-num gold">15%</div>
-        <h3>Income Tax Cap<span class="cn">个税封顶</span></h3>
-        <p>Qualified individuals pay a maximum of <strong>15%</strong> personal income tax — compared to <strong>45%</strong> in mainland China. A game‑changer for global talent.</p>
-      </div>
-      <div class="policy-card">
-        <span class="tag blue">Trade 贸易</span>
-        <div class="big-num blue">0%</div>
-        <h3>Import Tariffs<span class="cn">进口关税</span></h3>
-        <p>Most goods entering Hainan are <strong>zero‑tariff</strong>. Lower cost of living, more consumer choice, and enormous business opportunities.</p>
-      </div>
+    <div class="cards-3" id="policyCards">
+      <!-- 由后端 API 动态填充 -->
     </div>
   </div>
 </section>
@@ -291,11 +272,8 @@
 <!-- Numbers -->
 <section class="numbers">
   <div class="container">
-    <div class="num-grid">
-      <div class="num-card"><div class="n">+59%</div><div class="l">More foreign visitors<br>Q1 2025 vs Q1 2024</div><div class="l cn">外国游客增长<br>2025一季度 vs 2024一季度</div></div>
-      <div class="num-card"><div class="n gold">1,900+</div><div class="l">Kilometres of tropical<br>coastline &amp; beaches</div><div class="l cn">热带海岸线<br>与沙滩</div></div>
-      <div class="num-card"><div class="n">No. 1</div><div class="l">Air quality ranking<br>among Chinese cities</div><div class="l cn">中国城市<br>空气质量第一</div></div>
-      <div class="num-card"><div class="n gold">74+</div><div class="l">Hospitals with<br>international service</div><div class="l cn">提供国际服务<br>的医院</div></div>
+    <div class="num-grid" id="numbersGrid">
+      <!-- 由后端 API 动态填充 -->
     </div>
   </div>
 </section>
@@ -307,27 +285,8 @@
     <h2 class="section-title">Where Tropical Meets Modern<span class="cn">热带与现代的交汇</span></h2>
     <p class="section-sub">World‑class infrastructure wrapped in island paradise. Everything you need — in English.</p>
     <p class="section-sub cn">海岛天堂包裹着世界级基础设施，你所需的一切——都有英文服务。</p>
-    <div class="cards-4">
-      <div class="card">
-        <div class="card-emoji">🏥</div>
-        <h3>International Healthcare<span class="cn">国际医疗</span></h3>
-        <p>74+ hospitals with international departments, English‑speaking staff, and direct‑bill insurance. Haikou &amp; Sanya lead with dedicated international medical centres.</p>
-      </div>
-      <div class="card">
-        <div class="card-emoji">💳</div>
-        <h3>Seamless Payments<span class="cn">无缝支付</span></h3>
-        <p>Link your Visa, Mastercard, or JCB to WeChat Pay or Alipay. Foreign phone numbers supported. Tap‑and‑go across the entire island.</p>
-      </div>
-      <div class="card">
-        <div class="card-emoji">🏫</div>
-        <h3>International Schools<span class="cn">国际学校</span></h3>
-        <p>Growing network of international and bilingual schools. Hainan University offers English‑taught programmes with Belt &amp; Road scholarships.</p>
-      </div>
-      <div class="card">
-        <div class="card-emoji">🌐</div>
-        <h3>English‑Ready City<span class="cn">英语友好城市</span></h3>
-        <p>Bilingual signage at airports, hospitals, tourist sites, and government halls. 12345 hotline in English, Russian, Japanese, and Korean.</p>
-      </div>
+    <div class="cards-4" id="livingCards">
+      <!-- 由后端 API 动态填充 -->
     </div>
   </div>
 </section>
@@ -335,9 +294,9 @@
 <!-- Quote -->
 <section class="quote">
   <div class="container">
-    <blockquote>"Hainan is not just an island — it's China's vision of an open, globally‑connected future. Come see why the world is choosing Hainan."</blockquote>
-    <p class="cn">"海南不仅仅是一座岛屿——它是中国对开放、全球互联未来的愿景。来看看为什么世界都在选择海南。"</p>
-    <cite>— Hainan Free Trade Port Administration · 海南自由贸易港管理局</cite>
+    <div id="quoteContent">
+      <!-- 由后端 API 动态填充 -->
+    </div>
   </div>
 </section>
 
@@ -349,68 +308,8 @@
     <p class="section-sub">Whether you're visiting, studying, working, or building a life — there's a clear path.</p>
     <p class="section-sub cn">无论是旅游、学习、工作，还是定居——都有一条清晰的路。</p>
 
-    <div class="path-row">
-      <div class="path-text">
-        <div class="path-num">01 — Tourism 旅游</div>
-        <h2>Discover Paradise<span class="cn">发现天堂</span></h2>
-        <p>No visa needed for 86 nationalities. Fly direct to Haikou, Sanya, or Bo'ao. Use 144‑hour transit from Hong Kong &amp; Macau — or join a cruise with 15‑day visa‑free access.</p>
-        <p class="cn">86 个国籍免签。直飞海口、三亚或博鳌。经港澳 144 小时过境，或乘邮轮享 15 天免签。</p>
-        <ul class="path-list">
-          <li>86‑country visa‑free entry (30 days)<span class="cn">86 国免签入境（30 天）</span></li>
-          <li>144‑hour transit via Hong Kong &amp; Macau<span class="cn">港澳 144 小时过境</span></li>
-          <li>15‑day cruise visa‑free programme<span class="cn">15 天邮轮免签计划</span></li>
-          <li>Multiple international airports<span class="cn">多个国际机场</span></li>
-        </ul>
-      </div>
-      <div class="path-visual">🏝️</div>
-    </div>
-
-    <div class="path-row">
-      <div class="path-visual alt">🎓</div>
-      <div class="path-text">
-        <div class="path-num">02 — Study 学习</div>
-        <h2>Learn in the Tropics<span class="cn">在热带求学</span></h2>
-        <p>Hainan University and international partner campuses offer English‑taught degrees. Belt &amp; Road scholarships available. X1 visa with admission letter — straightforward with dedicated international student offices.</p>
-        <p class="cn">海南大学及国际合作校区提供英文授课学位。有一带一路奖学金。凭录取通知书办 X1 签证，有专门国际学生办公室，流程顺畅。</p>
-        <ul class="path-list">
-          <li>English‑taught undergraduate &amp; graduate programmes<span class="cn">本硕英文授课项目</span></li>
-          <li>Belt &amp; Road scholarships for eligible students<span class="cn">一带一路奖学金</span></li>
-          <li>Dedicated international student support offices<span class="cn">专门国际学生支持办公室</span></li>
-          <li>Growing expat student community<span class="cn">不断壮大的留学生社群</span></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="path-row">
-      <div class="path-text">
-        <div class="path-num">03 — Work 工作</div>
-        <h2>Build Your Career<span class="cn">成就事业</span></h2>
-        <p>The 15% income tax cap alone makes Hainan compelling. Z visa process streamlined with "one‑window" service. A, B, and C talent categories — from top scientists to skilled professionals — all welcome.</p>
-        <p class="cn">仅 15% 个税封顶就足够有吸引力。Z 签证"一窗通办"简化流程。A、B、C 人才分类——从顶尖科学家到技能人才，全部欢迎。</p>
-        <ul class="path-list">
-          <li>15% personal income tax cap for qualified talent<span class="cn">合格人才 15% 个税封顶</span></li>
-          <li>Streamlined Z visa (work) process<span class="cn">简化 Z 签（工作）流程</span></li>
-          <li>ABC talent classification — transparent &amp; fair<span class="cn">ABC 人才分类——透明公平</span></li>
-          <li>Booming: tech, tourism, healthcare, finance<span class="cn">科技/旅游/医疗/金融蓬勃发展</span></li>
-        </ul>
-      </div>
-      <div class="path-visual alt2">💼</div>
-    </div>
-
-    <div class="path-row">
-      <div class="path-visual" style="background:linear-gradient(135deg,#0f766e,#14b8a6)">🏡</div>
-      <div class="path-text">
-        <div class="path-num">04 — Life 生活</div>
-        <h2>Make It Home<span class="cn">在此安家</span></h2>
-        <p>Once you experience Hainan, you'll want to stay. Q1/Q2 residence permits make family reunification simple. Property ownership, international insurance, and banking — increasingly seamless.</p>
-        <p class="cn">体验过海南，你就会想留下来。Q1/Q2 居留许可让家庭团聚变得简单。置业、国际保险、银行服务——越来越无缝。</p>
-        <ul class="path-list">
-          <li>Q1/Q2 family reunion residence permits<span class="cn">Q1/Q2 家庭团聚居留许可</span></li>
-          <li>Property ownership for qualified residents<span class="cn">合格居民置业</span></li>
-          <li>International medical insurance accepted<span class="cn">接受国际医疗保险</span></li>
-          <li>Thriving expat communities in Haikou &amp; Sanya<span class="cn">海口三亚活跃的外籍社群</span></li>
-        </ul>
-      </div>
+    <div id="pathwaysList">
+      <!-- 由后端 API 动态填充 -->
     </div>
   </div>
 </section>
@@ -429,13 +328,147 @@
 <footer>
   <div class="footer-inner">
     <span>© 2026 Why Hainan. Built for the world. 为世界而建</span>
-    <ul class="footer-links">
-      <li><a href="https://en.hnftp.gov.cn" target="_blank" rel="noopener">Official FTP Portal 官方门户</a></li>
-      <li><a href="https://en.explorehainan.com" target="_blank" rel="noopener">Explore Hainan 探索海南</a></li>
-      <li><a href="#">↑ Top 顶部</a></li>
+    <ul class="footer-links" id="footerLinks">
+      <!-- 由后端 API 动态填充 -->
     </ul>
   </div>
 </footer>
+<!-- 动态内容渲染（从后端 API 拉取，失败降级到静态内容） -->
+<script>
+(function () {
+  var cfg = window.WH_CONFIG || {};
+  if (!cfg.api || !cfg.api.content) return;
+
+  fetch(cfg.api.content)
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(render)
+    .catch(function () {
+      // 后端不可达时降级到本地快照，保证页面不空白
+      return fetch('content_fallback.json')
+        .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(render)
+        .catch(function () {});
+    });
+
+  function esc(s) { return String(s == null ? '' : s); }
+
+  function render(d) {
+    // 1. hero 统计卡
+    var hs = document.getElementById('heroStats');
+    if (hs && d.heroStats && d.heroStats.length) {
+      hs.innerHTML = '';
+      d.heroStats.forEach(function (s) {
+        var el = document.createElement('div');
+        el.className = 'stat';
+        el.innerHTML = '<div class="num">' + esc(s.number) + '</div>' +
+          '<div class="label">' + esc(s.label_en) + '</div>' +
+          '<div class="label-cn">' + esc(s.label_cn) + '</div>';
+        hs.appendChild(el);
+      });
+    }
+
+    // 2. 政策卡
+    var pc = document.getElementById('policyCards');
+    if (pc && d.policyCards && d.policyCards.length) {
+      pc.innerHTML = '';
+      d.policyCards.forEach(function (c) {
+        var el = document.createElement('div');
+        el.className = 'policy-card';
+        var color = c.tag_color || 'teal';
+        el.innerHTML = '<span class="tag ' + color + '">' + esc(c.tag_en) + ' ' + esc(c.tag_cn) + '</span>' +
+          '<div class="big-num ' + (c.number_color || color) + '">' + esc(c.big_number) + '</div>' +
+          '<h3>' + esc(c.title_en) + '<span class="cn">' + esc(c.title_cn) + '</span></h3>' +
+          '<p>' + esc(c.content_en) + '</p>';
+        pc.appendChild(el);
+      });
+    }
+
+    // 3. numbers 区
+    var ng = document.getElementById('numbersGrid');
+    if (ng && d.statCards && d.statCards.length) {
+      ng.innerHTML = '';
+      d.statCards.forEach(function (c) {
+        var el = document.createElement('div');
+        el.className = 'num-card';
+        var cls = c.number_color === 'gold' ? ' n gold' : ' n';
+        el.innerHTML = '<div class="' + cls + '">' + esc(c.number) + '</div>' +
+          '<div class="l">' + esc(c.label_en) + '</div>' +
+          '<div class="l cn">' + esc(c.label_cn) + '</div>';
+        ng.appendChild(el);
+      });
+    }
+
+    // 4. living 卡
+    var lc = document.getElementById('livingCards');
+    if (lc && d.livingCards && d.livingCards.length) {
+      lc.innerHTML = '';
+      d.livingCards.forEach(function (c) {
+        var el = document.createElement('div');
+        el.className = 'card';
+        el.innerHTML = '<div class="card-emoji">' + esc(c.emoji) + '</div>' +
+          '<h3>' + esc(c.title_en) + '<span class="cn">' + esc(c.title_cn) + '</span></h3>' +
+          '<p>' + esc(c.content_en) + '</p>';
+        lc.appendChild(el);
+      });
+    }
+
+    // 5. quote
+    var qc = document.getElementById('quoteContent');
+    if (qc && d.quotes && d.quotes.length) {
+      var q = d.quotes[0];
+      qc.innerHTML = '<blockquote>' + esc(q.content_en) + '</blockquote>' +
+        '<p class="cn">' + esc(q.content_cn) + '</p>' +
+        '<cite>— ' + esc(q.cite_en) + ' · ' + esc(q.cite_cn) + '</cite>';
+    }
+
+    // 6. pathways
+    var pl = document.getElementById('pathwaysList');
+    if (pl && d.pathways && d.pathways.length) {
+      pl.innerHTML = '';
+      var titles = { 1: 'Tourism 旅游', 2: 'Study 学习', 3: 'Work 工作', 4: 'Life 生活' };
+      var visualClass = { default: '', alt: ' alt', alt2: ' alt2' };
+      var inlineBg = { 4: 'style="background:linear-gradient(135deg,#0f766e,#14b8a6)"' };
+      d.pathways.forEach(function (p) {
+        var num = p.path_num ? String(p.path_num).replace(/^0+/, '') : '';
+        var titleLine = esc(p.title_en) + '<span class="cn">' + esc(p.title_cn) + '</span>';
+        var items = (p.items || []).map(function (it) {
+          return '<li>' + esc(it.item_en) + '<span class="cn">' + esc(it.item_cn) + '</span></li>';
+        }).join('');
+        var numLabel = p.path_num + ' — ' + (titles[Number(num)] || '');
+        var text = '<div class="path-text">' +
+          '<div class="path-num">' + esc(numLabel) + '</div>' +
+          '<h2>' + titleLine + '</h2>' +
+          '<p>' + esc(p.desc_en) + '</p>' +
+          '<p class="cn">' + esc(p.desc_cn) + '</p>' +
+          '<ul class="path-list">' + items + '</ul>' +
+          '</div>';
+        var vCls = visualClass[p.visual_style] || '';
+        var vInline = inlineBg[Number(num)] || '';
+        var visual = '<div class="path-visual' + vCls + '" ' + vInline + '>' + esc(p.emoji) + '</div>';
+
+        var row = document.createElement('div');
+        row.className = 'path-row';
+        // 偶数序号（2、4）visual 在左，奇数在右
+        row.innerHTML = (Number(num) % 2 === 0 ? visual + text : text + visual);
+        pl.appendChild(row);
+      });
+    }
+
+    // 7. footer links
+    var fl = document.getElementById('footerLinks');
+    if (fl && d.footerLinks && d.footerLinks.length) {
+      fl.innerHTML = '';
+      d.footerLinks.forEach(function (l) {
+        var el = document.createElement('li');
+        var target = l.url && l.url !== '#' ? ' target="_blank" rel="noopener"' : '';
+        el.innerHTML = '<a href="' + esc(l.url) + '"' + target + '>' + esc(l.label_en) + ' ' + esc(l.label_cn) + '</a>';
+        fl.appendChild(el);
+      });
+    }
+  }
+})();
+</script>
+
 <!-- Cloudflare Web Analytics -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6d48e6c94ccb413ca527cb26854dd25d"}'></script>
 
