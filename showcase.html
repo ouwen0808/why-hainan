@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>发现海南 · Discover Hainan — 旅游 · 学习 · 工作 · 生活</title>
+<script src="config.js"></script>
 <style>
   :root {
     --gold: #c8963e; --gold-light: #e8c97a;
@@ -269,108 +270,143 @@
 <div class="progress-bar" id="progress"></div>
 
 <script>
-  const slidesEl = document.getElementById('slides');
-  const slides = document.querySelectorAll('.slide');
-  const dots = document.getElementById('dots');
-  const progress = document.getElementById('progress');
-  const total = slides.length;
+(function () {
+  var slidesEl = document.getElementById('slides');
+  var dots = document.getElementById('dots');
+  var progress = document.getElementById('progress');
+  var autoTimer = null;
 
-  // Build dots
-  for (let i = 0; i < total; i++) {
-    const btn = document.createElement('button');
-    btn.title = `Slide ${i+1}`;
-    btn.addEventListener('click', () => {
-      slides[i].scrollIntoView({ behavior: 'smooth' });
+  function renderSlides(list) {
+    slidesEl.innerHTML = '';
+    list.forEach(function (s) {
+      var slide = document.createElement('div');
+      slide.className = 'slide';
+      var bg;
+      if (s.bg_type === 'gradient') {
+        bg = '<div class="slide-bg" style="background:' + (s.bg_value || '') + '"></div>';
+      } else {
+        bg = '<div class="slide-bg" style="background-image:url(\'' + (s.bg_value || '') + '\')"></div>';
+      }
+      var stats = (s.stats || []).map(function (st) {
+        return '<div class="stat"><div class="num">' + st.number + '</div><div class="label">' + st.label_en + '</div><div class="label-cn">' + st.label_cn + '</div></div>';
+      }).join('');
+      var checks = (s.checks || []).map(function (c) {
+        return '<li class="en">' + c.item_en + '<span class="cn">' + c.item_cn + '</span></li>';
+      }).join('');
+      var cta = s.cta_url ? '<a href="' + s.cta_url + '" target="_blank" class="cta-btn">' + (s.cta_text || '') + '</a>' : '';
+      var badge = s.badge_en ? '<div class="badge"><span class="dot"></span> ' + s.badge_en + (s.badge_cn ? ' · ' + s.badge_cn : '') + '</div>' : '';
+      var tag = (s.slide_index === 0) ? 'h1' : 'h2';
+      slide.innerHTML = bg +
+        '<div class="slide-content">' + badge +
+        '<span class="emoji-main">' + (s.emoji || '') + '</span>' +
+        '<' + tag + ' class="slide-title">' + (s.title_en || '') + '</' + tag + '>' +
+        '<div class="slide-title-cn">' + (s.title_cn || '') + '</div>' +
+        '<p class="slide-sub">' + (s.sub_en || '') + '</p>' +
+        '<p class="slide-sub-cn">' + (s.sub_cn || '') + '</p>' +
+        (stats ? '<div class="stat-row">' + stats + '</div>' : '') +
+        (checks ? '<ul class="checks">' + checks + '</ul>' : '') +
+        cta + '</div>';
+      slidesEl.appendChild(slide);
     });
-    dots.appendChild(btn);
-  }
-  const dotBtns = dots.querySelectorAll('button');
-
-  function updateActive() {
-    const scrollTop = slidesEl.scrollTop;
-    const h = slidesEl.clientHeight;
-    const idx = Math.round(scrollTop / h);
-    const clamped = Math.max(0, Math.min(total - 1, idx));
-
-    slides.forEach(s => s.classList.remove('active'));
-    slides[clamped].classList.add('active');
-
-    dotBtns.forEach((b, i) => b.classList.toggle('active', i === clamped));
-
-    const pct = ((clamped + 1) / total) * 100;
-    progress.style.width = pct + '%';
   }
 
-  slidesEl.addEventListener('scroll', updateActive, { passive: true });
-
-  // Keyboard navigation
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
-      e.preventDefault();
-      const h = slidesEl.clientHeight;
-      const next = Math.min(slidesEl.scrollTop + h, slidesEl.scrollHeight - h);
-      slidesEl.scrollTo({ top: next, behavior: 'smooth' });
-    } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
-      e.preventDefault();
-      const h = slidesEl.clientHeight;
-      const prev = Math.max(slidesEl.scrollTop - h, 0);
-      slidesEl.scrollTo({ top: prev, behavior: 'smooth' });
-    }
-  });
-
-  // Init
-  updateActive();
-
-  // Auto-advance every 8s
-  let autoTimer = setInterval(() => {
-    const h = slidesEl.clientHeight;
-    const current = Math.round(slidesEl.scrollTop / h);
-    if (current >= total - 1) {
-      slidesEl.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
-      slidesEl.scrollTo({ top: (current + 1) * h, behavior: 'smooth' });
-    }
-  }, 8000);
-
-  // Pause auto on user interaction
-  slidesEl.addEventListener('click', () => {
-    clearInterval(autoTimer);
-    autoTimer = setInterval(() => {
-      const h = slidesEl.clientHeight;
-      const current = Math.round(slidesEl.scrollTop / h);
+  function startAuto() {
+    if (autoTimer) clearInterval(autoTimer);
+    autoTimer = setInterval(function () {
+      var h = slidesEl.clientHeight;
+      var current = Math.round(slidesEl.scrollTop / h);
+      var total = slidesEl.querySelectorAll('.slide').length;
       if (current >= total - 1) {
         slidesEl.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         slidesEl.scrollTo({ top: (current + 1) * h, behavior: 'smooth' });
       }
     }, 8000);
-  });
+  }
 
-  // Touch swipe detection
-  let touchStartY = 0;
-  slidesEl.addEventListener('touchstart', (e) => {
-    touchStartY = e.touches[0].clientY;
-  }, { passive: true });
-  slidesEl.addEventListener('touchend', (e) => {
-    const diff = touchStartY - e.changedTouches[0].clientY;
-    const h = slidesEl.clientHeight;
-    if (Math.abs(diff) > 50) {
-      const direction = diff > 0 ? 1 : -1;
-      const current = Math.round(slidesEl.scrollTop / h);
-      const target = Math.max(0, Math.min(total - 1, current + direction));
-      slidesEl.scrollTo({ top: target * h, behavior: 'smooth' });
+  function initNav() {
+    var slides = slidesEl.querySelectorAll('.slide');
+    var total = slides.length;
+    dots.innerHTML = '';
+    for (var i = 0; i < total; i++) {
+      (function (idx) {
+        var btn = document.createElement('button');
+        btn.title = 'Slide ' + (idx + 1);
+        btn.addEventListener('click', function () { slides[idx].scrollIntoView({ behavior: 'smooth' }); });
+        dots.appendChild(btn);
+      })(i);
     }
-    clearInterval(autoTimer);
-    autoTimer = setInterval(() => {
-      const h = slidesEl.clientHeight;
-      const current = Math.round(slidesEl.scrollTop / h);
-      if (current >= total - 1) {
-        slidesEl.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        slidesEl.scrollTo({ top: (current + 1) * h, behavior: 'smooth' });
+    var dotBtns = dots.querySelectorAll('button');
+
+    function updateActive() {
+      var scrollTop = slidesEl.scrollTop;
+      var h = slidesEl.clientHeight;
+      var idx = Math.round(scrollTop / h);
+      var clamped = Math.max(0, Math.min(total - 1, idx));
+      slides.forEach(function (s) { s.classList.remove('active'); });
+      slides[clamped].classList.add('active');
+      dotBtns.forEach(function (b, i) { b.classList.toggle('active', i === clamped); });
+      progress.style.width = ((clamped + 1) / total) * 100 + '%';
+    }
+
+    slidesEl.addEventListener('scroll', updateActive, { passive: true });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+        e.preventDefault();
+        var h = slidesEl.clientHeight;
+        var next = Math.min(slidesEl.scrollTop + h, slidesEl.scrollHeight - h);
+        slidesEl.scrollTo({ top: next, behavior: 'smooth' });
+      } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        var h = slidesEl.clientHeight;
+        var prev = Math.max(slidesEl.scrollTop - h, 0);
+        slidesEl.scrollTo({ top: prev, behavior: 'smooth' });
       }
-    }, 8000);
-  }, { passive: true });
+    });
+
+    updateActive();
+    startAuto();
+
+    slidesEl.addEventListener('click', function () { startAuto(); });
+
+    var touchStartY = 0;
+    slidesEl.addEventListener('touchstart', function (e) { touchStartY = e.touches[0].clientY; }, { passive: true });
+    slidesEl.addEventListener('touchend', function (e) {
+      var diff = touchStartY - e.changedTouches[0].clientY;
+      var h = slidesEl.clientHeight;
+      if (Math.abs(diff) > 50) {
+        var direction = diff > 0 ? 1 : -1;
+        var current = Math.round(slidesEl.scrollTop / h);
+        var target = Math.max(0, Math.min(total - 1, current + direction));
+        slidesEl.scrollTo({ top: target * h, behavior: 'smooth' });
+      }
+      startAuto();
+    }, { passive: true });
+  }
+
+  // 尝试从后端拉取 slides，成功则数据驱动渲染；失败保留硬编码 fallback
+  var cfg = window.WH_CONFIG || {};
+  if (cfg.api && cfg.api.content) {
+    fetch(cfg.api.content)
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function (d) {
+        if (d.slides && d.slides.length) renderSlides(d.slides);
+        initNav();
+      })
+      .catch(function () {
+        return fetch('content_fallback.json')
+          .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+          .then(function (d) {
+            if (d.slides && d.slides.length) renderSlides(d.slides);
+            initNav();
+          })
+          .catch(function () { initNav(); });
+      });
+  } else {
+    initNav();
+  }
+})();
 </script>
 <!-- Cloudflare Web Analytics -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6d48e6c94ccb413ca527cb26854dd25d"}'></script>
