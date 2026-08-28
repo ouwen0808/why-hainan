@@ -1,0 +1,893 @@
+{
+  "stages": [
+    {
+      "id": 1,
+      "stage_num": 1,
+      "key": "before",
+      "label_en": "Before You Fly",
+      "label_cn": "行前准备与抵达初期",
+      "emoji": "✈️",
+      "sort_order": 1
+    },
+    {
+      "id": 2,
+      "stage_num": 2,
+      "key": "settle",
+      "label_en": "Landing & Settling",
+      "label_cn": "在琼安家与基础建立",
+      "emoji": "🛬",
+      "sort_order": 2
+    },
+    {
+      "id": 3,
+      "stage_num": 3,
+      "key": "daily",
+      "label_en": "Daily Life & Belonging",
+      "label_cn": "日常生活与社交融入",
+      "emoji": "🌴",
+      "sort_order": 3
+    },
+    {
+      "id": 4,
+      "stage_num": 4,
+      "key": "grow",
+      "label_en": "Growth & Roots",
+      "label_cn": "长期发展与家庭扎根",
+      "emoji": "🏡",
+      "sort_order": 4
+    }
+  ],
+  "policyCards": [
+    {
+      "id": 1,
+      "tag_en": "Entry",
+      "tag_cn": "入境",
+      "tag_color": "teal",
+      "big_number": "86",
+      "number_color": "teal",
+      "title_en": "Visa-Free Countries",
+      "title_cn": "免签国家",
+      "content_en": "Citizens from 86 nations can enter Hainan without a visa for up to <strong>30 days</strong> — for tourism, business, family visits, medical treatment, exhibitions, and sports.",
+      "content_cn": "86 国公民可免签入境海南，最长 <strong>30 天</strong>，限旅游、商务、探亲、医疗、会展、体育。",
+      "sort_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "tag_en": "Tax",
+      "tag_cn": "税收",
+      "tag_color": "gold",
+      "big_number": "15%",
+      "number_color": "gold",
+      "title_en": "Income Tax Cap",
+      "title_cn": "个税封顶",
+      "content_en": "Qualified individuals pay a maximum of <strong>15%</strong> personal income tax — compared to <strong>45%</strong> in mainland China. A game-changer for global talent.",
+      "content_cn": "合格人才个税封顶 <strong>15%</strong>（内地为 <strong>45%</strong>），是吸引全球人才的关键优势。",
+      "sort_order": 2,
+      "is_active": 1
+    },
+    {
+      "id": 3,
+      "tag_en": "Trade",
+      "tag_cn": "贸易",
+      "tag_color": "blue",
+      "big_number": "0%",
+      "number_color": "blue",
+      "title_en": "Import Tariffs",
+      "title_cn": "进口关税",
+      "content_en": "Most goods entering Hainan are <strong>zero-tariff</strong>. Lower cost of living, more consumer choice, and enormous business opportunities.",
+      "content_cn": "自贸港多数进口商品 <strong>零关税</strong>，生活成本更低、消费选择更多、商业机遇巨大。",
+      "sort_order": 3,
+      "is_active": 1
+    }
+  ],
+  "statCards": [
+    {
+      "id": 1,
+      "section": "numbers",
+      "number": "+59%",
+      "number_color": "teal",
+      "label_en": "More foreign visitors Q1 2025 vs Q1 2024",
+      "label_cn": "外国游客增长 2025一季度 vs 2024一季度",
+      "sort_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "section": "numbers",
+      "number": "1,900+",
+      "number_color": "gold",
+      "label_en": "Kilometres of tropical coastline & beaches",
+      "label_cn": "热带海岸线与沙滩",
+      "sort_order": 2,
+      "is_active": 1
+    },
+    {
+      "id": 3,
+      "section": "numbers",
+      "number": "No. 1",
+      "number_color": "teal",
+      "label_en": "Air quality ranking among Chinese cities",
+      "label_cn": "中国城市空气质量第一",
+      "sort_order": 3,
+      "is_active": 1
+    },
+    {
+      "id": 4,
+      "section": "numbers",
+      "number": "74+",
+      "number_color": "gold",
+      "label_en": "Hospitals with international service",
+      "label_cn": "提供国际服务的医院",
+      "sort_order": 4,
+      "is_active": 1
+    }
+  ],
+  "heroStats": [
+    {
+      "id": 5,
+      "section": "hero",
+      "number": "86",
+      "number_color": "teal",
+      "label_en": "Countries Visa-Free",
+      "label_cn": "免签国家",
+      "sort_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 6,
+      "section": "hero",
+      "number": "15%",
+      "number_color": "gold",
+      "label_en": "Max Income Tax",
+      "label_cn": "个税封顶",
+      "sort_order": 2,
+      "is_active": 1
+    },
+    {
+      "id": 7,
+      "section": "hero",
+      "number": "0%",
+      "number_color": "blue",
+      "label_en": "Import Tariffs",
+      "label_cn": "进口关税",
+      "sort_order": 3,
+      "is_active": 1
+    },
+    {
+      "id": 8,
+      "section": "hero",
+      "number": "25°C",
+      "number_color": "gold",
+      "label_en": "Year-Round Avg",
+      "label_cn": "全年均温",
+      "sort_order": 4,
+      "is_active": 1
+    }
+  ],
+  "livingCards": [
+    {
+      "id": 1,
+      "emoji": "🏥",
+      "title_en": "International Healthcare",
+      "title_cn": "国际医疗",
+      "content_en": "74+ hospitals with international departments, English-speaking staff, and direct-bill insurance. Haikou & Sanya lead with dedicated international medical centres.",
+      "content_cn": "74+ 家医院设有国际部，英文服务、保险直付。海口、三亚设专门国际医疗中心。",
+      "sort_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "emoji": "💳",
+      "title_en": "Seamless Payments",
+      "title_cn": "无缝支付",
+      "content_en": "Link your Visa, Mastercard, or JCB to WeChat Pay or Alipay. Foreign phone numbers supported. Tap-and-go across the entire island.",
+      "content_cn": "微信/支付宝可绑定 Visa、Mastercard、JCB，支持境外手机号，全岛一刷即付。",
+      "sort_order": 2,
+      "is_active": 1
+    },
+    {
+      "id": 3,
+      "emoji": "🏫",
+      "title_en": "International Schools",
+      "title_cn": "国际学校",
+      "content_en": "Growing network of international and bilingual schools. Hainan University offers English-taught programmes with Belt & Road scholarships.",
+      "content_cn": "国际化与双语学校网络不断扩大，海南大学提供英文授课项目及一带一路奖学金。",
+      "sort_order": 3,
+      "is_active": 1
+    },
+    {
+      "id": 4,
+      "emoji": "🌐",
+      "title_en": "English-Ready City",
+      "title_cn": "英语友好城市",
+      "content_en": "Bilingual signage at airports, hospitals, tourist sites, and government halls. 12345 hotline in English, Russian, Japanese, and Korean.",
+      "content_cn": "机场、医院、景点、政务大厅双语标识，12345 热线提供英/俄/日/韩服务。",
+      "sort_order": 4,
+      "is_active": 1
+    }
+  ],
+  "pathways": [
+    {
+      "id": 1,
+      "path_num": "01",
+      "emoji": "🏝️",
+      "title_en": "Discover Paradise",
+      "title_cn": "发现天堂",
+      "desc_en": "No visa needed for 86 nationalities. Fly direct to Haikou, Sanya, or Bo'ao. Use 144-hour transit from Hong Kong & Macau — or join a cruise with 15-day visa-free access.",
+      "desc_cn": "86 个国籍免签。直飞海口、三亚或博鳌。经港澳 144 小时过境，或乘邮轮享 15 天免签。",
+      "visual_style": "default",
+      "sort_order": 1,
+      "is_active": 1,
+      "items": [
+        {
+          "id": 1,
+          "pathway_id": 1,
+          "item_en": "86-country visa-free entry (30 days)",
+          "item_cn": "86 国免签入境（30 天）",
+          "sort_order": 1
+        },
+        {
+          "id": 2,
+          "pathway_id": 1,
+          "item_en": "144-hour transit via Hong Kong & Macau",
+          "item_cn": "港澳 144 小时过境",
+          "sort_order": 2
+        },
+        {
+          "id": 3,
+          "pathway_id": 1,
+          "item_en": "15-day cruise visa-free programme",
+          "item_cn": "15 天邮轮免签计划",
+          "sort_order": 3
+        },
+        {
+          "id": 4,
+          "pathway_id": 1,
+          "item_en": "Multiple international airports",
+          "item_cn": "多个国际机场",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "path_num": "02",
+      "emoji": "🎓",
+      "title_en": "Learn in the Tropics",
+      "title_cn": "在热带求学",
+      "desc_en": "Hainan University and international partner campuses offer English-taught degrees. Belt & Road scholarships available. X1 visa with admission letter.",
+      "desc_cn": "海南大学及国际合作校区提供英文授课学位，有一带一路奖学金，凭录取通知书办 X1 签证。",
+      "visual_style": "alt",
+      "sort_order": 2,
+      "is_active": 1,
+      "items": [
+        {
+          "id": 5,
+          "pathway_id": 2,
+          "item_en": "English-taught undergraduate & graduate programmes",
+          "item_cn": "本硕英文授课项目",
+          "sort_order": 1
+        },
+        {
+          "id": 6,
+          "pathway_id": 2,
+          "item_en": "Belt & Road scholarships for eligible students",
+          "item_cn": "一带一路奖学金",
+          "sort_order": 2
+        },
+        {
+          "id": 7,
+          "pathway_id": 2,
+          "item_en": "Dedicated international student support offices",
+          "item_cn": "专门国际学生支持办公室",
+          "sort_order": 3
+        },
+        {
+          "id": 8,
+          "pathway_id": 2,
+          "item_en": "Growing expat student community",
+          "item_cn": "不断壮大的留学生社群",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "path_num": "03",
+      "emoji": "💼",
+      "title_en": "Build Your Career",
+      "title_cn": "成就事业",
+      "desc_en": "The 15% income tax cap alone makes Hainan compelling. Z visa process streamlined with one-window service. A, B, and C talent categories all welcome.",
+      "desc_cn": "仅 15% 个税封顶就足够有吸引力。Z 签证一窗通办。A、B、C 人才分类全部欢迎。",
+      "visual_style": "alt2",
+      "sort_order": 3,
+      "is_active": 1,
+      "items": [
+        {
+          "id": 9,
+          "pathway_id": 3,
+          "item_en": "15% personal income tax cap for qualified talent",
+          "item_cn": "合格人才 15% 个税封顶",
+          "sort_order": 1
+        },
+        {
+          "id": 10,
+          "pathway_id": 3,
+          "item_en": "Streamlined Z visa (work) process",
+          "item_cn": "简化 Z 签（工作）流程",
+          "sort_order": 2
+        },
+        {
+          "id": 11,
+          "pathway_id": 3,
+          "item_en": "ABC talent classification — transparent & fair",
+          "item_cn": "ABC 人才分类——透明公平",
+          "sort_order": 3
+        },
+        {
+          "id": 12,
+          "pathway_id": 3,
+          "item_en": "Booming: tech, tourism, healthcare, finance",
+          "item_cn": "科技/旅游/医疗/金融蓬勃发展",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "path_num": "04",
+      "emoji": "🏡",
+      "title_en": "Make It Home",
+      "title_cn": "在此安家",
+      "desc_en": "Q1/Q2 residence permits make family reunification simple. Property ownership, international insurance, and banking — increasingly seamless.",
+      "desc_cn": "Q1/Q2 居留许可让家庭团聚变得简单。置业、国际保险、银行服务越来越无缝。",
+      "visual_style": "default",
+      "sort_order": 4,
+      "is_active": 1,
+      "items": [
+        {
+          "id": 13,
+          "pathway_id": 4,
+          "item_en": "Q1/Q2 family reunion residence permits",
+          "item_cn": "Q1/Q2 家庭团聚居留许可",
+          "sort_order": 1
+        },
+        {
+          "id": 14,
+          "pathway_id": 4,
+          "item_en": "Property ownership for qualified residents",
+          "item_cn": "合格居民置业",
+          "sort_order": 2
+        },
+        {
+          "id": 15,
+          "pathway_id": 4,
+          "item_en": "International medical insurance accepted",
+          "item_cn": "接受国际医疗保险",
+          "sort_order": 3
+        },
+        {
+          "id": 16,
+          "pathway_id": 4,
+          "item_en": "Thriving expat communities in Haikou & Sanya",
+          "item_cn": "海口三亚活跃的外籍社群",
+          "sort_order": 4
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "id": 1,
+      "slide_index": 0,
+      "badge_en": "Hainan Free Trade Port · 2026",
+      "badge_cn": "海南自由贸易港",
+      "emoji": "🌴",
+      "title_en": "Discover <em>Hainan</em>",
+      "title_cn": "发现海南",
+      "sub_en": "China’s only tropical island province. The world’s largest Free Trade Port.<br>86-country visa-free. 15% tax. Zero tariffs.",
+      "sub_cn": "中国唯一的热带岛屿省份，全球最大的自由贸易港。<br>86 国免签 · 15% 个税封顶 · 零关税。",
+      "bg_type": "gradient",
+      "bg_value": "linear-gradient(160deg,#0f172a,#0d3b3b,#0f766e)",
+      "cta_text": null,
+      "cta_url": null,
+      "is_active": 1,
+      "sort_order": 0,
+      "stats": [
+        {
+          "id": 1,
+          "slide_id": 1,
+          "number": "86",
+          "label_en": "Visa-Free",
+          "label_cn": "免签国",
+          "sort_order": 1
+        },
+        {
+          "id": 2,
+          "slide_id": 1,
+          "number": "15%",
+          "label_en": "Tax Cap",
+          "label_cn": "个税封顶",
+          "sort_order": 2
+        },
+        {
+          "id": 3,
+          "slide_id": 1,
+          "number": "0%",
+          "label_en": "Tariffs",
+          "label_cn": "关税",
+          "sort_order": 3
+        },
+        {
+          "id": 4,
+          "slide_id": 1,
+          "number": "25°C",
+          "label_en": "Year-Round",
+          "label_cn": "全年均温",
+          "sort_order": 4
+        }
+      ],
+      "checks": []
+    },
+    {
+      "id": 2,
+      "slide_index": 1,
+      "badge_en": "01 — Tourism",
+      "badge_cn": "旅游",
+      "emoji": "🏝️",
+      "title_en": "Arrive Without a <em>Visa</em>",
+      "title_cn": "免签入境",
+      "sub_en": "86 countries. 30 days. No paperwork. Just your passport.<br>Three international airports. Cruise ships welcome. 1,900km of coastline.",
+      "sub_cn": "86 国免签 30 天，无需繁琐手续，一本护照即可。<br>三大国际机场、邮轮直达、1900 公里海岸线。",
+      "bg_type": "image",
+      "bg_value": "img_0154faecdd9673aa.png",
+      "cta_text": "Plan Your Trip → 规划行程",
+      "cta_url": "https://en.hnftp.gov.cn",
+      "is_active": 1,
+      "sort_order": 1,
+      "stats": [],
+      "checks": [
+        {
+          "id": 1,
+          "slide_id": 2,
+          "item_en": "86-country visa-free (30 days)",
+          "item_cn": "86 国免签 30 天",
+          "sort_order": 1
+        },
+        {
+          "id": 2,
+          "slide_id": 2,
+          "item_en": "144-hr transit via HK &amp; Macau",
+          "item_cn": "港澳 144 小时过境",
+          "sort_order": 2
+        },
+        {
+          "id": 3,
+          "slide_id": 2,
+          "item_en": "15-day cruise visa-free",
+          "item_cn": "邮轮 15 天免签",
+          "sort_order": 3
+        },
+        {
+          "id": 4,
+          "slide_id": 2,
+          "item_en": "25°C year-round paradise",
+          "item_cn": "全年 25°C 天堂",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slide_index": 2,
+      "badge_en": "02 — Study",
+      "badge_cn": "学习",
+      "emoji": "🎓",
+      "title_en": "Learn in <em>Paradise</em>",
+      "title_cn": "在热带天堂求学",
+      "sub_en": "Hainan University — English-taught degrees with Belt &amp; Road scholarships.<br>X1 student visa. International campus community. 25°C year-round.",
+      "sub_cn": "海南大学——英文授课学位 + 一带一路奖学金。<br>X1 学生签证，国际化校园社区，全年 25°C。",
+      "bg_type": "image",
+      "bg_value": "img_0e8fca3c517df7ad.png",
+      "cta_text": "Explore Programmes → 了解课程",
+      "cta_url": "https://www.hainanu.edu.cn",
+      "is_active": 1,
+      "sort_order": 2,
+      "stats": [],
+      "checks": [
+        {
+          "id": 5,
+          "slide_id": 3,
+          "item_en": "UG &amp; PG English programmes",
+          "item_cn": "本硕英文课程",
+          "sort_order": 1
+        },
+        {
+          "id": 6,
+          "slide_id": 3,
+          "item_en": "Belt &amp; Road scholarships",
+          "item_cn": "一带一路奖学金",
+          "sort_order": 2
+        },
+        {
+          "id": 7,
+          "slide_id": 3,
+          "item_en": "International student support",
+          "item_cn": "国际学生支持",
+          "sort_order": 3
+        },
+        {
+          "id": 8,
+          "slide_id": 3,
+          "item_en": "Tropical island campus",
+          "item_cn": "热带海岛校园",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slide_index": 3,
+      "badge_en": "03 — Work",
+      "badge_cn": "工作",
+      "emoji": "💼",
+      "title_en": "<em>15%</em> Tax. One Island.",
+      "title_cn": "15% 个税封顶，一岛尽享",
+      "sub_en": "Personal income tax cap at 15% (vs 45% mainland). Zero import tariffs.<br>Streamlined Z visa. Tech, tourism, healthcare, finance — all booming.",
+      "sub_cn": "个税封顶 15%（内地为 45%），零关税。<br>简化 Z 签。科技、旅游、医疗、金融全面腾飞。",
+      "bg_type": "image",
+      "bg_value": "img_d17c9e65f87275aa.png",
+      "cta_text": null,
+      "cta_url": null,
+      "is_active": 1,
+      "sort_order": 3,
+      "stats": [
+        {
+          "id": 5,
+          "slide_id": 4,
+          "number": "15%",
+          "label_en": "Income Tax",
+          "label_cn": "个税",
+          "sort_order": 1
+        },
+        {
+          "id": 6,
+          "slide_id": 4,
+          "number": "15%",
+          "label_en": "Corporate Tax",
+          "label_cn": "企业所得税",
+          "sort_order": 2
+        },
+        {
+          "id": 7,
+          "slide_id": 4,
+          "number": "0%",
+          "label_en": "Tariffs",
+          "label_cn": "关税",
+          "sort_order": 3
+        }
+      ],
+      "checks": []
+    },
+    {
+      "id": 5,
+      "slide_index": 4,
+      "badge_en": "04 — Life",
+      "badge_cn": "生活",
+      "emoji": "🏡",
+      "title_en": "Make It <em>Home</em>",
+      "title_cn": "在此安家",
+      "sub_en": "74+ international hospitals. Visa/Mastercard linked to WeChat &amp; Alipay.<br>International schools. Q1/Q2 family reunion visas. 12345 hotline in 4 languages.",
+      "sub_cn": "74+ 家国际医院。微信/支付宝绑定 Visa/Mastercard。<br>国际学校、Q1/Q2 家庭团聚签证、12345 四语热线。",
+      "bg_type": "image",
+      "bg_value": "img_e8e884c8789ab1a4.png",
+      "cta_text": "Start Your Journey → 开启旅程",
+      "cta_url": "https://en.hnftp.gov.cn",
+      "is_active": 1,
+      "sort_order": 4,
+      "stats": [],
+      "checks": [
+        {
+          "id": 9,
+          "slide_id": 5,
+          "item_en": "74+ international hospitals",
+          "item_cn": "74+ 国际医院",
+          "sort_order": 1
+        },
+        {
+          "id": 10,
+          "slide_id": 5,
+          "item_en": "Visa/MC/JCB on WeChat/Alipay",
+          "item_cn": "微信支付宝绑外卡",
+          "sort_order": 2
+        },
+        {
+          "id": 11,
+          "slide_id": 5,
+          "item_en": "International schools",
+          "item_cn": "国际学校",
+          "sort_order": 3
+        },
+        {
+          "id": 12,
+          "slide_id": 5,
+          "item_en": "Family reunion residence permits",
+          "item_cn": "家庭团聚居留许可",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slide_index": 5,
+      "badge_en": null,
+      "badge_cn": null,
+      "emoji": "🌴",
+      "title_en": "Why <em>Hainan</em>?",
+      "title_cn": "为什么是海南？",
+      "sub_en": "86 countries visa-free. Zero tariffs. 15% tax cap.<br>One tropical island. Four paths. Infinite opportunities.",
+      "sub_cn": "86 国免签、零关税、15% 个税封顶。<br>一座热带岛屿，四条路径，无限机遇。",
+      "bg_type": "gradient",
+      "bg_value": "linear-gradient(160deg,#0f766e,#0d3b3b,#0f172a)",
+      "cta_text": "Visit WhyHainan.com → 访问网站",
+      "cta_url": "https://fdb56b09.why-hainan.pages.dev",
+      "is_active": 1,
+      "sort_order": 5,
+      "stats": [
+        {
+          "id": 8,
+          "slide_id": 6,
+          "number": "🏝️",
+          "label_en": "Tourism",
+          "label_cn": "旅游",
+          "sort_order": 1
+        },
+        {
+          "id": 9,
+          "slide_id": 6,
+          "number": "🎓",
+          "label_en": "Study",
+          "label_cn": "学习",
+          "sort_order": 2
+        },
+        {
+          "id": 10,
+          "slide_id": 6,
+          "number": "💼",
+          "label_en": "Work",
+          "label_cn": "工作",
+          "sort_order": 3
+        },
+        {
+          "id": 11,
+          "slide_id": 6,
+          "number": "🏡",
+          "label_en": "Life",
+          "label_cn": "生活",
+          "sort_order": 4
+        }
+      ],
+      "checks": []
+    }
+  ],
+  "quickGuide": [
+    {
+      "id": 1,
+      "title_en": "Visa-Free Entry",
+      "title_cn": "免签入境",
+      "sort_order": 1,
+      "is_active": 1,
+      "items": [
+        {
+          "id": 1,
+          "section_id": 1,
+          "content_en": "<strong>86 countries</strong> can enter Hainan <strong>visa-free for up to 30 days</strong> — for tourism, business, family visits, medical treatment, exhibitions & sports.",
+          "content_cn": "86 国可免签入境海南，最长 30 天，限旅游/商务/探亲/医疗/会展/体育。",
+          "sort_order": 1
+        },
+        {
+          "id": 2,
+          "section_id": 1,
+          "content_en": "Valid ports: Haikou Meilan, Sanya Phoenix, Bo'ao, Yangpu, Haikou Port.",
+          "content_cn": "口岸：海口美兰、三亚凤凰、博鳌、洋浦港、海口港。",
+          "sort_order": 2
+        },
+        {
+          "id": 3,
+          "section_id": 1,
+          "content_en": "144-hour transit via Hong Kong & Macau; 15-day cruise visa-free.",
+          "content_cn": "港澳 144 小时过境；邮轮 15 天免签。",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title_en": "Tax",
+      "title_cn": "税收",
+      "sort_order": 2,
+      "is_active": 1,
+      "items": [
+        {
+          "id": 4,
+          "section_id": 2,
+          "content_en": "Qualified talent pays a <strong>max 15% personal income tax</strong> (vs 45% mainland).",
+          "content_cn": "合格人才个税封顶 15%（内地为 45%）。",
+          "sort_order": 1
+        },
+        {
+          "id": 5,
+          "section_id": 2,
+          "content_en": "Most imports are <strong>zero-tariff</strong> in the Free Trade Port.",
+          "content_cn": "自贸港多数进口商品零关税。",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title_en": "Payments",
+      "title_cn": "支付",
+      "sort_order": 3,
+      "is_active": 1,
+      "items": [
+        {
+          "id": 6,
+          "section_id": 3,
+          "content_en": "Link <strong>Visa / Mastercard / JCB / Amex</strong> to WeChat Pay or Alipay.",
+          "content_cn": "微信/支付宝可绑定 Visa、Mastercard、JCB、Amex。",
+          "sort_order": 1
+        },
+        {
+          "id": 7,
+          "section_id": 3,
+          "content_en": "Foreign phone numbers are supported. Alipay: no fee under ¥200; above that 3%.",
+          "content_cn": "支持境外手机号；支付宝 200 元内免手续费，以上收 3%。",
+          "sort_order": 2
+        },
+        {
+          "id": 8,
+          "section_id": 3,
+          "content_en": "e-CNY App supports 210+ countries/regions phone registration.",
+          "content_cn": "数字人民币 e-CNY 支持 210+ 国家/地区手机号注册。",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title_en": "Renting",
+      "title_cn": "租房",
+      "sort_order": 4,
+      "is_active": 1,
+      "items": [
+        {
+          "id": 9,
+          "section_id": 4,
+          "content_en": "Verify the agent's licence, the property certificate & owner ID before signing.",
+          "content_cn": "签约前核实中介资质、房产证与产权人身份。",
+          "sort_order": 1
+        },
+        {
+          "id": 10,
+          "section_id": 4,
+          "content_en": "Watch for sub-letting (二房东) scams; confirm the deposit & penalty terms in the contract.",
+          "content_cn": "警惕二房东；合同明确押金与违约金条款。",
+          "sort_order": 2
+        },
+        {
+          "id": 11,
+          "section_id": 4,
+          "content_en": "Foreigners must register the lease at the local police station.",
+          "content_cn": "外籍人士须到派出所办理租赁登记。",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title_en": "Healthcare",
+      "title_cn": "就医",
+      "sort_order": 5,
+      "is_active": 1,
+      "items": [
+        {
+          "id": 12,
+          "section_id": 5,
+          "content_en": "<strong>74+ hospitals</strong> offer international service; Haikou People's Hospital & Sanya People's Hospital have dedicated international departments.",
+          "content_cn": "74+ 家医院提供国际服务；海口、三亚市人民医院设国际医疗部。",
+          "sort_order": 1
+        },
+        {
+          "id": 13,
+          "section_id": 5,
+          "content_en": "Sanya intl clinic: 0898-88250332.",
+          "content_cn": "三亚国际门诊：0898-88250332。",
+          "sort_order": 2
+        },
+        {
+          "id": 14,
+          "section_id": 5,
+          "content_en": "Buy commercial medical/accident insurance recommended.",
+          "content_cn": "建议购买商业医疗/意外保险。",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title_en": "Key Official Links",
+      "title_cn": "官方入口",
+      "sort_order": 6,
+      "is_active": 1,
+      "items": [
+        {
+          "id": 15,
+          "section_id": 6,
+          "content_en": "International portal: <a href=\"https://en.hainan.gov.cn\" target=\"_blank\">en.hainan.gov.cn</a> (6 languages)",
+          "content_cn": "海南国际服务门户（6 语种）",
+          "sort_order": 1
+        },
+        {
+          "id": 16,
+          "section_id": 6,
+          "content_en": "Policy search (EN): <a href=\"https://policy.hnftp.gov.cn\" target=\"_blank\">policy.hnftp.gov.cn</a>",
+          "content_cn": "政策查询英文版",
+          "sort_order": 2
+        },
+        {
+          "id": 17,
+          "section_id": 6,
+          "content_en": "Free Trade Port: <a href=\"https://en.hnftp.gov.cn\" target=\"_blank\">en.hnftp.gov.cn</a>",
+          "content_cn": "自贸港官网",
+          "sort_order": 3
+        },
+        {
+          "id": 18,
+          "section_id": 6,
+          "content_en": "Hotline: <strong>12345</strong> (English, Russian, Japanese, Korean)",
+          "content_cn": "12345 热线（英/俄/日/韩）",
+          "sort_order": 4
+        }
+      ]
+    }
+  ],
+  "quotes": [
+    {
+      "id": 1,
+      "content_en": "Hainan is not just an island — it's China's vision of an open, globally-connected future. Come see why the world is choosing Hainan.",
+      "content_cn": "海南不仅仅是一座岛屿——它是中国对开放、全球互联未来的愿景。来看看为什么世界都在选择海南。",
+      "cite_en": "Hainan Free Trade Port Administration",
+      "cite_cn": "海南自由贸易港管理局",
+      "is_active": 1,
+      "sort_order": 1
+    }
+  ],
+  "footerLinks": [
+    {
+      "id": 1,
+      "label_en": "Official FTP Portal",
+      "label_cn": "官方门户",
+      "url": "https://en.hnftp.gov.cn",
+      "sort_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "label_en": "Explore Hainan",
+      "label_cn": "探索海南",
+      "url": "https://en.explorehainan.com",
+      "sort_order": 2,
+      "is_active": 1
+    },
+    {
+      "id": 3,
+      "label_en": "↑ Top",
+      "label_cn": "顶部",
+      "url": "#",
+      "sort_order": 3,
+      "is_active": 1
+    }
+  ]
+}
