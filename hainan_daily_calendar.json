@@ -700,6 +700,22 @@
         "name_cn": "海南省政府网 — 生活服务",
         "url": "https://en.hainan.gov.cn"
       }
+    },
+    {
+      "day": 43,
+      "stage": 3,
+      "emoji": "🚨",
+      "title": "Save these numbers now: 110, 119, 120 & 12345",
+      "title_cn": "现在存好这些号码：110、119、120 与 12345",
+      "pain": "In an emergency, most foreigners don't know China's emergency numbers and freeze trying to explain the situation to a dispatcher in Chinese.",
+      "pain_cn": "遇到紧急情况时，多数外籍人士不知道中国的紧急号码，也难以用中文向接线员说清情况。",
+      "solution": "Ouwen gives you a bilingual emergency card — police 110, fire 119, ambulance 120, plus the 12345 government hotline with English service — to keep on your phone's home screen.",
+      "solution_cn": "欧闻送你一张双语应急卡——报警 110、火警 119、急救 120，以及提供英语服务的 12345 政务服务热线——存到手机主屏备用。",
+      "source": {
+        "name": "Hainan Provincial Government — 12345 Service Hotline",
+        "name_cn": "海南省政府 — 12345 政务服务热线",
+        "url": "https://en.hainan.gov.cn"
+      }
     }
   ]
 }
