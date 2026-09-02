@@ -99,6 +99,20 @@
     background: var(--gold-light); z-index: 10; transition: width 0.5s linear;
   }
 
+  /* ── Home nav ── */
+  .home-nav {
+    position: fixed; top: 16px; left: 20px; z-index: 30;
+    display: flex; align-items: center; gap: 8px;
+    text-decoration: none; color: #fff;
+    background: rgba(15,23,42,0.55); backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 8px 16px; border-radius: 24px; font-weight: 600; font-size: 0.9rem;
+    transition: all 0.25s;
+  }
+  .home-nav:hover { background: rgba(15,23,42,0.8); border-color: var(--gold-light); }
+  .home-nav .hn-arrow { transition: transform 0.25s; }
+  .home-nav:hover .hn-arrow { transform: translateX(-3px); }
+
   /* ── Global search ── */
   .global-search {
     position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
@@ -139,6 +153,9 @@
 </style>
 </head>
 <body>
+
+<!-- 返回首页导航 -->
+<a href="index.html" class="home-nav"><span class="hn-arrow">←</span> Why Hainan <span style="opacity:0.65;font-size:0.78rem;">为什么选海南</span></a>
 
 <form class="global-search" action="daily-guide.html" method="get">
   <input type="text" name="q" placeholder="搜索指南 · Search guides…" autocomplete="off">
