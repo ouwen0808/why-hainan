@@ -716,6 +716,22 @@
         "name_cn": "海南省政府 — 12345 政务服务热线",
         "url": "https://en.hainan.gov.cn"
       }
+    },
+    {
+      "stage": 4,
+      "title": "Zero-tariff inputs + 30% value-add rule: Hainan's factory bonus",
+      "title_cn": "零关税原料 + 加工增值 30% 规则：海南制造红利",
+      "emoji": "🏭",
+      "pain": "Entrepreneurs don't know Hainan Free Trade Port lets manufacturers import machinery and raw materials duty-free, and that products with over 30% local value-add re-enter the domestic market tariff-free.",
+      "pain_cn": "创业者不知道海南自贸港允许制造企业零关税进口设备与原料，且加工增值超 30% 的产品可免税销往内地市场。",
+      "solution": "Ouwen checks your business against the zero-tariff positive list, confirms the 30% value-add calculation, and files the required customs recordation so you import duty-free from day one.",
+      "solution_cn": "欧闻对照零关税正面清单核查你的业务、确认 30% 增值额计算，并代办海关备案，让你从第一天起就零关税进口。",
+      "source": {
+        "name": "General Administration of Customs (China)",
+        "name_cn": "中国海关总署",
+        "url": "https://www.customs.gov.cn"
+      },
+      "day": 44
     }
   ]
 }
