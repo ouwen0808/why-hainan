@@ -8,7 +8,19 @@
 <style>
   :root { --teal:#0d9488; --gold:#c8963e; --navy:#0f172a; --gray:#64748b; }
   * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family:'Inter',-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif; color:#0f172a; background:#f8fafc; line-height:1.7; padding:32px 20px; }
+  body { font-family:'Inter',-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif; color:#0f172a; background:#f8fafc; line-height:1.7; padding:100px 20px 32px; }
+
+  /* Nav（与首页一致，可跳转回首页） */
+  .nav { position:fixed; top:0; left:0; right:0; z-index:100; padding:14px 0; background:rgba(255,255,255,0.9); backdrop-filter:blur(12px); border-bottom:1px solid rgba(0,0,0,0.06); }
+  .nav-inner { max-width:1200px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between; }
+  .nav-logo { font-weight:800; font-size:1.2rem; color:#0f172a; text-decoration:none; }
+  .nav-logo span { color:var(--teal); }
+  .nav-links { display:flex; gap:24px; list-style:none; }
+  .nav-links a { text-decoration:none; color:#334155; font-weight:500; font-size:0.9rem; }
+  .nav-links a:hover { color:var(--teal); }
+  .nav-cta { background:var(--teal); color:#fff !important; padding:7px 18px; border-radius:20px; font-weight:600; }
+  .nav-cta:hover { background:#0f766e !important; }
+  @media (max-width:860px){ .nav-links{ display:none; } }
   .wrap { max-width:760px; margin:0 auto; }
   h1 { font-size:1.8rem; font-weight:800; margin-bottom:4px; }
   .sub { color:var(--gray); margin-bottom:28px; font-size:0.95rem; }
@@ -22,6 +34,20 @@
 </style>
 </head>
 <body>
+<!-- Nav（与首页一致，可跳转回首页） -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">🌴 Why<span>Hainan</span><span style="font-size:0.7em;color:var(--gray);margin-left:6px;">为什么选海南</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#policy">Policy 政策</a></li>
+      <li><a href="index.html#living">Living 生活</a></li>
+      <li><a href="index.html#pathways">Pathways 路径</a></li>
+      <li><a href="daily-guide.html">Daily Guide 每日指南</a></li>
+      <li><a href="index.html#cta" class="nav-cta">Get Started 开始</a></li>
+    </ul>
+  </div>
+</nav>
+
 <div class="wrap">
   <h1>🏝️ Hainan Quick Guide <span class="cn">海南快速指南</span></h1>
   <div class="sub">Essential facts for foreigners · 外籍人士必备要点 · Updated Aug 2026</div>
