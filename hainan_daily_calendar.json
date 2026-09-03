@@ -732,6 +732,22 @@
         "name_cn": "中国海关总署",
         "url": "https://www.customs.gov.cn"
       }
+    },
+    {
+      "stage": 1,
+      "title": "Fill out your China entry health declaration before you board",
+      "title_cn": "登机前填好中国入境健康申报",
+      "emoji": "🌡️",
+      "pain": "Many travellers arrive at the Hainan border without completing China's mandatory entry health declaration, causing delays at the checkpoint or being pulled aside to fill it out on the spot.",
+      "pain_cn": "不少旅客抵达海南口岸才发现没填中国入境健康申报，在边检排队或被要求现场补填。",
+      "solution": "Ouwen's pre-flight checklist shows you how to complete the health declaration via the 'Customs Pocket Declaration' WeChat mini-program (or paper form), save the QR code, and present it on arrival.",
+      "solution_cn": "欧闻行前清单教你通过「海关旅客指尖服务」微信小程序（或纸质版）完成健康申报、保存二维码并在入境时出示。",
+      "source": {
+        "name": "General Administration of Customs (China)",
+        "name_cn": "中国海关总署",
+        "url": "https://www.customs.gov.cn"
+      },
+      "day": 45
     }
   ]
 }
