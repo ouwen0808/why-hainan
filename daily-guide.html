@@ -136,6 +136,10 @@
   .card .row span { font-size: 0.9rem; color: var(--gray-700); }
   .card .src { font-size: 0.78rem; color: var(--gray-500); margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--gray-200); }
   .card .src a { color: var(--teal); font-weight: 600; text-decoration: none; }
+  .card { cursor: pointer; }
+  .card-cta { margin-top: 12px; font-size: 0.8rem; font-weight: 700; color: var(--teal); display: flex; align-items: center; gap: 4px; }
+  .card-cta::after { content: '→'; transition: transform 0.2s; }
+  .card:hover .card-cta::after { transform: translateX(4px); }
 
   .footer { text-align: center; padding: 48px 24px; color: var(--gray-500); font-size: 0.85rem; }
   .footer a { color: var(--teal); text-decoration: none; }
@@ -303,6 +307,7 @@
         const s = stages[String(item.stage)];
         const card = document.createElement('div');
         card.className = 'card';
+        card.dataset.day = item.day;
         card.innerHTML = `
           <div class="card-top">
             <div class="card-emoji">${item.emoji}</div>
@@ -315,8 +320,12 @@
               <div class="row"><b class="pain">痛点</b><span>${item.pain}${item.pain_cn ? '<div class="cn-line">' + item.pain_cn + '</div>' : ''}</span></div>
               <div class="row"><b class="sol">方案</b><span>${item.solution}${item.solution_cn ? '<div class="cn-line">' + item.solution_cn + '</div>' : ''}</span></div>
               <div class="src">🔗 <a href="${item.source.url}" target="_blank" rel="noopener">${item.source.name}</a>${item.source.name_cn ? ' · ' + item.source.name_cn : ''}</div>
+              <div class="card-cta">查看详情 · View details</div>
             </div>
           </div>`;
+        card.addEventListener('click', () => {
+          location.href = 'daily-detail.html?day=' + item.day;
+        });
         feed.appendChild(card);
       });
     }
@@ -340,6 +349,8 @@
         return haystack.includes(q);
       });
     }
+    // 按 day 倒序（最新一天在最上面）
+    items = items.slice().sort((a, b) => b.day - a.day);
     renderFeed(items);
     // 更新标题
     if (searchQuery.trim()) {
