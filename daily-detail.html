@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ouwen × Hainan — Daily guide detail. Authoritative source, decoded pain point and solution.">
+<title>Ouwen × Hainan — Daily Guide Detail</title>
+<script src="config.js"></script>
+<style>
+  :root {
+    --gold: #c8963e; --gold-light: #e8c97a;
+    --teal: #0d9488; --teal-dark: #0f766e;
+    --navy: #0f172a; --navy-light: #1e293b;
+    --white: #f8fafc; --gray-100: #f1f5f9; --gray-200: #e2e8f0;
+    --gray-500: #64748b; --gray-700: #334155; --gray-900: #0f172a;
+    --radius: 14px; --shadow: 0 1px 3px rgba(0,0,0,0.08);
+    --shadow-lg: 0 12px 40px rgba(0,0,0,0.10);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: var(--gray-900); background: var(--gray-100); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+  /* Nav */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+    padding: 14px 0; background: rgba(255,255,255,0.9); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+  .nav-inner { max-width: 1000px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
+  .nav-logo { font-weight: 800; font-size: 1.25rem; color: var(--navy); text-decoration: none; }
+  .nav-logo span { color: var(--teal); }
+  .nav-back { text-decoration: none; color: var(--teal); font-weight: 600; font-size: 0.9rem; }
+  .nav-back:hover { color: var(--teal-dark); }
+
+  /* Article */
+  .wrap { max-width: 860px; margin: 0 auto; padding: 120px 24px 60px; }
+  .breadcrumb { font-size: 0.8rem; color: var(--gray-500); margin-bottom: 20px; }
+  .breadcrumb a { color: var(--teal); text-decoration: none; font-weight: 600; }
+  .article { background: #fff; border-radius: var(--radius); padding: 40px 36px; box-shadow: var(--shadow-lg); border: 1px solid var(--gray-200); }
+  .article-head { text-align: center; margin-bottom: 28px; }
+  .article-emoji { font-size: 4rem; line-height: 1; display: block; margin-bottom: 16px; }
+  .article-meta { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+  .day-badge { background: var(--navy); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; }
+  .stage-badge { font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; }
+  .stage-badge.s1 { background: #dbeafe; color: #1d4ed8; }
+  .stage-badge.s2 { background: #fef3c7; color: #92400e; }
+  .stage-badge.s3 { background: #ccfbf1; color: #0f766e; }
+  .stage-badge.s4 { background: #ede9fe; color: #6d28d9; }
+  .article h1 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); font-weight: 800; color: var(--navy); line-height: 1.25; }
+  .article .cn-title { font-size: 1.1rem; font-weight: 600; color: var(--gray-500); margin-top: 10px; }
+  .divider { height: 1px; background: var(--gray-200); margin: 28px 0; }
+
+  .block { margin-bottom: 24px; }
+  .block h2 { font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+  .block.pain h2 { color: #dc2626; }
+  .block.solution h2 { color: #0f766e; }
+  .block p { font-size: 1rem; color: var(--gray-700); line-height: 1.75; }
+  .block .cn-line { font-size: 0.92rem; color: var(--gray-500); margin-top: 8px; }
+
+  .source-box { background: #f8fafc; border: 1px solid var(--gray-200); border-radius: 12px; padding: 18px 20px; margin-top: 8px; }
+  .source-box .label { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: var(--gray-500); margin-bottom: 8px; }
+  .source-box .src-name { font-size: 1rem; font-weight: 700; color: var(--navy); }
+  .source-box .src-cn { font-size: 0.88rem; color: var(--gray-500); margin-top: 2px; }
+  .source-box a { display: inline-block; margin-top: 10px; color: var(--teal); font-weight: 600; text-decoration: none; font-size: 0.9rem; word-break: break-all; }
+  .source-box a:hover { text-decoration: underline; }
+  .official-tag { display: inline-block; background: #fef3c7; color: #92400e; font-size: 0.7rem; font-weight: 700; padding: 2px 10px; border-radius: 10px; margin-left: 8px; vertical-align: middle; }
+
+  /* Prev/Next */
+  .pager { display: flex; gap: 14px; margin-top: 24px; }
+  .pager a { flex: 1; background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 18px 20px; text-decoration: none; color: var(--gray-700); transition: all 0.2s; }
+  .pager a:hover { border-color: var(--teal); box-shadow: var(--shadow); transform: translateY(-2px); }
+  .pager .dir { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: var(--gray-500); margin-bottom: 6px; }
+  .pager .ttl { font-size: 0.95rem; font-weight: 700; color: var(--navy); line-height: 1.3; }
+  .pager .prev { text-align: left; }
+  .pager .next { text-align: right; }
+
+  .back-all { text-align: center; margin-top: 28px; }
+  .back-all a { display: inline-block; background: var(--teal); color: #fff; font-weight: 700; padding: 12px 28px; border-radius: 28px; text-decoration: none; }
+  .back-all a:hover { background: var(--teal-dark); }
+
+  .notfound { text-align: center; padding: 80px 24px; }
+  .notfound .big { font-size: 3.5rem; display: block; margin-bottom: 14px; }
+
+  .footer { text-align: center; padding: 48px 24px; color: var(--gray-500); font-size: 0.85rem; }
+  .footer a { color: var(--teal); text-decoration: none; }
+
+  @media (max-width: 600px) {
+    .article { padding: 28px 20px; }
+    .pager { flex-direction: column; }
+    .pager .next { text-align: left; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">🌴 Why<span>Hainan</span></a>
+    <a href="daily-guide.html" class="nav-back">← 返回每日指南 · All Guides</a>
+  </div>
+</nav>
+
+<div class="wrap" id="detailWrap">
+  <!-- 内容由 JS 渲染 -->
+</div>
+
+<div class="footer">
+  Built by <strong>Ouwen (欧闻)</strong> · Your full-cycle local partner in Hainan.<br>
+  Authoritative sources: <a href="https://en.hainan.gov.cn" target="_blank" rel="noopener">en.hainan.gov.cn</a> ·
+  <a href="https://policy.hnftp.gov.cn" target="_blank" rel="noopener">policy.hnftp.gov.cn</a> ·
+  <a href="https://www.pbc.gov.cn" target="_blank" rel="noopener">pbc.gov.cn</a>
+</div>
+
+<script>
+(async function () {
+  // 与列表页一致：优先后端 API，失败降级本地 JSON
+  async function loadData() {
+    try {
+      const cfg = window.WH_CONFIG || {};
+      const [guidesRes, contentRes] = await Promise.all([
+        fetch(cfg.api.guides),
+        fetch(cfg.api.content),
+      ]);
+      if (guidesRes.ok && contentRes.ok) {
+        const guides = await guidesRes.json();
+        const content = await contentRes.json();
+        const stages = {};
+        (content.stages || []).forEach((s) => {
+          stages[String(s.stage_num)] = { key: s.key, label: s.label_en, cn: s.label_cn, emoji: s.emoji };
+        });
+        const calendar = (guides || []).map((g) => ({
+          day: g.day, stage: g.stage_num, emoji: g.emoji,
+          title: g.title_en, title_cn: g.title_cn,
+          pain: g.pain_en, pain_cn: g.pain_cn,
+          solution: g.solution_en, solution_cn: g.solution_cn,
+          source: { name: g.source_name, name_cn: g.source_name_cn, url: g.source_url },
+        }));
+        if (calendar.length) return { calendar, stages };
+      }
+    } catch (e) { /* fallback */ }
+    const res = await fetch('hainan_daily_calendar.json');
+    return await res.json();
+  }
+
+  const data = await loadData();
+  const calendar = data.calendar;
+  const stages = data.stages;
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const targetDay = parseInt(urlParams.get('day'), 10);
+
+  const wrap = document.getElementById('detailWrap');
+
+  // 找不到或参数非法
+  const item = calendar.find(c => c.day === targetDay);
+  if (!item) {
+    wrap.innerHTML = `<div class="notfound"><span class="big">🤔</span><h2>找不到这一天</h2><p>Day not found. 请返回列表重新选择。</p><div class="back-all"><a href="daily-guide.html">← 返回每日指南</a></div></div>`;
+    document.title = 'Guide Not Found — Ouwen × Hainan';
+    return;
+  }
+
+  const s = stages[String(item.stage)];
+
+  // 按 day 倒序排序，用于上/下一条导航
+  const sorted = calendar.slice().sort((a, b) => b.day - a.day);
+  const idx = sorted.findIndex(c => c.day === item.day);
+  const prevItem = idx > 0 ? sorted[idx - 1] : null;            // day 更大（更新的）
+  const nextItem = idx < sorted.length - 1 ? sorted[idx + 1] : null; // day 更小（更早的）
+
+  document.title = `Day ${item.day} — ${item.title} · Ouwen × Hainan`;
+
+  function pagerLink(it, dir, label) {
+    if (!it) return `<span class="${dir}" style="flex:1;opacity:0.4;background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius);padding:18px 20px;">${dir === 'prev' ? '已是最新' : '已是最早'}</span>`;
+    return `<a class="${dir}" href="daily-detail.html?day=${it.day}"><div class="dir">${label} · Day ${it.day}</div><div class="ttl">${it.emoji} ${it.title}</div></a>`;
+  }
+
+  wrap.innerHTML = `
+    <div class="breadcrumb"><a href="daily-guide.html">每日指南</a> / Day ${item.day}</div>
+    <article class="article">
+      <div class="article-head">
+        <span class="article-emoji">${item.emoji}</span>
+        <div class="article-meta">
+          <span class="day-badge">Day ${item.day}</span>
+          <span class="stage-badge s${item.stage}">Stage ${item.stage} · ${s.label} ${s.emoji}</span>
+        </div>
+        <h1>${item.title}</h1>
+        ${item.title_cn ? '<div class="cn-title">' + item.title_cn + '</div>' : ''}
+      </div>
+      <div class="divider"></div>
+
+      <div class="block pain">
+        <h2>😣 痛点 · The Pain Point</h2>
+        <p>${item.pain}</p>
+        ${item.pain_cn ? '<div class="cn-line">' + item.pain_cn + '</div>' : ''}
+      </div>
+
+      <div class="block solution">
+        <h2>✅ 欧闻方案 · Ouwen's Solution</h2>
+        <p>${item.solution}</p>
+        ${item.solution_cn ? '<div class="cn-line">' + item.solution_cn + '</div>' : ''}
+      </div>
+
+      <div class="divider"></div>
+      <div class="source-box">
+        <div class="label">🔗 权威来源 · Authoritative Source<span class="official-tag">✓ 官方</span></div>
+        <div class="src-name">${item.source.name}</div>
+        ${item.source.name_cn ? '<div class="src-cn">' + item.source.name_cn + '</div>' : ''}
+        ${item.source.url ? '<a href="' + item.source.url + '" target="_blank" rel="noopener">' + item.source.url + '</a>' : ''}
+      </div>
+    </article>
+
+    <div class="pager">
+      ${pagerLink(prevItem, 'prev', '↑ 更新的 · Newer')}
+      ${pagerLink(nextItem, 'next', '↓ 更早的 · Older')}
+    </div>
+
+    <div class="back-all"><a href="daily-guide.html">← 返回全部指南 · Back to All Guides</a></div>
+  `;
+})();
+</script>
+
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6d48e6c94ccb413ca527cb26854dd25d"}'></script>
+<!-- Baidu Analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?cbd9f20e49647beb8f3a6664ca43d813";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
