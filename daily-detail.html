@@ -195,6 +195,7 @@
           pain: g.pain_en, pain_cn: g.pain_cn,
           solution: g.solution_en, solution_cn: g.solution_cn,
           source: { name: g.source_name, name_cn: g.source_name_cn, url: g.source_url },
+          extras: g.extras || null,
         }));
         if (calendar.length) return { calendar, stages };
       }
@@ -228,7 +229,15 @@
   }
 
   const s = stages[String(item.stage)] || {};
-  const ext = extras[String(item.day)] || {};
+  // 优先用后端/快照里的结构化 extras，否则降级到 guide_extras.json 兑底
+  const inlineExtras = item.extras || null;
+  const hasInline = inlineExtras && (
+    (inlineExtras.highlights && inlineExtras.highlights.length) ||
+    (inlineExtras.facts && inlineExtras.facts.length) ||
+    inlineExtras.tip ||
+    (inlineExtras.official_links && inlineExtras.official_links.length)
+  );
+  const ext = hasInline ? inlineExtras : (extras[String(item.day)] || {});
 
   // 按 day 倒序，用于上/下一条导航
   const sorted = calendar.slice().sort((a, b) => b.day - a.day);
