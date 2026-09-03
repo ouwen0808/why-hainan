@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "note": "Daily guide detail page extension data. Each key = day number. Populated from authoritative official sources (en.hainan.gov.cn / policy.hnftp.gov.cn / nia.gov.cn / pbc.gov.cn / customs.gov.cn / chinatax.gov.cn). Entries without a key fall back to the base calendar content.",
+    "updated": "2026-09-03"
+  },
+  "1": {
+    "highlights": [
+      { "en": "86 countries can enter Hainan visa-free — formed by stacking Hainan's 59-country policy + 29 mutual visa-exemption agreements + 46 unilateral visa-free countries.", "cn": "86 国人员可免签入境海南——由海南 59 国免签政策 + 29 国互免协定 + 46 国单方面免签叠加而成。" },
+      { "en": "Allowed purposes: tourism, business, family visits, medical treatment, exhibitions, sports competitions (work and study excluded).", "cn": "适用事由：旅游、商贸、探亲、医疗、会展、体育竞技（不含工作和学习）。" },
+      { "en": "Stay is limited to the administrative area of Hainan Province, up to 30 days.", "cn": "活动范围仅限海南省行政区域，停留不超过 30 天。" }
+    ],
+    "facts": [
+      { "en": "86 visa-free countries (as of 2026)", "cn": "86 个免签国家（截至 2026 年）" },
+      { "en": "30 days maximum visa-free stay", "cn": "最长 30 天免签停留" },
+      { "en": "59 countries under Hainan's own policy", "cn": "海南专属政策覆盖 59 国" }
+    ],
+    "official_links": [
+      { "label_en": "Hainan govt — 86 visa-free countries", "label_cn": "海南省政府——86 国免签政策", "url": "https://en.hainan.gov.cn/englishsite/TTravel/202508/be1ea17f4c08410fb32aab27ba338dce.shtml" },
+      { "label_en": "Hainan FTP — 59-country visa-free guide", "label_cn": "海南自贸港——59 国免签指南", "url": "https://en.hnftp.gov.cn/tips/policy/" },
+      { "label_en": "NIA — regional visa-free policies", "label_cn": "国家移民管理局——区域性免签政策", "url": "https://www.nia.gov.cn/n741440/n741577/c1699641/content.html" }
+    ],
+    "tip": {
+      "en": "Your stay counts from 00:00 on the day AFTER arrival. If you plan to travel to the mainland or extend your stay, apply for a permit before your visa-free period expires.",
+      "cn": "停留时间自入境次日 0 时起算。若要前往内地或延长停留，须在免签到期前向公安出入境管理部门申请许可。"
+    }
+  },
+  "2": {
+    "highlights": [
+      { "en": "Hainan runs a 'one-window service' — work permit and residence permit are processed together in a single application.", "cn": "海南实行「一窗通办」——工作许可与居留许可一次性合并办理。" },
+      { "en": "A standardised document checklist removes guesswork from the Z-visa application.", "cn": "标准化材料清单，让 Z 字签证申请不再靠猜。" },
+      { "en": "Progress is tracked end-to-end so you always know the current status.", "cn": "全程跟踪进度，随时掌握办理状态。" }
+    ],
+    "facts": [
+      { "en": "1 window for work + residence permit", "cn": "工作许可 + 居留许可一窗办理" }
+    ],
+    "official_links": [
+      { "label_en": "Hainan Policy Query (English)", "label_cn": "海南政策查询（英文版）", "url": "https://policy.hnftp.gov.cn" }
+    ],
+    "tip": {
+      "en": "Prepare scanned colour copies of your passport, degree certificate (authenticated), and a clean criminal record check before starting — these are the most common delay points.",
+      "cn": "提前备好护照彩色扫描件、学历证书（认证件）和无犯罪记录证明——这三样是最常见的拖进度环节。"
+    }
+  },
+  "3": {
+    "highlights": [
+      { "en": "An 'Arrival Package' covers airport pickup before you even step out of the terminal.", "cn": "「安心抵达套餐」在你出航站楼前就安排好接机。" },
+      { "en": "Transitional housing at partner hotels and serviced apartments lets you settle in while you hunt for a long-term home.", "cn": "合作酒店与酒店式公寓的过渡住宿，让你在找长期住房期间先安顿下来。" },
+      { "en": "Initial essentials setup (SIM, transport, utilities) is handled for you.", "cn": "初期生活配置（电话卡、交通、水电）一并代办。" }
+    ],
+    "facts": [
+      { "en": "Airport pickup + transitional housing + essentials", "cn": "接机 + 过渡住宿 + 生活配置" }
+    ],
+    "official_links": [
+      { "label_en": "en.hainan.gov.cn — Living services", "label_cn": "海南政府网——生活服务", "url": "https://en.hainan.gov.cn" }
+    ],
+    "tip": {
+      "en": "Book your first 1–2 weeks of accommodation before you fly — this gives you a registered address, which you need for accommodation registration and many later steps.",
+      "cn": "起飞前先订好前 1–2 周住宿——有了登记地址，后续的住宿登记和多项手续才好办。"
+    }
+  },
+  "4": {
+    "highlights": [
+      { "en": "You can pre-charge an e-CNY (digital yuan) wallet from abroad before you land.", "cn": "可在境外提前预充值数字人民币（e-CNY）钱包，落地即用。" },
+      { "en": "Registration works with a foreign phone number — 210+ countries are supported.", "cn": "支持境外手机号注册，覆盖 210+ 个国家/地区。" },
+      { "en": "An anonymous wallet is available, and no Chinese bank card is required to get started.", "cn": "提供匿名钱包，无需境内银行卡即可开通。" }
+    ],
+    "facts": [
+      { "en": "210+ countries supported by phone number", "cn": "支持 210+ 国家/地区手机号注册" },
+      { "en": "0 Chinese bank card needed to start", "cn": "开通无需境内银行卡" }
+    ],
+    "official_links": [
+      { "label_en": "PBOC — e-CNY for inbound visitors", "label_cn": "人民银行——入境旅客数字人民币", "url": "https://www.pbc.gov.cn" }
+    ],
+    "tip": {
+      "en": "Download the e-CNY app and register with your home-country number while you still have stable internet — it is far smoother than doing it on arrival.",
+      "cn": "趁网络稳定时，用本国手机号下载并注册数字人民币 App，比落地后再弄顺畅得多。"
+    }
+  },
+  "5": {
+    "highlights": [
+      { "en": "WeChat Pay and Alipay accept international cards: Visa, Mastercard, JCB, Amex and Discover.", "cn": "微信支付与支付宝支持 Visa、Mastercard、JCB、Amex、Discover 国际卡。" },
+      { "en": "Foreign phone numbers are fully supported for account binding.", "cn": "完全支持境外手机号绑定。" },
+      { "en": "This removes the biggest day-one worry for inbound visitors: paying with your own card.", "cn": "解决了入境旅客落地第一天的最大顾虑——用自己的卡就能付。" }
+    ],
+    "facts": [
+      { "en": "5 card networks supported", "cn": "支持 5 大国际卡组织" },
+      { "en": "2 super-apps: WeChat Pay + Alipay", "cn": "两大支付：微信支付 + 支付宝" }
+    ],
+    "official_links": [
+      { "label_en": "PBOC — Payment Guide for Foreigners", "label_cn": "人民银行——外籍来华支付指南", "url": "https://www.pbc.gov.cn" }
+    ],
+    "tip": {
+      "en": "Link your card BEFORE you fly and do one small test transaction — a declined overseas card is almost always a bank-side security block you can clear with a quick call.",
+      "cn": "起飞前先绑卡并做一笔小额测试——境外卡被拒大多是发卡行的风控拦截，一通电话即可解除。"
+    }
+  },
+  "6": {
+    "highlights": [
+      { "en": "The 12345 government service hotline answers in English, Russian, Japanese and Korean.", "cn": "12345 政务服务热线提供英、俄、日、韩四种外语服务。" },
+      { "en": "Bilingual signage is mandated at airports and major transport hubs.", "cn": "机场及主要交通枢纽强制设置双语标识。" },
+      { "en": "The NIA also runs a 24-hour hotline (+86 12367) with English service.", "cn": "国家移民管理局另设 24 小时热线（+86 12367），含英语服务。" }
+    ],
+    "facts": [
+      { "en": "4 foreign languages on 12345", "cn": "12345 热线支持 4 种外语" },
+      { "en": "24-hour NIA hotline: +86 12367", "cn": "移民局 24 小时热线：+86 12367" }
+    ],
+    "official_links": [
+      { "label_en": "en.hainan.gov.cn", "label_cn": "海南政府网", "url": "https://en.hainan.gov.cn" },
+      { "label_en": "NIA service hotline info", "label_cn": "国家移民管理局服务热线", "url": "https://www.nia.gov.cn" }
+    ],
+    "tip": {
+      "en": "Save both numbers in your phone before departure — 12345 for daily life, 12367 for immigration/visa questions.",
+      "cn": "出发前把这两个号码存进手机——12345 管日常生活，12367 管出入境/签证问题。"
+    }
+  },
+  "7": {
+    "highlights": [
+      { "en": "Three international airports: Haikou Meilan, Sanya Phoenix and Qionghai Bo'ao.", "cn": "三大国际机场：海口美兰、三亚凤凰、琼海博鳌。" },
+      { "en": "144-hour visa-free transit via Hong Kong / Macau gives another flexible entry route.", "cn": "经香港/澳门 144 小时过境免签，提供另一条灵活的入境路线。" },
+      { "en": "15-day visa-free entry is available for cruise-ship tour groups.", "cn": "邮轮旅游团可享 15 天免签入境。" }
+    ],
+    "facts": [
+      { "en": "3 international airports", "cn": "3 个国际机场" },
+      { "en": "144h transit visa-free (HK/Macau)", "cn": "经港/澳 144 小时过境免签" },
+      { "en": "15-day cruise visa-free", "cn": "15 天邮轮免签" }
+    ],
+    "official_links": [
+      { "label_en": "National Immigration Administration", "label_cn": "国家移民管理局", "url": "https://www.nia.gov.cn" }
+    ],
+    "tip": {
+      "en": "If there is no direct flight from your city, fly via Hong Kong or Macau — both connect to Hainan on short hops and preserve the visa-free route.",
+      "cn": "若所在城市无直飞，可经香港或澳门中转——两地到海南航程短，且不破坏免签路线。"
+    }
+  },
+  "29": {
+    "highlights": [
+      { "en": "Carry a doctor's note and the original prescription for personal medicines.", "cn": "个人药品随身携带医生证明和原始处方。" },
+      { "en": "Controlled or restricted items must be declared at customs on entry.", "cn": "受控/受限物品须在入境时向海关申报。" },
+      { "en": "Confirm recommended vaccinations for your itinerary before departure.", "cn": "出发前确认行程所需的推荐疫苗。" }
+    ],
+    "facts": [
+      { "en": "Personal meds = doctor's note + prescription", "cn": "个人药品 = 医生证明 + 处方" }
+    ],
+    "official_links": [
+      { "label_en": "General Administration of Customs (China)", "label_cn": "中国海关总署", "url": "https://www.customs.gov.cn" }
+    ],
+    "tip": {
+      "en": "Keep medicines in their original labelled packaging and carry only the quantity needed for your trip — bulk unlabelled pills invite customs questions.",
+      "cn": "药品保留原厂标签包装，只带行程所需用量——散装无标签药片最容易引来海关问询。"
+    }
+  },
+  "33": {
+    "highlights": [
+      { "en": "Declare RMB cash of ¥20,000 or more on entry/exit.", "cn": "携带人民币现金 ≥2 万元须申报。" },
+      { "en": "Declare foreign currency of USD 5,000 or more (or equivalent).", "cn": "携带外币 ≥5000 美元（或等值）须申报。" },
+      { "en": "Know the red (goods to declare) and green (nothing to declare) channel rules before you board.", "cn": "登机前搞清红色（申报）与绿色（无申报）通道规则。" }
+    ],
+    "facts": [
+      { "en": "¥20,000 RMB cash declaration threshold", "cn": "人民币现金申报线 2 万元" },
+      { "en": "USD 5,000 foreign currency threshold", "cn": "外币申报线 5000 美元" }
+    ],
+    "official_links": [
+      { "label_en": "General Administration of Customs (China)", "label_cn": "中国海关总署", "url": "https://www.customs.gov.cn" }
+    ],
+    "tip": {
+      "en": "Undisclosed cash over the limit risks fines or confiscation — declare at the red channel and keep the receipt.",
+      "cn": "超额现金不申报有罚款或没收风险——走红色通道主动申报并保留凭证。"
+    }
+  },
+  "37": {
+    "highlights": [
+      { "en": "China requires an ISO-standard microchip, an up-to-date rabies vaccine and an official health certificate.", "cn": "中国要求 ISO 标准芯片、有效狂犬疫苗和官方健康证明。" },
+      { "en": "Pets must enter through a designated port — or face quarantine.", "cn": "宠物须从指定口岸入境——否则会被隔离。" },
+      { "en": "Start the paperwork 30+ days early; requirements vary by origin country.", "cn": "至少提前 30 天备材料；不同来源国要求不同。" }
+    ],
+    "facts": [
+      { "en": "3 core requirements: ISO chip + rabies shot + health certificate", "cn": "三大要件：ISO 芯片 + 狂犬疫苗 + 健康证明" },
+      { "en": "30+ days lead time", "cn": "至少提前 30 天" }
+    ],
+    "official_links": [
+      { "label_en": "General Administration of Customs (China)", "label_cn": "中国海关总署", "url": "https://www.customs.gov.cn" }
+    ],
+    "tip": {
+      "en": "Check which ports accept pets for your route — not every port clears animals, and flying into the wrong one can mean quarantine.",
+      "cn": "务必确认你的航线经停哪些口岸可携宠入境——并非所有口岸都清关宠物，飞错口岸可能面临隔离。"
+    }
+  },
+  "41": {
+    "highlights": [
+      { "en": "International flight tickets bought in China are eligible for VAT refund (up to a CNY 100,000 cap).", "cn": "在中国境内购买的国际机票可申请增值税退税（上限 10 万元）。" },
+      { "en": "Hainan adds its own island-departure tax-refund scheme for eligible flights.", "cn": "海南另有离岛退税政策，适用于符合条件的航班。" },
+      { "en": "Not all airlines participate — check before booking.", "cn": "并非所有航司都参与——购票前先确认。" }
+    ],
+    "facts": [
+      { "en": "CNY 100,000 VAT-refund cap for international flights", "cn": "国际航班增值税退税上限 10 万元" }
+    ],
+    "official_links": [
+      { "label_en": "State Taxation Administration (China)", "label_cn": "国家税务总局", "url": "https://www.chinatax.gov.cn" }
+    ],
+    "tip": {
+      "en": "Keep your e-ticket itinerary/receipt and boarding pass — both are usually required to claim the refund.",
+      "cn": "保留电子行程单和登机牌——申请退税时通常两者都需要。"
+    }
+  },
+  "45": {
+    "highlights": [
+      { "en": "Complete China's entry health declaration via the 'Customs Pocket Declaration' (海关旅客指尖服务) WeChat mini-program before you board.", "cn": "登机前通过「海关旅客指尖服务」微信小程序完成入境健康申报。" },
+      { "en": "Alternatively use the web portal htdecl.chinaport.gov.cn or the China Customs App.", "cn": "也可通过网页 htdecl.chinaport.gov.cn 或中国海关 App 办理。" },
+      { "en": "Save the QR code and present it at customs on arrival.", "cn": "保存二维码，入境时向海关出示。" }
+    ],
+    "facts": [
+      { "en": "3 ways to declare: WeChat mini-program / web / App", "cn": "3 种申报方式：小程序 / 网页 / App" }
+    ],
+    "official_links": [
+      { "label_en": "Health declaration web portal", "label_cn": "健康申报网页入口", "url": "https://htdecl.chinaport.gov.cn/htdeclweb/home/pages/index/index.html" },
+      { "label_en": "General Administration of Customs (China)", "label_cn": "中国海关总署", "url": "https://www.customs.gov.cn" }
+    ],
+    "tip": {
+      "en": "Do it 24 hours before arrival and screenshot the QR code — airport WiFi can be slow, and a saved code gets you through faster.",
+      "cn": "抵达前 24 小时内填写并截图保存二维码——机场 WiFi 可能很慢，存好的码能让你更快通关。"
+    }
+  }
+}
