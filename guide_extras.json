@@ -2,53 +2,53 @@
   "1": {
     "highlights": [
       {
-        "en": "86 countries can enter Hainan visa-free — formed by stacking Hainan's 59-country policy + 29 mutual visa-exemption agreements + 46 unilateral visa-free countries.",
-        "cn": "86 国人员可免签入境海南——由海南 59 国免签政策 + 29 国互免协定 + 46 国单方面免签叠加而成。"
+        "en": "61 countries can enter Hainan visa-free under the regional visa-free policy (updated Aug 20, 2026).",
+        "cn": "61 国人员可依区域性免签政策免签入境海南（2026-08-20 更新）。"
       },
       {
-        "en": "Allowed purposes: tourism, business, family visits, medical treatment, exhibitions, sports competitions (work and study excluded).",
-        "cn": "适用事由：旅游、商贸、探亲、医疗、会展、体育竞技（不含工作和学习）。"
+        "en": "Allowed purposes: tourism, business, visits, family, medical treatment, exhibitions, sports competitions (work and study excluded).",
+        "cn": "适用事由：旅游、商贸、访问、探亲、就医、会展、体育竞技（不含工作和学习）。"
       },
       {
-        "en": "Stay is limited to the administrative area of Hainan Province, up to 30 days.",
-        "cn": "活动范围仅限海南省行政区域，停留不超过 30 天。"
+        "en": "Activity is limited to Hainan Province, up to 30 days.",
+        "cn": "活动范围仅限于海南省行政区域，停留不超过 30 天。"
       }
     ],
     "facts": [
       {
-        "en": "86 visa-free countries (as of 2026)",
-        "cn": "86 个免签国家（截至 2026 年）"
+        "en": "61 visa-free countries (as of Aug 2026)",
+        "cn": "61 个免签国家（截至 2026 年 8 月）"
       },
       {
         "en": "30 days maximum visa-free stay",
         "cn": "最长 30 天免签停留"
       },
       {
-        "en": "59 countries under Hainan's own policy",
-        "cn": "海南专属政策覆盖 59 国"
-      }
-    ],
-    "official_links": [
-      {
-        "label_en": "Hainan govt — 86 visa-free countries",
-        "label_cn": "海南省政府——86 国免签政策",
-        "url": "https://en.hainan.gov.cn/englishsite/TTravel/202508/be1ea17f4c08410fb32aab27ba338dce.shtml"
-      },
-      {
-        "label_en": "Hainan FTP — 59-country visa-free guide",
-        "label_cn": "海南自贸港——59 国免签指南",
-        "url": "https://en.hnftp.gov.cn/tips/policy/"
-      },
-      {
-        "label_en": "NIA — regional visa-free policies",
-        "label_cn": "国家移民管理局——区域性免签政策",
-        "url": "https://www.nia.gov.cn/n741440/n741577/c1699641/content.html"
+        "en": "Entry via any Hainan open port",
+        "cn": "经海南省任一对外开放口岸入境"
       }
     ],
     "tip": {
       "en": "Your stay counts from 00:00 on the day AFTER arrival. If you plan to travel to the mainland or extend your stay, apply for a permit before your visa-free period expires.",
       "cn": "停留时间自入境次日 0 时起算。若要前往内地或延长停留，须在免签到期前向公安出入境管理部门申请许可。"
-    }
+    },
+    "official_links": [
+      {
+        "label_en": "NIA — 61-country Hainan visa-free policy",
+        "label_cn": "国家移民管理局——61 国海南免签政策",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1699641/content.html"
+      },
+      {
+        "label_en": "Hainan FTP — visa-free guide",
+        "label_cn": "海南自贸港——免签指南",
+        "url": "https://en.hnftp.gov.cn/tips/policy/"
+      },
+      {
+        "label_en": "Hainan govt — visa-free countries",
+        "label_cn": "海南省政府——免签国家",
+        "url": "https://en.hainan.gov.cn/englishsite/TTravel/202508/be1ea17f4c08410fb32aab27ba338dce.shtml"
+      }
+    ]
   },
   "2": {
     "highlights": [
