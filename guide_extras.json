@@ -1,23 +1,49 @@
 {
-  "meta": {
-    "note": "Daily guide detail page extension data. Each key = day number. Populated from authoritative official sources (en.hainan.gov.cn / policy.hnftp.gov.cn / nia.gov.cn / pbc.gov.cn / customs.gov.cn / chinatax.gov.cn). Entries without a key fall back to the base calendar content.",
-    "updated": "2026-09-03"
-  },
   "1": {
     "highlights": [
-      { "en": "86 countries can enter Hainan visa-free — formed by stacking Hainan's 59-country policy + 29 mutual visa-exemption agreements + 46 unilateral visa-free countries.", "cn": "86 国人员可免签入境海南——由海南 59 国免签政策 + 29 国互免协定 + 46 国单方面免签叠加而成。" },
-      { "en": "Allowed purposes: tourism, business, family visits, medical treatment, exhibitions, sports competitions (work and study excluded).", "cn": "适用事由：旅游、商贸、探亲、医疗、会展、体育竞技（不含工作和学习）。" },
-      { "en": "Stay is limited to the administrative area of Hainan Province, up to 30 days.", "cn": "活动范围仅限海南省行政区域，停留不超过 30 天。" }
+      {
+        "en": "86 countries can enter Hainan visa-free — formed by stacking Hainan's 59-country policy + 29 mutual visa-exemption agreements + 46 unilateral visa-free countries.",
+        "cn": "86 国人员可免签入境海南——由海南 59 国免签政策 + 29 国互免协定 + 46 国单方面免签叠加而成。"
+      },
+      {
+        "en": "Allowed purposes: tourism, business, family visits, medical treatment, exhibitions, sports competitions (work and study excluded).",
+        "cn": "适用事由：旅游、商贸、探亲、医疗、会展、体育竞技（不含工作和学习）。"
+      },
+      {
+        "en": "Stay is limited to the administrative area of Hainan Province, up to 30 days.",
+        "cn": "活动范围仅限海南省行政区域，停留不超过 30 天。"
+      }
     ],
     "facts": [
-      { "en": "86 visa-free countries (as of 2026)", "cn": "86 个免签国家（截至 2026 年）" },
-      { "en": "30 days maximum visa-free stay", "cn": "最长 30 天免签停留" },
-      { "en": "59 countries under Hainan's own policy", "cn": "海南专属政策覆盖 59 国" }
+      {
+        "en": "86 visa-free countries (as of 2026)",
+        "cn": "86 个免签国家（截至 2026 年）"
+      },
+      {
+        "en": "30 days maximum visa-free stay",
+        "cn": "最长 30 天免签停留"
+      },
+      {
+        "en": "59 countries under Hainan's own policy",
+        "cn": "海南专属政策覆盖 59 国"
+      }
     ],
     "official_links": [
-      { "label_en": "Hainan govt — 86 visa-free countries", "label_cn": "海南省政府——86 国免签政策", "url": "https://en.hainan.gov.cn/englishsite/TTravel/202508/be1ea17f4c08410fb32aab27ba338dce.shtml" },
-      { "label_en": "Hainan FTP — 59-country visa-free guide", "label_cn": "海南自贸港——59 国免签指南", "url": "https://en.hnftp.gov.cn/tips/policy/" },
-      { "label_en": "NIA — regional visa-free policies", "label_cn": "国家移民管理局——区域性免签政策", "url": "https://www.nia.gov.cn/n741440/n741577/c1699641/content.html" }
+      {
+        "label_en": "Hainan govt — 86 visa-free countries",
+        "label_cn": "海南省政府——86 国免签政策",
+        "url": "https://en.hainan.gov.cn/englishsite/TTravel/202508/be1ea17f4c08410fb32aab27ba338dce.shtml"
+      },
+      {
+        "label_en": "Hainan FTP — 59-country visa-free guide",
+        "label_cn": "海南自贸港——59 国免签指南",
+        "url": "https://en.hnftp.gov.cn/tips/policy/"
+      },
+      {
+        "label_en": "NIA — regional visa-free policies",
+        "label_cn": "国家移民管理局——区域性免签政策",
+        "url": "https://www.nia.gov.cn/n741440/n741577/c1699641/content.html"
+      }
     ],
     "tip": {
       "en": "Your stay counts from 00:00 on the day AFTER arrival. If you plan to travel to the mainland or extend your stay, apply for a permit before your visa-free period expires.",
@@ -26,15 +52,31 @@
   },
   "2": {
     "highlights": [
-      { "en": "Hainan runs a 'one-window service' — work permit and residence permit are processed together in a single application.", "cn": "海南实行「一窗通办」——工作许可与居留许可一次性合并办理。" },
-      { "en": "A standardised document checklist removes guesswork from the Z-visa application.", "cn": "标准化材料清单，让 Z 字签证申请不再靠猜。" },
-      { "en": "Progress is tracked end-to-end so you always know the current status.", "cn": "全程跟踪进度，随时掌握办理状态。" }
+      {
+        "en": "Hainan runs a 'one-window service' — work permit and residence permit are processed together in a single application.",
+        "cn": "海南实行「一窗通办」——工作许可与居留许可一次性合并办理。"
+      },
+      {
+        "en": "A standardised document checklist removes guesswork from the Z-visa application.",
+        "cn": "标准化材料清单，让 Z 字签证申请不再靠猜。"
+      },
+      {
+        "en": "Progress is tracked end-to-end so you always know the current status.",
+        "cn": "全程跟踪进度，随时掌握办理状态。"
+      }
     ],
     "facts": [
-      { "en": "1 window for work + residence permit", "cn": "工作许可 + 居留许可一窗办理" }
+      {
+        "en": "1 window for work + residence permit",
+        "cn": "工作许可 + 居留许可一窗办理"
+      }
     ],
     "official_links": [
-      { "label_en": "Hainan Policy Query (English)", "label_cn": "海南政策查询（英文版）", "url": "https://policy.hnftp.gov.cn" }
+      {
+        "label_en": "Hainan Policy Query (English)",
+        "label_cn": "海南政策查询（英文版）",
+        "url": "https://policy.hnftp.gov.cn"
+      }
     ],
     "tip": {
       "en": "Prepare scanned colour copies of your passport, degree certificate (authenticated), and a clean criminal record check before starting — these are the most common delay points.",
@@ -43,15 +85,31 @@
   },
   "3": {
     "highlights": [
-      { "en": "An 'Arrival Package' covers airport pickup before you even step out of the terminal.", "cn": "「安心抵达套餐」在你出航站楼前就安排好接机。" },
-      { "en": "Transitional housing at partner hotels and serviced apartments lets you settle in while you hunt for a long-term home.", "cn": "合作酒店与酒店式公寓的过渡住宿，让你在找长期住房期间先安顿下来。" },
-      { "en": "Initial essentials setup (SIM, transport, utilities) is handled for you.", "cn": "初期生活配置（电话卡、交通、水电）一并代办。" }
+      {
+        "en": "An 'Arrival Package' covers airport pickup before you even step out of the terminal.",
+        "cn": "「安心抵达套餐」在你出航站楼前就安排好接机。"
+      },
+      {
+        "en": "Transitional housing at partner hotels and serviced apartments lets you settle in while you hunt for a long-term home.",
+        "cn": "合作酒店与酒店式公寓的过渡住宿，让你在找长期住房期间先安顿下来。"
+      },
+      {
+        "en": "Initial essentials setup (SIM, transport, utilities) is handled for you.",
+        "cn": "初期生活配置（电话卡、交通、水电）一并代办。"
+      }
     ],
     "facts": [
-      { "en": "Airport pickup + transitional housing + essentials", "cn": "接机 + 过渡住宿 + 生活配置" }
+      {
+        "en": "Airport pickup + transitional housing + essentials",
+        "cn": "接机 + 过渡住宿 + 生活配置"
+      }
     ],
     "official_links": [
-      { "label_en": "en.hainan.gov.cn — Living services", "label_cn": "海南政府网——生活服务", "url": "https://en.hainan.gov.cn" }
+      {
+        "label_en": "en.hainan.gov.cn — Living services",
+        "label_cn": "海南政府网——生活服务",
+        "url": "https://en.hainan.gov.cn"
+      }
     ],
     "tip": {
       "en": "Book your first 1–2 weeks of accommodation before you fly — this gives you a registered address, which you need for accommodation registration and many later steps.",
@@ -60,16 +118,35 @@
   },
   "4": {
     "highlights": [
-      { "en": "You can pre-charge an e-CNY (digital yuan) wallet from abroad before you land.", "cn": "可在境外提前预充值数字人民币（e-CNY）钱包，落地即用。" },
-      { "en": "Registration works with a foreign phone number — 210+ countries are supported.", "cn": "支持境外手机号注册，覆盖 210+ 个国家/地区。" },
-      { "en": "An anonymous wallet is available, and no Chinese bank card is required to get started.", "cn": "提供匿名钱包，无需境内银行卡即可开通。" }
+      {
+        "en": "You can pre-charge an e-CNY (digital yuan) wallet from abroad before you land.",
+        "cn": "可在境外提前预充值数字人民币（e-CNY）钱包，落地即用。"
+      },
+      {
+        "en": "Registration works with a foreign phone number — 210+ countries are supported.",
+        "cn": "支持境外手机号注册，覆盖 210+ 个国家/地区。"
+      },
+      {
+        "en": "An anonymous wallet is available, and no Chinese bank card is required to get started.",
+        "cn": "提供匿名钱包，无需境内银行卡即可开通。"
+      }
     ],
     "facts": [
-      { "en": "210+ countries supported by phone number", "cn": "支持 210+ 国家/地区手机号注册" },
-      { "en": "0 Chinese bank card needed to start", "cn": "开通无需境内银行卡" }
+      {
+        "en": "210+ countries supported by phone number",
+        "cn": "支持 210+ 国家/地区手机号注册"
+      },
+      {
+        "en": "0 Chinese bank card needed to start",
+        "cn": "开通无需境内银行卡"
+      }
     ],
     "official_links": [
-      { "label_en": "PBOC — e-CNY for inbound visitors", "label_cn": "人民银行——入境旅客数字人民币", "url": "https://www.pbc.gov.cn" }
+      {
+        "label_en": "PBOC — e-CNY for inbound visitors",
+        "label_cn": "人民银行——入境旅客数字人民币",
+        "url": "https://www.pbc.gov.cn"
+      }
     ],
     "tip": {
       "en": "Download the e-CNY app and register with your home-country number while you still have stable internet — it is far smoother than doing it on arrival.",
@@ -78,16 +155,35 @@
   },
   "5": {
     "highlights": [
-      { "en": "WeChat Pay and Alipay accept international cards: Visa, Mastercard, JCB, Amex and Discover.", "cn": "微信支付与支付宝支持 Visa、Mastercard、JCB、Amex、Discover 国际卡。" },
-      { "en": "Foreign phone numbers are fully supported for account binding.", "cn": "完全支持境外手机号绑定。" },
-      { "en": "This removes the biggest day-one worry for inbound visitors: paying with your own card.", "cn": "解决了入境旅客落地第一天的最大顾虑——用自己的卡就能付。" }
+      {
+        "en": "WeChat Pay and Alipay accept international cards: Visa, Mastercard, JCB, Amex and Discover.",
+        "cn": "微信支付与支付宝支持 Visa、Mastercard、JCB、Amex、Discover 国际卡。"
+      },
+      {
+        "en": "Foreign phone numbers are fully supported for account binding.",
+        "cn": "完全支持境外手机号绑定。"
+      },
+      {
+        "en": "This removes the biggest day-one worry for inbound visitors: paying with your own card.",
+        "cn": "解决了入境旅客落地第一天的最大顾虑——用自己的卡就能付。"
+      }
     ],
     "facts": [
-      { "en": "5 card networks supported", "cn": "支持 5 大国际卡组织" },
-      { "en": "2 super-apps: WeChat Pay + Alipay", "cn": "两大支付：微信支付 + 支付宝" }
+      {
+        "en": "5 card networks supported",
+        "cn": "支持 5 大国际卡组织"
+      },
+      {
+        "en": "2 super-apps: WeChat Pay + Alipay",
+        "cn": "两大支付：微信支付 + 支付宝"
+      }
     ],
     "official_links": [
-      { "label_en": "PBOC — Payment Guide for Foreigners", "label_cn": "人民银行——外籍来华支付指南", "url": "https://www.pbc.gov.cn" }
+      {
+        "label_en": "PBOC — Payment Guide for Foreigners",
+        "label_cn": "人民银行——外籍来华支付指南",
+        "url": "https://www.pbc.gov.cn"
+      }
     ],
     "tip": {
       "en": "Link your card BEFORE you fly and do one small test transaction — a declined overseas card is almost always a bank-side security block you can clear with a quick call.",
@@ -96,17 +192,40 @@
   },
   "6": {
     "highlights": [
-      { "en": "The 12345 government service hotline answers in English, Russian, Japanese and Korean.", "cn": "12345 政务服务热线提供英、俄、日、韩四种外语服务。" },
-      { "en": "Bilingual signage is mandated at airports and major transport hubs.", "cn": "机场及主要交通枢纽强制设置双语标识。" },
-      { "en": "The NIA also runs a 24-hour hotline (+86 12367) with English service.", "cn": "国家移民管理局另设 24 小时热线（+86 12367），含英语服务。" }
+      {
+        "en": "The 12345 government service hotline answers in English, Russian, Japanese and Korean.",
+        "cn": "12345 政务服务热线提供英、俄、日、韩四种外语服务。"
+      },
+      {
+        "en": "Bilingual signage is mandated at airports and major transport hubs.",
+        "cn": "机场及主要交通枢纽强制设置双语标识。"
+      },
+      {
+        "en": "The NIA also runs a 24-hour hotline (+86 12367) with English service.",
+        "cn": "国家移民管理局另设 24 小时热线（+86 12367），含英语服务。"
+      }
     ],
     "facts": [
-      { "en": "4 foreign languages on 12345", "cn": "12345 热线支持 4 种外语" },
-      { "en": "24-hour NIA hotline: +86 12367", "cn": "移民局 24 小时热线：+86 12367" }
+      {
+        "en": "4 foreign languages on 12345",
+        "cn": "12345 热线支持 4 种外语"
+      },
+      {
+        "en": "24-hour NIA hotline: +86 12367",
+        "cn": "移民局 24 小时热线：+86 12367"
+      }
     ],
     "official_links": [
-      { "label_en": "en.hainan.gov.cn", "label_cn": "海南政府网", "url": "https://en.hainan.gov.cn" },
-      { "label_en": "NIA service hotline info", "label_cn": "国家移民管理局服务热线", "url": "https://www.nia.gov.cn" }
+      {
+        "label_en": "en.hainan.gov.cn",
+        "label_cn": "海南政府网",
+        "url": "https://en.hainan.gov.cn"
+      },
+      {
+        "label_en": "NIA service hotline info",
+        "label_cn": "国家移民管理局服务热线",
+        "url": "https://www.nia.gov.cn"
+      }
     ],
     "tip": {
       "en": "Save both numbers in your phone before departure — 12345 for daily life, 12367 for immigration/visa questions.",
@@ -115,109 +234,1346 @@
   },
   "7": {
     "highlights": [
-      { "en": "Three international airports: Haikou Meilan, Sanya Phoenix and Qionghai Bo'ao.", "cn": "三大国际机场：海口美兰、三亚凤凰、琼海博鳌。" },
-      { "en": "144-hour visa-free transit via Hong Kong / Macau gives another flexible entry route.", "cn": "经香港/澳门 144 小时过境免签，提供另一条灵活的入境路线。" },
-      { "en": "15-day visa-free entry is available for cruise-ship tour groups.", "cn": "邮轮旅游团可享 15 天免签入境。" }
+      {
+        "en": "Three international airports: Haikou Meilan, Sanya Phoenix and Qionghai Bo'ao.",
+        "cn": "三大国际机场：海口美兰、三亚凤凰、琼海博鳌。"
+      },
+      {
+        "en": "144-hour visa-free transit via Hong Kong / Macau gives another flexible entry route.",
+        "cn": "经香港/澳门 144 小时过境免签，提供另一条灵活的入境路线。"
+      },
+      {
+        "en": "15-day visa-free entry is available for cruise-ship tour groups.",
+        "cn": "邮轮旅游团可享 15 天免签入境。"
+      }
     ],
     "facts": [
-      { "en": "3 international airports", "cn": "3 个国际机场" },
-      { "en": "144h transit visa-free (HK/Macau)", "cn": "经港/澳 144 小时过境免签" },
-      { "en": "15-day cruise visa-free", "cn": "15 天邮轮免签" }
+      {
+        "en": "3 international airports",
+        "cn": "3 个国际机场"
+      },
+      {
+        "en": "144h transit visa-free (HK/Macau)",
+        "cn": "经港/澳 144 小时过境免签"
+      },
+      {
+        "en": "15-day cruise visa-free",
+        "cn": "15 天邮轮免签"
+      }
     ],
     "official_links": [
-      { "label_en": "National Immigration Administration", "label_cn": "国家移民管理局", "url": "https://www.nia.gov.cn" }
+      {
+        "label_en": "National Immigration Administration",
+        "label_cn": "国家移民管理局",
+        "url": "https://www.nia.gov.cn"
+      }
     ],
     "tip": {
       "en": "If there is no direct flight from your city, fly via Hong Kong or Macau — both connect to Hainan on short hops and preserve the visa-free route.",
       "cn": "若所在城市无直飞，可经香港或澳门中转——两地到海南航程短，且不破坏免签路线。"
     }
   },
-  "29": {
+  "8": {
     "highlights": [
-      { "en": "Carry a doctor's note and the original prescription for personal medicines.", "cn": "个人药品随身携带医生证明和原始处方。" },
-      { "en": "Controlled or restricted items must be declared at customs on entry.", "cn": "受控/受限物品须在入境时向海关申报。" },
-      { "en": "Confirm recommended vaccinations for your itinerary before departure.", "cn": "出发前确认行程所需的推荐疫苗。" }
+      {
+        "en": "Foreigners must register their temporary residence within 24 hours of arrival in China.",
+        "cn": "外国人在华须在抵达后 24 小时内办理临时住宿登记。"
+      },
+      {
+        "en": "Staying in a hotel auto-registers you; renting a home means you must register at the local police station yourself.",
+        "cn": "住酒店会自动登记；租房则需本人到属地派出所登记。"
+      },
+      {
+        "en": "Ouwen's Maker Ambassador escorts you to the station with translation — done in one visit.",
+        "cn": "欧闻「安家大使」陪同前往，全程翻译，一次办结。"
+      }
     ],
     "facts": [
-      { "en": "Personal meds = doctor's note + prescription", "cn": "个人药品 = 医生证明 + 处方" }
+      {
+        "en": "24 hours to register",
+        "cn": "24 小时内登记"
+      },
+      {
+        "en": "Hotels auto-register",
+        "cn": "酒店自动登记"
+      }
+    ],
+    "tip": {
+      "en": "Keep your hotel receipt or rental contract handy — it is the proof of address the police station will ask for.",
+      "cn": "随身带好酒店凭证或租赁合同——这是派出所登记时要核对的住址证明。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan Public Security (entry-exit)",
+        "label_cn": "海南省公安厅出入境管理局",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "9": {
+    "highlights": [
+      {
+        "en": "Opening a local bank account usually needs work proof and address proof — the classic maze.",
+        "cn": "本地开户通常需要工作证明与住址证明——典型的迷宫流程。"
+      },
+      {
+        "en": "Hainan runs an 'EF Account' (easy/fast account) scheme for foreigners with simplified documents.",
+        "cn": "海南推出「EF 账户」（便捷账户）制度，外国人开户材料更简化。"
+      },
+      {
+        "en": "Ouwen's Life Concierge prepares documents and escorts you to partner banks for priority opening + a linked e-CNY wallet.",
+        "cn": "欧闻「生活管家」备好材料，陪同到合作银行优先开户，并绑定数字人民币钱包。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "EF Account = simplified opening",
+        "cn": "EF 账户 = 简化开户"
+      },
+      {
+        "en": "Priority service via partner banks",
+        "cn": "合作银行优先通道"
+      }
+    ],
+    "tip": {
+      "en": "Bring your passport, residence permit and a Chinese phone number — those three unlock most bank counters.",
+      "cn": "带齐护照、居留许可和一个中国手机号——这三样能解锁大多数银行柜台。"
+    },
+    "official_links": [
+      {
+        "label_en": "PBOC Hainan Branch — EF Account",
+        "label_cn": "人民银行海南省分行——EF 账户",
+        "url": "https://www.pbc.gov.cn"
+      }
+    ]
+  },
+  "10": {
+    "highlights": [
+      {
+        "en": "Mobile and broadband plans are explained in plain English — no fine-print guessing.",
+        "cn": "手机卡与宽带套餐用通俗英文讲解——不用再猜条款。"
+      },
+      {
+        "en": "We help you choose the right plan for your data and home-internet needs.",
+        "cn": "我们根据你的流量与家用宽带需求帮你选对套餐。"
+      },
+      {
+        "en": "From SIM activation to router setup, everything is done for you.",
+        "cn": "从办卡激活到路由器配置，全部代办。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "SIM + broadband, fully explained",
+        "cn": "手机卡 + 宽带，全程讲解"
+      }
+    ],
+    "tip": {
+      "en": "Get a contract plan rather than prepaid if you'll stay long — it unlocks better data rates and priority network access.",
+      "cn": "长期停留建议办合约套餐而非预付卡——流量单价更优、网络优先级更高。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan FTP Intl Service Portal",
+        "label_cn": "海南自贸港国际服务门户",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "11": {
+    "highlights": [
+      {
+        "en": "Hainan's special incentives include duty-free shopping, a 15% tax cap and startup subsidies.",
+        "cn": "海南特殊政策含免税购物、15% 税率封顶与创业补贴。"
+      },
+      {
+        "en": "Most people only half-know these — and almost no one uses them all.",
+        "cn": "多数人只知其一、鲜有人全用上。"
+      },
+      {
+        "en": "Ouwen's Policy Expert gives you a 1-on-1 reading of the incentives that apply to YOUR situation.",
+        "cn": "欧闻「政策专家」一对一解读适合你的政策组合。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "15% personal income tax cap",
+        "cn": "15% 个税封顶"
+      },
+      {
+        "en": "3 core perks: duty-free / 15% tax / subsidies",
+        "cn": "三大福利：免税 / 15% 税率 / 补贴"
+      }
+    ],
+    "tip": {
+      "en": "Don't self-diagnose eligibility from news headlines — one short consult often reveals a subsidy you were missing.",
+      "cn": "别只靠新闻标题判断自己够不够格——一次简短咨询常能挖出你漏掉的补贴。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan Policy Query (English)",
+        "label_cn": "海南政策查询（英文版）",
+        "url": "https://policy.hnftp.gov.cn"
+      }
+    ]
+  },
+  "12": {
+    "highlights": [
+      {
+        "en": "A 5-minute crash course covers buses, ride-hailing and driving rules.",
+        "cn": "5 分钟速成课讲清公交、网约车与驾车规则。"
+      },
+      {
+        "en": "Temporary driving-permit assistance lets you hit the road fast with a foreign license.",
+        "cn": "协助办理临时驾驶许可，外国驾照也能快速上路。"
+      },
+      {
+        "en": "Partner car-rental recommendations save you from tourist-price traps.",
+        "cn": "合作租车推荐，避开游客价陷阱。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "5-minute transport crash course",
+        "cn": "5 分钟出行速成"
+      }
+    ],
+    "tip": {
+      "en": "Install a local ride-hailing app and link your international card before you arrive — hailing a car gets far easier.",
+      "cn": "落地前装好本地打车 App 并绑好国际卡——叫车会顺手很多。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan Transport Bureau",
+        "label_cn": "海南省交通运输厅",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "13": {
+    "highlights": [
+      {
+        "en": "7 common rental traps: fake landlords, deposit disputes, opaque clauses.",
+        "cn": "7 大租房陷阱：假房东、押金纠纷、模糊条款。"
+      },
+      {
+        "en": "Ouwen's Settling Advisor works only with licensed agents and verifies property deeds.",
+        "cn": "欧闻「安家顾问」只对接持牌中介，并核验房产证。"
+      },
+      {
+        "en": "Every clause of the contract is walked through with you before signing.",
+        "cn": "签约前逐条陪你过合同。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "7 rental traps to avoid",
+        "cn": "7 个租房坑"
+      }
+    ],
+    "tip": {
+      "en": "Never pay a deposit or rent to a personal account before verifying the deed and the landlord's identity.",
+      "cn": "核实房产证与房东身份前，切勿向个人账户支付押金或租金。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan Housing authority",
+        "label_cn": "海南省住建部门",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "14": {
+    "highlights": [
+      {
+        "en": "Renewal and extension timelines are easy to miss — and overstaying is a serious offence.",
+        "cn": "续签与延期时间点极易错过——逾期居留是严重违规。"
+      },
+      {
+        "en": "Ouwen tracks every expiry date and pushes proactive renewal reminders.",
+        "cn": "欧闻跟踪每个到期日，主动推送续签提醒。"
+      },
+      {
+        "en": "Start the renewal process 30 days before your current permit expires.",
+        "cn": "建议在当前许可到期前 30 天启动续签。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "Start 30 days before expiry",
+        "cn": "到期前 30 天启动"
+      }
+    ],
+    "tip": {
+      "en": "Set a calendar alert the moment you receive a permit — the 30-day window closes faster than you think.",
+      "cn": "拿到许可的那一刻就设好日历提醒——30 天的窗口比你想象中过得快。"
+    },
+    "official_links": [
+      {
+        "label_en": "National Immigration Administration",
+        "label_cn": "国家移民管理局",
+        "url": "https://www.nia.gov.cn"
+      }
+    ]
+  },
+  "15": {
+    "highlights": [
+      {
+        "en": "Most merchants accept only WeChat/Alipay — cash is awkward and change is rare.",
+        "cn": "多数商户只收微信/支付宝——现金尴尬且常找不开。"
+      },
+      {
+        "en": "Ouwen builds a digital-yuan-friendly merchant network with in-app guides and discounts.",
+        "cn": "欧闻搭建数字人民币友好商户网络，附应用内消费指南与折扣。"
+      },
+      {
+        "en": "One phone handles meals, transport, shopping and utilities.",
+        "cn": "一部手机搞定吃饭、出行、购物、缴费。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "2 super-apps: WeChat Pay + Alipay",
+        "cn": "两大支付：微信支付 + 支付宝"
+      }
+    ],
+    "tip": {
+      "en": "Top up a small e-CNY balance as backup — a few merchants or older terminals may not take foreign cards smoothly.",
+      "cn": "备一小笔数字人民币余额兜底——个别商户或老终端对外卡支持不稳定。"
+    },
+    "official_links": [
+      {
+        "label_en": "PBOC payment guide",
+        "label_cn": "人民银行支付指南",
+        "url": "https://www.pbc.gov.cn"
+      }
+    ]
+  },
+  "16": {
+    "highlights": [
+      {
+        "en": "Booking appointments and talking to doctors in Chinese is the hardest part of getting care.",
+        "cn": "挂号与和医生沟通是就医最大的语言难关。"
+      },
+      {
+        "en": "Ouwen's Health Escort provides a partner international-clinics list and booking help.",
+        "cn": "欧闻「健康陪护」提供合作国际诊所清单与挂号协助。"
+      },
+      {
+        "en": "Phone-interpreter medical accompaniment covers your whole visit.",
+        "cn": "电话口译全程陪同就诊。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "Phone-interpreter medical accompaniment",
+        "cn": "电话口译陪诊"
+      }
+    ],
+    "tip": {
+      "en": "Save a bilingual note of your allergies, meds and history — it makes every hospital visit faster and safer.",
+      "cn": "存一份双语过敏史、用药与病史便签——每次就医都更快更安全。"
+    },
+    "official_links": [
+      {
+        "label_en": "Haikou People's Hospital Intl Centre",
+        "label_cn": "海口市人民医院国际医疗中心",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "17": {
+    "highlights": [
+      {
+        "en": "A real local circle beats a long contact list for beating culture shock.",
+        "cn": "对抗文化冲击，真正的本地圈子胜过一长串联系人。"
+      },
+      {
+        "en": "Ouwen's Community Connector runs cultural events, language-exchange corners and interest clubs.",
+        "cn": "欧闻「社群连接器」组织文化活动、语言角与兴趣俱乐部。"
+      },
+      {
+        "en": "Cycling and food clubs plus an expat forum keep loneliness at bay.",
+        "cn": "骑行、美食俱乐部加外籍社群论坛，让孤独感无处可藏。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "Interest clubs: cycling, food & more",
+        "cn": "兴趣俱乐部：骑行、美食等"
+      }
+    ],
+    "tip": {
+      "en": "Commit to one recurring meetup per week — consistency, not intensity, is what builds real friendships.",
+      "cn": "每周坚持参加一个固定聚会——交朋友靠的是持续，不是一时热情。"
+    },
+    "official_links": [
+      {
+        "label_en": "Ouwen App community",
+        "label_cn": "欧闻 App 社群",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "18": {
+    "highlights": [
+      {
+        "en": "Curated dining guides cover what to eat and where — no tourist-trap guessing.",
+        "cn": "精选美食指南告诉你吃什么、去哪吃——不再踩游客陷阱。"
+      },
+      {
+        "en": "Bilingual menus at partner restaurants remove the ordering barrier.",
+        "cn": "合作餐厅提供双语菜单，点餐无障碍。"
+      },
+      {
+        "en": "Food tours introduce local flavours with dining etiquette explained.",
+        "cn": "美食导览带你尝本地风味，并讲解用餐礼仪。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "Bilingual menus at partner restaurants",
+        "cn": "合作餐厅双语菜单"
+      }
+    ],
+    "tip": {
+      "en": "Ask about 'Wenchang chicken, Hele crab, Jiaji duck, Dongshan lamb' — Hainan's four signature dishes — and locals will warm up instantly.",
+      "cn": "聊起海南四大名菜「文昌鸡、和乐蟹、嘉积鸭、东山羊」，本地人会立刻热情起来。"
+    },
+    "official_links": [
+      {
+        "label_en": "Explore Hainan",
+        "label_cn": "探索海南",
+        "url": "https://en.explorehainan.com"
+      }
+    ]
+  },
+  "19": {
+    "highlights": [
+      {
+        "en": "Duty-free rules and quotas confuse almost every first-time visitor.",
+        "cn": "免税规则与额度几乎难倒每一位初次访客。"
+      },
+      {
+        "en": "Ouwen provides a step-by-step duty-free guide plus a quota calculator.",
+        "cn": "欧闻提供分步免税指南与额度计算器。"
+      },
+      {
+        "en": "Partner store discounts stack on top of the official quota.",
+        "cn": "合作门店折扣叠加在官方额度之上。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "Quota calculator + step-by-step guide",
+        "cn": "额度计算器 + 分步指南"
+      }
+    ],
+    "tip": {
+      "en": "Keep your passport and departure ticket handy — both are checked when you claim duty-free purchases.",
+      "cn": "随身带好护照与离岛票据——提货免税商品时两者都要核验。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan Duty Free official",
+        "label_cn": "海南离岛免税官方",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "20": {
+    "highlights": [
+      {
+        "en": "Which commercial/accident insurance to buy is unclear for most foreigners.",
+        "cn": "该买哪种商业/意外险，多数外国人心里没底。"
+      },
+      {
+        "en": "Ouwen guides you on international medical insurance and direct-bill hospitals.",
+        "cn": "欧闻指导你选择国际医疗保险与直付医院。"
+      },
+      {
+        "en": "Essential coverage is matched to your visa type and lifestyle.",
+        "cn": "按你的签证类型与生活方式匹配必要保障。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "Direct-bill hospital network",
+        "cn": "直付医院网络"
+      }
+    ],
+    "tip": {
+      "en": "Confirm whether your hospital is 'direct-bill' — that's the difference between cashless care and paying out of pocket then claiming.",
+      "cn": "确认医院是否「直付」——这决定了是免现金就医，还是先垫付再报销。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan medical authorities",
+        "label_cn": "海南省医疗主管部门",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "21": {
+    "highlights": [
+      {
+        "en": "License recognition and temporary-permit rules differ by country.",
+        "cn": "驾照互认与临时许可规则因国家而异。"
+      },
+      {
+        "en": "Ouwen assists with temporary driving permits and local traffic rules in English.",
+        "cn": "欧闻协助办理临时驾驶许可，并用英文讲解本地交规。"
+      },
+      {
+        "en": "Rental partners are vetted so you get a road-ready car fast.",
+        "cn": "租车伙伴经过筛选，让你快速开上合规车辆。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "Temporary driving permit + vetted rentals",
+        "cn": "临时驾驶许可 + 精选租车"
+      }
+    ],
+    "tip": {
+      "en": "Get an official translation of your license before you arrive — it speeds up the temporary-permit process significantly.",
+      "cn": "出发前办好驾照官方翻译件——能显著加快临时许可办理。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan Transport Bureau",
+        "label_cn": "海南省交通运输厅",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "22": {
+    "highlights": [
+      {
+        "en": "Company registration, tax, social security and legal — usually high cost and high complexity.",
+        "cn": "公司注册、税务、社保、法务——通常成本高、流程复杂。"
+      },
+      {
+        "en": "Ouwen's Business Partner handles registration → EF-account opening → bookkeeping/tax → talent subsidies in one stop.",
+        "cn": "欧闻「企业伙伴」一站搞定：注册 → EF 开户 → 记账报税 → 人才补贴申请。"
+      },
+      {
+        "en": "Hainan's Free Trade Port adds extra incentives worth structuring for.",
+        "cn": "海南自贸港的政策红利值得提前做好架构规划。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "One-stop: registration + account + bookkeeping + subsidies",
+        "cn": "一站式：注册 + 开户 + 记账 + 补贴"
+      }
+    ],
+    "tip": {
+      "en": "Choose your business scope wording carefully at registration — it determines which 'encouraged industries' incentives you can later claim.",
+      "cn": "注册时务必斟酌经营范围表述——它决定你之后能申请哪些「鼓励类产业」政策。"
+    },
+    "official_links": [
+      {
+        "label_en": "en.hainan.gov.cn — invest",
+        "label_cn": "海南政府网——投资",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "23": {
+    "highlights": [
+      {
+        "en": "The 15% personal income tax cap applies to eligible high-level talent.",
+        "cn": "15% 个税封顶适用于符合条件的高层次人才。"
+      },
+      {
+        "en": "Eligibility: ≥183 days per year in Hainan (with ≥90 actual days in the tax year).",
+        "cn": "条件：在海南累计居住满 183 天（其中年度内在海南实际工作满 90 天）。"
+      },
+      {
+        "en": "Ouwen checks your eligibility and helps you structure and file.",
+        "cn": "欧闻核查你的资格，并协助架构与申报。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "15% personal income tax cap",
+        "cn": "15% 个税封顶"
+      },
+      {
+        "en": "≥183 days/year in Hainan",
+        "cn": "在海南满 183 天/年"
+      }
+    ],
+    "tip": {
+      "en": "Track your Hainan residence days from day one — the 183-day test is decided by records, not memory.",
+      "cn": "从第一天起记录在琼天数——183 天的认定靠的是记录，不是记忆。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan Policy Query (English)",
+        "label_cn": "海南政策查询（英文版）",
+        "url": "https://policy.hnftp.gov.cn"
+      }
+    ]
+  },
+  "24": {
+    "highlights": [
+      {
+        "en": "International school seats are tight and admissions complex.",
+        "cn": "国际学校名额紧张、录取流程复杂。"
+      },
+      {
+        "en": "Ouwen's Education Planning covers school comparison, admission assistance and policy interpretation.",
+        "cn": "欧闻「教育规划」涵盖择校对比、入学协助与政策解读。"
+      },
+      {
+        "en": "Parent meetups connect you with families who've already navigated it.",
+        "cn": "家长聚会让你认识已经走通这条路的家庭。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "School comparison + admission + parent meetups",
+        "cn": "择校 + 入学 + 家长聚会"
+      }
+    ],
+    "tip": {
+      "en": "Start admissions 6–12 months early — top international schools in Hainan fill their foreigner quotas fast.",
+      "cn": "提前 6–12 个月启动入学——海南优质国际学校的外籍名额很快报满。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan Education Dept",
+        "label_cn": "海南省教育厅",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "25": {
+    "highlights": [
+      {
+        "en": "Foreigners buying property face special purchase policy and legal/tax complexity.",
+        "cn": "外国人购房适用特殊政策，涉及法律与税务复杂性。"
+      },
+      {
+        "en": "Ouwen's Settling Advisor works with compliant agents and interprets purchase/rent policy.",
+        "cn": "欧闻「安家顾问」对接合规中介，解读买卖与租赁政策。"
+      },
+      {
+        "en": "Transaction accompaniment covers due diligence through closing.",
+        "cn": "交易陪同覆盖从尽调到过户全程。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "Compliant agents + transaction accompaniment",
+        "cn": "合规中介 + 交易陪同"
+      }
+    ],
+    "tip": {
+      "en": "Verify the developer's five permits and the land-use rights before any deposit — this is the single most important check.",
+      "cn": "交任何定金前，先核实开发商的「五证」与土地使用权——这是最重要的一项核查。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan Housing authority",
+        "label_cn": "海南省住建部门",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "26": {
+    "highlights": [
+      {
+        "en": "Cross-border salary repatriation faces foreign-exchange controls.",
+        "cn": "跨境工资汇回面临外汇管制。"
+      },
+      {
+        "en": "Ouwen's Cross-border Finance Bridge uses EF accounts for compliant salary outflow and settlement.",
+        "cn": "欧闻「跨境金融桥」通过 EF 账户合规办理工资汇出与结汇。"
+      },
+      {
+        "en": "Small-amount instant FX swap covers your day-to-day needs.",
+        "cn": "小额即时换汇满足日常所需。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "EF-account-based salary outflow",
+        "cn": "基于 EF 账户的工资汇出"
+      }
+    ],
+    "tip": {
+      "en": "Keep your employment contract and tax records — they are the documents that prove legitimate income for compliant remittance.",
+      "cn": "保留劳动合同与完税记录——这是证明收入合规、顺利汇出的关键材料。"
+    },
+    "official_links": [
+      {
+        "label_en": "PBOC Hainan Branch — EF Account",
+        "label_cn": "人民银行海南省分行——EF 账户",
+        "url": "https://www.pbc.gov.cn"
+      }
+    ]
+  },
+  "27": {
+    "highlights": [
+      {
+        "en": "Family reunification visas and dependents' status are confusing.",
+        "cn": "家庭团聚签证与随行家属身份令人困惑。"
+      },
+      {
+        "en": "Q1/Q2 residence permits cover spouse, parents and children.",
+        "cn": "Q1/Q2 居留许可覆盖配偶、父母、子女。"
+      },
+      {
+        "en": "Dependents can join your work/residence permit.",
+        "cn": "家属可随你的工作/居留许可一同办理。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "Q1/Q2 residence permits for family",
+        "cn": "Q1/Q2 居留许可（家庭）"
+      }
+    ],
+    "tip": {
+      "en": "Prepare notarised and authenticated relationship certificates (marriage/birth) in advance — they are the most common missing piece.",
+      "cn": "提前办妥经公证认证的关系证明（结婚/出生）——这是最常缺失的材料。"
+    },
+    "official_links": [
+      {
+        "label_en": "National Immigration Administration",
+        "label_cn": "国家移民管理局",
+        "url": "https://www.nia.gov.cn"
+      }
+    ]
+  },
+  "28": {
+    "highlights": [
+      {
+        "en": "No clear long-term path from first landing to permanent residency.",
+        "cn": "从落地到永居之间缺乏清晰的长期路径。"
+      },
+      {
+        "en": "The roadmap: residence → work permit → talent status → permanent residence eligibility.",
+        "cn": "路线图：居留 → 工作许可 → 人才身份 → 永居资格。"
+      },
+      {
+        "en": "Owen builds a personalised long-term plan for your situation.",
+        "cn": "欧闻为你量身定制长期规划。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "4-step roadmap to permanent residency",
+        "cn": "通往永居的 4 步路线图"
+      }
+    ],
+    "tip": {
+      "en": "Permanent residence is a marathon, not a sprint — each earlier step (talent certification, tax records) compounds later.",
+      "cn": "永居是马拉松而非冲刺——早先每一步（人才认定、完税记录）都会在后期叠加优势。"
+    },
+    "official_links": [
+      {
+        "label_en": "en.hainan.gov.cn — talent",
+        "label_cn": "海南政府网——人才",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "29": {
+    "highlights": [
+      {
+        "en": "Carry a doctor's note and the original prescription for personal medicines.",
+        "cn": "个人药品随身携带医生证明和原始处方。"
+      },
+      {
+        "en": "Controlled or restricted items must be declared at customs on entry.",
+        "cn": "受控/受限物品须在入境时向海关申报。"
+      },
+      {
+        "en": "Confirm recommended vaccinations for your itinerary before departure.",
+        "cn": "出发前确认行程所需的推荐疫苗。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "Personal meds = doctor's note + prescription",
+        "cn": "个人药品 = 医生证明 + 处方"
+      }
     ],
     "official_links": [
-      { "label_en": "General Administration of Customs (China)", "label_cn": "中国海关总署", "url": "https://www.customs.gov.cn" }
+      {
+        "label_en": "General Administration of Customs (China)",
+        "label_cn": "中国海关总署",
+        "url": "https://www.customs.gov.cn"
+      }
     ],
     "tip": {
       "en": "Keep medicines in their original labelled packaging and carry only the quantity needed for your trip — bulk unlabelled pills invite customs questions.",
       "cn": "药品保留原厂标签包装，只带行程所需用量——散装无标签药片最容易引来海关问询。"
     }
   },
-  "33": {
+  "30": {
     "highlights": [
-      { "en": "Declare RMB cash of ¥20,000 or more on entry/exit.", "cn": "携带人民币现金 ≥2 万元须申报。" },
-      { "en": "Declare foreign currency of USD 5,000 or more (or equivalent).", "cn": "携带外币 ≥5000 美元（或等值）须申报。" },
-      { "en": "Know the red (goods to declare) and green (nothing to declare) channel rules before you board.", "cn": "登机前搞清红色（申报）与绿色（无申报）通道规则。" }
+      {
+        "en": "Your work or residence permit stalls without the required physical exam at a designated hospital.",
+        "cn": "缺了指定医院的体检，工作/居留许可申请会卡住。"
+      },
+      {
+        "en": "The exam must be done at an International Travel Healthcare Center.",
+        "cn": "体检须在国际旅行卫生保健中心进行。"
+      },
+      {
+        "en": "Ouwen books the appointment, walks you through each item and delivers the sealed record on time.",
+        "cn": "欧闻代约、逐项陪同，并按时送达密封的《外国人体格检查记录》。"
+      }
     ],
     "facts": [
-      { "en": "¥20,000 RMB cash declaration threshold", "cn": "人民币现金申报线 2 万元" },
-      { "en": "USD 5,000 foreign currency threshold", "cn": "外币申报线 5000 美元" }
+      {
+        "en": "Sealed Foreigner Physical Exam Record",
+        "cn": "密封《外国人体格检查记录》"
+      }
+    ],
+    "tip": {
+      "en": "Do the medical check early — it is a common last-minute blocker that can push your whole application back.",
+      "cn": "体检要趁早——这是最容易临门一脚卡住的环节，会拖慢整个申请。"
+    },
+    "official_links": [
+      {
+        "label_en": "National Immigration Administration",
+        "label_cn": "国家移民管理局",
+        "url": "https://www.nia.gov.cn"
+      }
+    ]
+  },
+  "31": {
+    "highlights": [
+      {
+        "en": "Typhoons hit Hainan often in summer and autumn — foreigners don't know the colour signals.",
+        "cn": "夏秋海南台风多发——外国人看不懂颜色预警信号。"
+      },
+      {
+        "en": "Each colour (blue/yellow/orange/red) signals a different threat level and action.",
+        "cn": "蓝/黄/橙/红四级预警对应不同危险等级与应对措施。"
+      },
+      {
+        "en": "Ouwen sends bilingual typhoon alerts with a step-by-step safety checklist.",
+        "cn": "欧闻推送双语台风预警与分步避险清单。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "4 warning levels: blue / yellow / orange / red",
+        "cn": "四级预警：蓝/黄/橙/红"
+      }
+    ],
+    "tip": {
+      "en": "Stock water, food and a power bank when an orange signal is issued — and stay indoors for red.",
+      "cn": "发布橙色预警时备好水、食物和充电宝——红色预警则务必待在室内。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan Provincial Government — Emergency Management",
+        "label_cn": "海南省政府——应急管理",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "32": {
+    "highlights": [
+      {
+        "en": "Only 'encouraged industries' qualify for the 15% corporate income tax rate (vs standard 25%).",
+        "cn": "只有「鼓励类产业」可享 15% 企业所得税（标准为 25%）。"
+      },
+      {
+        "en": "A substantive-operation requirement must be met in Hainan.",
+        "cn": "须满足在海南实质经营的要求。"
+      },
+      {
+        "en": "Owen checks your business scope against the catalogue and helps you file.",
+        "cn": "欧闻对照目录核查你的经营范围，并协助申报。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "15% corporate tax vs 25% standard",
+        "cn": "企业所得税 15%（标准 25%）"
+      }
+    ],
+    "tip": {
+      "en": "The 'substantive operation' test looks at staff, premises and management in Hainan — structure this early, not after the fact.",
+      "cn": "「实质经营」要看在琼的人员、场所与管理——要尽早规划，而非事后补救。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan Policy Query (English)",
+        "label_cn": "海南政策查询（英文版）",
+        "url": "https://policy.hnftp.gov.cn"
+      }
+    ]
+  },
+  "33": {
+    "highlights": [
+      {
+        "en": "Declare RMB cash of ¥20,000 or more on entry/exit.",
+        "cn": "携带人民币现金 ≥2 万元须申报。"
+      },
+      {
+        "en": "Declare foreign currency of USD 5,000 or more (or equivalent).",
+        "cn": "携带外币 ≥5000 美元（或等值）须申报。"
+      },
+      {
+        "en": "Know the red (goods to declare) and green (nothing to declare) channel rules before you board.",
+        "cn": "登机前搞清红色（申报）与绿色（无申报）通道规则。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "¥20,000 RMB cash declaration threshold",
+        "cn": "人民币现金申报线 2 万元"
+      },
+      {
+        "en": "USD 5,000 foreign currency threshold",
+        "cn": "外币申报线 5000 美元"
+      }
     ],
     "official_links": [
-      { "label_en": "General Administration of Customs (China)", "label_cn": "中国海关总署", "url": "https://www.customs.gov.cn" }
+      {
+        "label_en": "General Administration of Customs (China)",
+        "label_cn": "中国海关总署",
+        "url": "https://www.customs.gov.cn"
+      }
     ],
     "tip": {
       "en": "Undisclosed cash over the limit risks fines or confiscation — declare at the red channel and keep the receipt.",
       "cn": "超额现金不申报有罚款或没收风险——走红色通道主动申报并保留凭证。"
     }
   },
-  "37": {
+  "34": {
     "highlights": [
-      { "en": "China requires an ISO-standard microchip, an up-to-date rabies vaccine and an official health certificate.", "cn": "中国要求 ISO 标准芯片、有效狂犬疫苗和官方健康证明。" },
-      { "en": "Pets must enter through a designated port — or face quarantine.", "cn": "宠物须从指定口岸入境——否则会被隔离。" },
-      { "en": "Start the paperwork 30+ days early; requirements vary by origin country.", "cn": "至少提前 30 天备材料；不同来源国要求不同。" }
+      {
+        "en": "A Z visa must be converted into a residence permit within 30 days of entry.",
+        "cn": "Z 字签证须在入境后 30 天内换发居留许可。"
+      },
+      {
+        "en": "Miss the 30-day window and you are effectively overstaying.",
+        "cn": "错过 30 天窗口，就相当于逾期居留。"
+      },
+      {
+        "en": "Ouwen books your Exit-Entry Administration appointment and prepares the full dossier.",
+        "cn": "欧闻代约出入境管理局，备齐完整材料。"
+      }
     ],
     "facts": [
-      { "en": "3 core requirements: ISO chip + rabies shot + health certificate", "cn": "三大要件：ISO 芯片 + 狂犬疫苗 + 健康证明" },
-      { "en": "30+ days lead time", "cn": "至少提前 30 天" }
+      {
+        "en": "30 days to convert Z visa",
+        "cn": "30 天内换发 Z 签"
+      },
+      {
+        "en": "Dossier: work permit card + medical record + housing registration",
+        "cn": "材料：工作许可卡 + 体检记录 + 住宿登记"
+      }
+    ],
+    "tip": {
+      "en": "Book your appointment the week you land — popular offices fill up fast and the clock is already running.",
+      "cn": "落地当周就约号——热门窗口号源紧张，而倒计时早已开始。"
+    },
+    "official_links": [
+      {
+        "label_en": "National Immigration Administration",
+        "label_cn": "国家移民管理局",
+        "url": "https://www.nia.gov.cn"
+      }
+    ]
+  },
+  "35": {
+    "highlights": [
+      {
+        "en": "Hainan has a high-speed rail loop linking Haikou, Sanya and every major city.",
+        "cn": "海南环岛高铁串起海口、三亚及各主要城市。"
+      },
+      {
+        "en": "The full loop is about 653 km and roughly 3 hours — one ticket goes a long way.",
+        "cn": "环岛全程约 653 公里、约 3 小时——一张票走很长的路。"
+      },
+      {
+        "en": "Book with a foreign passport via the official app or station counters.",
+        "cn": "用外国护照可通过官方 App 或车站窗口购票。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "~653 km island loop",
+        "cn": "环岛约 653 公里"
+      },
+      {
+        "en": "~3 hours for the full loop",
+        "cn": "环岛约 3 小时"
+      }
+    ],
+    "tip": {
+      "en": "Skip taxis and flights for island hops — the high-speed rail is usually faster, cheaper and smoother.",
+      "cn": "岛内出行别选打车或飞机——高铁通常更快、更便宜、更平稳。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan Provincial Government",
+        "label_cn": "海南省政府",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "36": {
+    "highlights": [
+      {
+        "en": "Hainan certifies high-level talent in A/B/C classes with real perks.",
+        "cn": "海南按 A/B/C 类认定高层次人才，附真金白银的福利。"
+      },
+      {
+        "en": "Perks include housing subsidies, tax incentives and school-priority access.",
+        "cn": "福利含住房补贴、税收优惠与子女入学优先。"
+      },
+      {
+        "en": "Owen checks your qualifications against the catalogue and files the certification.",
+        "cn": "欧闻对照目录核查资质，并代你申报认定。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "3 talent classes: A / B / C",
+        "cn": "3 类人才：A / B / C"
+      }
+    ],
+    "tip": {
+      "en": "Talent certification is the gateway that unlocks the 15% tax rate and school priority — apply for it as soon as you qualify.",
+      "cn": "人才认定是解锁 15% 税率与入学优先的钥匙——一旦够格就尽早申报。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan FTP International Service Portal — Talent",
+        "label_cn": "海南自贸港国际服务门户——人才",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "37": {
+    "highlights": [
+      {
+        "en": "China requires an ISO-standard microchip, an up-to-date rabies vaccine and an official health certificate.",
+        "cn": "中国要求 ISO 标准芯片、有效狂犬疫苗和官方健康证明。"
+      },
+      {
+        "en": "Pets must enter through a designated port — or face quarantine.",
+        "cn": "宠物须从指定口岸入境——否则会被隔离。"
+      },
+      {
+        "en": "Start the paperwork 30+ days early; requirements vary by origin country.",
+        "cn": "至少提前 30 天备材料；不同来源国要求不同。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "3 core requirements: ISO chip + rabies shot + health certificate",
+        "cn": "三大要件：ISO 芯片 + 狂犬疫苗 + 健康证明"
+      },
+      {
+        "en": "30+ days lead time",
+        "cn": "至少提前 30 天"
+      }
     ],
     "official_links": [
-      { "label_en": "General Administration of Customs (China)", "label_cn": "中国海关总署", "url": "https://www.customs.gov.cn" }
+      {
+        "label_en": "General Administration of Customs (China)",
+        "label_cn": "中国海关总署",
+        "url": "https://www.customs.gov.cn"
+      }
     ],
     "tip": {
       "en": "Check which ports accept pets for your route — not every port clears animals, and flying into the wrong one can mean quarantine.",
       "cn": "务必确认你的航线经停哪些口岸可携宠入境——并非所有口岸都清关宠物，飞错口岸可能面临隔离。"
     }
   },
-  "41": {
+  "38": {
     "highlights": [
-      { "en": "International flight tickets bought in China are eligible for VAT refund (up to a CNY 100,000 cap).", "cn": "在中国境内购买的国际机票可申请增值税退税（上限 10 万元）。" },
-      { "en": "Hainan adds its own island-departure tax-refund scheme for eligible flights.", "cn": "海南另有离岛退税政策，适用于符合条件的航班。" },
-      { "en": "Not all airlines participate — check before booking.", "cn": "并非所有航司都参与——购票前先确认。" }
+      {
+        "en": "Social insurance coverage starts from your first work day — even during probation.",
+        "cn": "社保自入职第一天起生效——试用期也不例外。"
+      },
+      {
+        "en": "Your employer must register you within 30 days of employment.",
+        "cn": "用人单位须在用工之日起 30 日内为你参保登记。"
+      },
+      {
+        "en": "Hainan's five-insurance system: pension, medical, unemployment, work injury, maternity.",
+        "cn": "海南五险：养老、医疗、失业、工伤、生育。"
+      }
     ],
     "facts": [
-      { "en": "CNY 100,000 VAT-refund cap for international flights", "cn": "国际航班增值税退税上限 10 万元" }
+      {
+        "en": "5 insurances: pension / medical / unemployment / injury / maternity",
+        "cn": "五险：养老/医疗/失业/工伤/生育"
+      },
+      {
+        "en": "30-day employer registration duty",
+        "cn": "用人单位 30 日登记义务"
+      }
+    ],
+    "tip": {
+      "en": "Verify your coverage online shortly after starting — don't just assume your employer handled it.",
+      "cn": "入职后不久就上网核查自己的参保状态——别默认公司已经办好。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan Human Resources & Social Security",
+        "label_cn": "海南省人力资源和社会保障厅",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "39": {
+    "highlights": [
+      {
+        "en": "Haikou, Sanya and other cities enforce mandatory waste sorting with fines.",
+        "cn": "海口、三亚等城市强制垃圾分类，违规有罚款。"
+      },
+      {
+        "en": "The four categories: recyclable, kitchen, hazardous and other.",
+        "cn": "四类：可回收物、厨余垃圾、有害垃圾、其他垃圾。"
+      },
+      {
+        "en": "Ouwen's bilingual sorting chart plus a neighbourhood guide removes the guesswork.",
+        "cn": "欧闻双语分类图 + 社区指南，让分类不再靠猜。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "4 bins: recyclable / kitchen / hazardous / other",
+        "cn": "四类桶：可回收/厨余/有害/其他"
+      }
+    ],
+    "tip": {
+      "en": "Batteries and light bulbs are hazardous, not 'other' — that's the most common mistake that earns a fine.",
+      "cn": "电池、灯泡属有害垃圾而非「其他」——这是最容易吃罚单的错误。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan Provincial Government",
+        "label_cn": "海南省政府",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "40": {
+    "highlights": [
+      {
+        "en": "Foreign residents must file an annual individual income tax reconciliation in China.",
+        "cn": "外籍居民须在中国办理个税年度汇算。"
+      },
+      {
+        "en": "The March–June window is also when Hainan's 15% incentive gets applied.",
+        "cn": "3–6 月窗口期也正是海南 15% 优惠落实的时段。"
+      },
+      {
+        "en": "Owen reminds you every March and completes the settlement for you.",
+        "cn": "欧闻每年 3 月提醒，并代你完成汇算。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "March–June annual filing window",
+        "cn": "3–6 月年度申报期"
+      }
+    ],
+    "tip": {
+      "en": "Mark March in your calendar every year — missing the annual settlement can mean penalties and a lost 15% refund.",
+      "cn": "每年在日历上标记 3 月——错过年度汇算可能面临滞纳金，还错失 15% 退税。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan Policy Query (English)",
+        "label_cn": "海南政策查询（英文版）",
+        "url": "https://policy.hnftp.gov.cn"
+      }
+    ]
+  },
+  "41": {
+    "highlights": [
+      {
+        "en": "International flight tickets bought in China are eligible for VAT refund (up to a CNY 100,000 cap).",
+        "cn": "在中国境内购买的国际机票可申请增值税退税（上限 10 万元）。"
+      },
+      {
+        "en": "Hainan adds its own island-departure tax-refund scheme for eligible flights.",
+        "cn": "海南另有离岛退税政策，适用于符合条件的航班。"
+      },
+      {
+        "en": "Not all airlines participate — check before booking.",
+        "cn": "并非所有航司都参与——购票前先确认。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "CNY 100,000 VAT-refund cap for international flights",
+        "cn": "国际航班增值税退税上限 10 万元"
+      }
     ],
     "official_links": [
-      { "label_en": "State Taxation Administration (China)", "label_cn": "国家税务总局", "url": "https://www.chinatax.gov.cn" }
+      {
+        "label_en": "State Taxation Administration (China)",
+        "label_cn": "国家税务总局",
+        "url": "https://www.chinatax.gov.cn"
+      }
     ],
     "tip": {
       "en": "Keep your e-ticket itinerary/receipt and boarding pass — both are usually required to claim the refund.",
       "cn": "保留电子行程单和登机牌——申请退税时通常两者都需要。"
     }
   },
-  "45": {
+  "42": {
     "highlights": [
-      { "en": "Complete China's entry health declaration via the 'Customs Pocket Declaration' (海关旅客指尖服务) WeChat mini-program before you board.", "cn": "登机前通过「海关旅客指尖服务」微信小程序完成入境健康申报。" },
-      { "en": "Alternatively use the web portal htdecl.chinaport.gov.cn or the China Customs App.", "cn": "也可通过网页 htdecl.chinaport.gov.cn 或中国海关 App 办理。" },
-      { "en": "Save the QR code and present it at customs on arrival.", "cn": "保存二维码，入境时向海关出示。" }
+      {
+        "en": "After signing a lease, transfer water, power, gas and broadband into your name.",
+        "cn": "签完租约后，把水、电、气、宽带过户到自己名下。"
+      },
+      {
+        "en": "Hainan uses tiered electricity pricing — the more you use, the higher the rate.",
+        "cn": "海南实行阶梯电价——用得越多，单价越高。"
+      },
+      {
+        "en": "Set up WeChat/Alipay auto-pay so every bill settles on time.",
+        "cn": "开通微信/支付宝自动缴费，账单准时结清。"
+      }
     ],
     "facts": [
-      { "en": "3 ways to declare: WeChat mini-program / web / App", "cn": "3 种申报方式：小程序 / 网页 / App" }
+      {
+        "en": "Tiered electricity pricing",
+        "cn": "阶梯电价"
+      },
+      {
+        "en": "4 utilities: water / power / gas / broadband",
+        "cn": "四类：水/电/气/宽带"
+      }
+    ],
+    "tip": {
+      "en": "Ask the landlord for the last bill before you move in — it confirms the account numbers and avoids paying the previous tenant's arrears.",
+      "cn": "入住前向房东要上一期账单——既能确认户号，又能避免替前任住户补缴欠费。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan Provincial Government — Living Services",
+        "label_cn": "海南省政府——生活服务",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "43": {
+    "highlights": [
+      {
+        "en": "China's emergency numbers: police 110, fire 119, ambulance 120.",
+        "cn": "中国应急电话：报警 110、火警 119、急救 120。"
+      },
+      {
+        "en": "12345 is the government service hotline with English support.",
+        "cn": "12345 是政务服务热线，含英语服务。"
+      },
+      {
+        "en": "Ouwen gives you a bilingual emergency card to keep on your phone's home screen.",
+        "cn": "欧闻提供双语应急卡，放在手机首屏随时取用。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "110 / 119 / 120 + 12345",
+        "cn": "110 / 119 / 120 + 12345"
+      }
+    ],
+    "tip": {
+      "en": "Save these as home-screen widgets or lock-screen notes — in an emergency you won't have time to search.",
+      "cn": "把这些做成首屏小组件或锁屏便签——紧急关头没时间翻找。"
+    },
+    "official_links": [
+      {
+        "label_en": "Hainan Provincial Government — 12345 Service Hotline",
+        "label_cn": "海南省政府——12345 服务热线",
+        "url": "https://en.hainan.gov.cn"
+      }
+    ]
+  },
+  "44": {
+    "highlights": [
+      {
+        "en": "Hainan Free Trade Port lets manufacturers import machinery and raw materials duty-free.",
+        "cn": "海南自贸港允许制造企业免税进口机器设备与原材料。"
+      },
+      {
+        "en": "Products with over 30% local value-add re-enter the domestic market tariff-free.",
+        "cn": "加工增值超过 30% 的产品，可免税销往内地市场。"
+      },
+      {
+        "en": "Owen checks your business against the zero-tariff positive list and files the customs recordation.",
+        "cn": "欧闻对照零关税正面清单核查，并代办海关备案。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "30% value-add rule",
+        "cn": "加工增值 30% 规则"
+      }
+    ],
+    "tip": {
+      "en": "The 30% value-add calculation is technical — get it right at the customs recordation stage, not during an audit.",
+      "cn": "30% 增值的计算很专业——要在海关备案阶段就做对，而不是等稽查时才补救。"
+    },
+    "official_links": [
+      {
+        "label_en": "General Administration of Customs (China)",
+        "label_cn": "中国海关总署",
+        "url": "https://www.customs.gov.cn"
+      }
+    ]
+  },
+  "45": {
+    "highlights": [
+      {
+        "en": "Complete China's entry health declaration via the 'Customs Pocket Declaration' (海关旅客指尖服务) WeChat mini-program before you board.",
+        "cn": "登机前通过「海关旅客指尖服务」微信小程序完成入境健康申报。"
+      },
+      {
+        "en": "Alternatively use the web portal htdecl.chinaport.gov.cn or the China Customs App.",
+        "cn": "也可通过网页 htdecl.chinaport.gov.cn 或中国海关 App 办理。"
+      },
+      {
+        "en": "Save the QR code and present it at customs on arrival.",
+        "cn": "保存二维码，入境时向海关出示。"
+      }
+    ],
+    "facts": [
+      {
+        "en": "3 ways to declare: WeChat mini-program / web / App",
+        "cn": "3 种申报方式：小程序 / 网页 / App"
+      }
     ],
     "official_links": [
-      { "label_en": "Health declaration web portal", "label_cn": "健康申报网页入口", "url": "https://htdecl.chinaport.gov.cn/htdeclweb/home/pages/index/index.html" },
-      { "label_en": "General Administration of Customs (China)", "label_cn": "中国海关总署", "url": "https://www.customs.gov.cn" }
+      {
+        "label_en": "Health declaration web portal",
+        "label_cn": "健康申报网页入口",
+        "url": "https://htdecl.chinaport.gov.cn/htdeclweb/home/pages/index/index.html"
+      },
+      {
+        "label_en": "General Administration of Customs (China)",
+        "label_cn": "中国海关总署",
+        "url": "https://www.customs.gov.cn"
+      }
     ],
     "tip": {
       "en": "Do it 24 hours before arrival and screenshot the QR code — airport WiFi can be slow, and a saved code gets you through faster.",
       "cn": "抵达前 24 小时内填写并截图保存二维码——机场 WiFi 可能很慢，存好的码能让你更快通关。"
     }
+  },
+  "meta": {
+    "note": "Daily guide detail page extension data. Each key = day number. Populated from authoritative official sources (en.hainan.gov.cn / policy.hnftp.gov.cn / nia.gov.cn / pbc.gov.cn / customs.gov.cn / chinatax.gov.cn). Populated from authoritative official sources. Entries without a key fall back to the base calendar content.",
+    "updated": "2026-09-03"
   }
 }
