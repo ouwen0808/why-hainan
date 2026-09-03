@@ -1,0 +1,182 @@
+[
+  {
+    "day": 1,
+    "emoji": "🛂",
+    "title": "Do I even need a visa? 86 countries don't.",
+    "title_cn": "我需要签证吗？86 个国家不需要",
+    "pain": "Uncertain which visa type applies and how long it takes.",
+    "pain_cn": "不确定适用哪种签证类型，也不清楚需要多长时间。",
+    "solution": "86 countries enter visa-free for 30 days (tourism, business, family, medical, exhibitions, sports). For work use Z, study X1/X2, family Q1/Q2.",
+    "solution_cn": "86 国人员免签入境 30 天（旅游/商务/探亲/医疗/会展/体育）。工作用 Z 签，学习用 X1/X2，家庭团聚用 Q1/Q2。",
+    "source": {
+      "name": "Hainan FTP International Service Portal",
+      "name_cn": "海南自贸港国际服务门户",
+      "url": "https://en.hainan.gov.cn"
+    }
+  },
+  {
+    "day": 2,
+    "emoji": "📋",
+    "title": "The Z-visa document checklist, decoded.",
+    "title_cn": "Z 字签证材料清单，逐条拆解",
+    "pain": "Application materials feel complicated and unclear.",
+    "pain_cn": "申请材料繁琐、要求不清晰。",
+    "solution": "One-window service: work permit + residence permit together. We give you a standardised checklist and track progress.",
+    "solution_cn": "「一窗通办」：工作许可与居留许可一起办。我们提供标准化清单并全程跟踪进度。",
+    "source": {
+      "name": "Hainan Policy Query (English)",
+      "name_cn": "海南政策查询（英文版）",
+      "url": "https://policy.hnftp.gov.cn"
+    }
+  },
+  {
+    "day": 3,
+    "emoji": "🏨",
+    "title": "Where do I stay before I find 'home'?",
+    "title_cn": "在找到「家」之前，我住哪里？",
+    "pain": "Hard to find short/long-term housing suited to foreigners from abroad.",
+    "pain_cn": "人在境外，很难找到适合外国人的短期/长期住房。",
+    "solution": "'Arrival Package': airport pickup, transitional housing at partner hotels/apartments, initial essentials setup.",
+    "solution_cn": "「安心抵达套餐」：接机、合作酒店/公寓过渡住宿、初期生活用品配置。",
+    "source": {
+      "name": "en.hainan.gov.cn — Living services",
+      "name_cn": "海南政府网 — 生活服务",
+      "url": "https://en.hainan.gov.cn"
+    }
+  },
+  {
+    "day": 4,
+    "emoji": "💴",
+    "title": "Pre-load e-CNY before you even land.",
+    "title_cn": "落地前就预充值数字人民币",
+    "pain": "Worried about paying on arrival; unsure how to exchange money or open accounts.",
+    "pain_cn": "担心抵达时无法支付；不确定如何兑换货币或开户。",
+    "solution": "Pre-charge a digital-yuan (e-CNY) wallet from abroad — 210+ countries register by phone, anonymous wallet, no Chinese bank card needed.",
+    "solution_cn": "从境外预充值数字人民币钱包——支持 210+ 国家手机号注册、匿名钱包、无需境内银行卡。",
+    "source": {
+      "name": "PBOC — e-CNY for inbound visitors",
+      "name_cn": "人民银行 — 入境旅客数字人民币",
+      "url": "https://www.pbc.gov.cn"
+    }
+  },
+  {
+    "day": 5,
+    "emoji": "💳",
+    "title": "Visa, Mastercard, JCB — now work on WeChat & Alipay.",
+    "title_cn": "Visa、Mastercard、JCB——微信支付宝都能用了",
+    "pain": "Fear that only Chinese bank cards are accepted.",
+    "pain_cn": "担心只接受中国银行卡。",
+    "solution": "WeChat Pay & Alipay accept Visa / Mastercard / JCB / Amex / Discover. Foreign phone numbers supported.",
+    "solution_cn": "微信支付与支付宝支持 Visa/Mastercard/JCB/Amex/Discover，并支持境外手机号。",
+    "source": {
+      "name": "PBOC — Payment Guide for Foreigners",
+      "name_cn": "人民银行 — 外籍来华支付指南",
+      "url": "https://www.pbc.gov.cn"
+    }
+  },
+  {
+    "day": 6,
+    "emoji": "🗣️",
+    "title": "The language barrier starts before takeoff.",
+    "title_cn": "语言障碍，从起飞前就开始了",
+    "pain": "Worried about communicating in Chinese upon arrival.",
+    "pain_cn": "担心抵达后无法用中文沟通。",
+    "solution": "12345 hotline serves EN / RU / JA / KO; bilingual signage is mandated at airports and transport hubs.",
+    "solution_cn": "12345 热线提供英/俄/日/韩服务；机场及交通枢纽强制设置双语标识。",
+    "source": {
+      "name": "en.hainan.gov.cn",
+      "name_cn": "海南政府网",
+      "url": "https://en.hainan.gov.cn"
+    }
+  },
+  {
+    "day": 7,
+    "emoji": "✈️",
+    "title": "Three airports, direct from everywhere.",
+    "title_cn": "三大机场，全球直飞",
+    "pain": "Unfamiliar with entry ports and transport.",
+    "pain_cn": "不熟悉入境口岸和交通方式。",
+    "solution": "Haikou Meilan, Sanya Phoenix, Bo'ao airports — plus 144-hour transit via HK/Macau and 15-day cruise access.",
+    "solution_cn": "海口美兰、三亚凤凰、博鳌机场——另有经港/澳 144 小时过境免签及 15 天邮轮免签。",
+    "source": {
+      "name": "National Immigration Administration",
+      "name_cn": "国家移民管理局",
+      "url": "https://www.nia.gov.cn"
+    }
+  },
+  {
+    "day": 29,
+    "emoji": "💊",
+    "title": "Medicines & vaccinations: pack smart before you fly",
+    "title_cn": "药品与疫苗：起飞前聪明打包",
+    "pain": "Unsure which medicines you can bring into China, and whether you need vaccinations or health documents.",
+    "pain_cn": "不确定哪些药品能带入中国，是否需要疫苗或健康证明。",
+    "solution": "Ouwen's pre-trip health checklist: carry a doctor's note + prescription for personal meds, declare controlled items at customs, and confirm which vaccinations are recommended for your itinerary.",
+    "solution_cn": "欧闻行前健康清单：个人药品携带医生证明 + 处方、受控物品在海关申报、确认行程推荐疫苗。",
+    "source": {
+      "name": "General Administration of Customs (China)",
+      "name_cn": "中国海关总署",
+      "url": "https://www.customs.gov.cn"
+    }
+  },
+  {
+    "day": 33,
+    "emoji": "🛃",
+    "title": "Cash & customs: what you must declare when entering Hainan",
+    "title_cn": "现金与海关：入境海南必须申报什么",
+    "pain": "Foreigners don't know the cash limits and which items must be declared at Chinese customs, risking fines or confiscation.",
+    "pain_cn": "外籍人士不清楚入境现金限额和哪些物品必须向海关申报，有被罚款或没收的风险。",
+    "solution": "Ouwen's pre-flight customs checklist: declare RMB cash of ¥20,000+ or foreign currency of USD 5,000+, and know the red/green channel rules before you board.",
+    "solution_cn": "欧闻行前海关清单：人民币现金 ≥2 万或外币 ≥5000 美元须主动申报，并提前搞清红绿通道规则。",
+    "source": {
+      "name": "General Administration of Customs (China)",
+      "name_cn": "中国海关总署",
+      "url": "https://www.customs.gov.cn"
+    }
+  },
+  {
+    "day": 37,
+    "emoji": "🐾",
+    "title": "Bringing your pet to Hainan? Start the paperwork 30+ days early.",
+    "title_cn": "带宠物来海南？至少提前 30 天备材料",
+    "pain": "Foreigners relocating with a dog or cat don't realize China requires an ISO microchip, an up-to-date rabies vaccine, and an official health certificate, plus entry through a designated port — or their pet gets quarantined.",
+    "pain_cn": "带猫狗来琼的外籍人士不知道中国要求 ISO 芯片、有效狂犬疫苗和官方健康证明，且须从指定口岸入境——否则宠物会被隔离。",
+    "solution": "Ouwen's pet-arrival checklist maps every requirement by origin country, tells you which ports accept pets, and prepares the full certificate pack before you fly.",
+    "solution_cn": "欧闻宠物入境清单按来源国逐项列出要求、告知哪些口岸可携宠入境，并在起飞前备齐全套证明。",
+    "source": {
+      "name": "General Administration of Customs (China)",
+      "name_cn": "中国海关总署",
+      "url": "https://www.customs.gov.cn"
+    }
+  },
+  {
+    "day": 41,
+    "emoji": "🎫",
+    "title": "Book smart: the new flight-tax refund most visitors miss.",
+    "title_cn": "聪明购票：大多数访客不知道的国际航班离境退税",
+    "pain": "Foreign travellers don't know they can claim back value-added tax on plane tickets purchased in China — and that Hainan has its own additional refund scheme for island-bound flights.",
+    "pain_cn": "外籍旅客不知道可以申请中国境内购买的机票增值税退税，也不知道海南还有针对离岛航班的地方退税政策。",
+    "solution": "Ouwen walks you through the CNY 100k VAT-refund cap for international flights, Hainan's island-departure tax-refund eligibility, and which airlines participate.",
+    "solution_cn": "欧闻带你了解国际航班最高 10 万元增值税退税额度、海南离岛退税条件，以及参与航司名单。",
+    "source": {
+      "name": "State Taxation Administration (China)",
+      "name_cn": "国家税务总局",
+      "url": "https://www.chinatax.gov.cn"
+    }
+  },
+  {
+    "day": 45,
+    "emoji": "🌡️",
+    "title": "Fill out your China entry health declaration before you board",
+    "title_cn": "登机前填好中国入境健康申报",
+    "pain": "Many travellers arrive at the Hainan border without completing China's mandatory entry health declaration, causing delays at the checkpoint or being pulled aside to fill it out on the spot.",
+    "pain_cn": "不少旅客抵达海南口岸才发现没填中国入境健康申报，在边检排队或被要求现场补填。",
+    "solution": "Ouwen's pre-flight checklist shows you how to complete the health declaration via the 'Customs Pocket Declaration' WeChat mini-program (or paper form), save the QR code, and present it on arrival.",
+    "solution_cn": "欧闻行前清单教你通过「海关旅客指尖服务」微信小程序（或纸质版）完成健康申报、保存二维码并在入境时出示。",
+    "source": {
+      "name": "General Administration of Customs (China)",
+      "name_cn": "中国海关总署",
+      "url": "https://www.customs.gov.cn"
+    }
+  }
+]
