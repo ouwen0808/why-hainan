@@ -77,7 +77,18 @@
   .block p { font-size: 1rem; color: var(--gray-700); line-height: 1.75; }
   .block .cn-line { font-size: 0.92rem; color: var(--gray-500); margin-top: 8px; line-height: 1.7; }
   .pain-card { background: var(--red-bg); border-left: 4px solid var(--red); border-radius: 10px; padding: 18px 20px; }
-  .solution-card { background: var(--teal-bg); border-left: 4px solid var(--teal); border-radius: 10px; padding: 18px 20px; }
+  .solution-card { background: var(--teal-bg); border-left: 4px solid var(--teal); border-radius: 10px; padding: 20px 22px; }
+
+  /* Solution sentence list (long text → readable bullets) */
+  .sol-list { display: flex; flex-direction: column; gap: 12px; }
+  .sol-item { display: flex; gap: 12px; align-items: flex-start; }
+  .sol-item .tick { width: 22px; height: 22px; border-radius: 50%; background: var(--teal); color: #fff; font-size: 0.7rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 3px; box-shadow: 0 2px 6px rgba(13,148,136,0.3); }
+  .sol-item .txt { flex: 1; font-size: 1rem; color: var(--gray-700); line-height: 1.72; font-weight: 500; }
+  .cn-block { margin-top: 16px; padding-top: 16px; border-top: 1px dashed rgba(13,148,136,0.3); font-size: 0.9rem; color: var(--gray-500); line-height: 1.8; }
+  .cn-block::before { content: '中文对照 · '; font-weight: 700; color: var(--teal-dark); letter-spacing: 0.3px; }
+  .lang-toggle { display: inline-flex; gap: 6px; margin-top: 10px; }
+  .lang-toggle button { background: #fff; border: 1px solid var(--gray-200); color: var(--gray-500); font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 14px; cursor: pointer; transition: all 0.15s; }
+  .lang-toggle button.on { background: var(--teal); border-color: var(--teal); color: #fff; }
 
   .divider { height: 1px; background: var(--gray-200); margin: 30px 0; }
 
@@ -327,6 +338,29 @@
     return `<a class="${dir}" href="daily-detail.html?day=${it.day}"><div class="dir">${label} · Day ${it.day}</div><div class="ttl">${it.emoji} ${it.title}</div></a>`;
   }
 
+  // 把长段英文 solution 拆成可读要点列表（按句号/分号智能切分）
+  function splitSentences(text) {
+    if (!text) return [];
+    const parts = text
+      .replace(/\s+/g, ' ')
+      .split(/(?<=[.!?;])\s+(?=[A-Z0-9"'\u201c\u2018])/)
+      .map(s => s.trim())
+      .filter(s => s.length > 1);
+    // 若没拆成功（整段无大写开头句），退回整段
+    return parts.length ? parts : [text.trim()];
+  }
+
+  function solutionBlock() {
+    const sentences = splitSentences(item.solution);
+    const items = sentences.map(s => `
+      <div class="sol-item">
+        <div class="tick">✓</div>
+        <div class="txt">${s}</div>
+      </div>`).join('');
+    const cn = item.solution_cn ? `<div class="cn-block">${item.solution_cn}</div>` : '';
+    return `<div class="sol-list">${items}</div>${cn}`;
+  }
+
   // 同阶段其他天推荐
   function sameStageBlock() {
     const siblings = calendar
@@ -375,8 +409,7 @@
         <div class="block solution">
           <div class="block-head"><div class="block-icon">✅</div><h2>欧闻方案 · Ouwen's Solution</h2></div>
           <div class="solution-card">
-            <p>${item.solution}</p>
-            ${item.solution_cn ? '<div class="cn-line">' + item.solution_cn + '</div>' : ''}
+            ${solutionBlock()}
           </div>
         </div>
 
