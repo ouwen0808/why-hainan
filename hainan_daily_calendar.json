@@ -2323,10 +2323,11 @@
       }
     },
     {
+      "day": 46,
       "stage": 2,
+      "emoji": "📄",
       "title": "Signed a lease? Your rental still needs a filing",
       "title_cn": "签了租房合同？还要办租赁备案",
-      "emoji": "📄",
       "pain": "You signed a lease but skipped the official housing filing — the proof of address that school enrolment, residence permits and tax residency later ask for.",
       "pain_cn": "签了租赁合同，却漏了官方房屋租赁备案——而这正是日后子女入学、居留许可、税务居住认定都要用到的住址凭证。",
       "solution": "After signing a lease, the property should be registered with the housing authority, producing a filing receipt that proves your legal address. Ouwen reviews your contract, reminds your landlord to complete the filing, and files on your behalf when the landlord can't — so your paperwork never stalls at the next step.",
@@ -2336,7 +2337,12 @@
         "name_cn": "海南省住房和城乡建设厅",
         "url": "https://en.hainan.gov.cn"
       },
-      "day": 46
+      "extras": {
+        "highlights": [],
+        "facts": [],
+        "tip": null,
+        "official_links": []
+      }
     }
   ]
 }
