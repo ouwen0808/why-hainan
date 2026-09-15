@@ -92,6 +92,19 @@
   function unlocked() { try { return localStorage.getItem(UNLOCK_KEY) === '1'; } catch (e) { return false; } }
   function markUnlocked() { try { localStorage.setItem(UNLOCK_KEY, '1'); } catch (e) {} }
 
+  // 自动识别用户当前所在模块（页面），提交时记录来源
+  function detectModule() {
+    var page = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    var map = {
+      'index.html': '首页',
+      'daily-guide.html': '每日指南',
+      'daily-detail.html': '每日详情',
+      'hainan-quick-guide.html': '快速指南',
+      'showcase.html': '展示页'
+    };
+    return map[page] || '其他';
+  }
+
   /* ---------- 联系方式数据 ---------- */
   var contactCache = null;
   function fetchContact() {
@@ -166,6 +179,8 @@
       '<input class="whcw-input" id="whcw-phone" placeholder="+86 138xxxx">' +
       '<label class="whcw-label">Message · 留言（可选）</label>' +
       '<textarea class="whcw-input" id="whcw-msg" rows="2" placeholder="Anything you want to ask"></textarea>' +
+      '<label class="whcw-label">Remark · 备注（可选）</label>' +
+      '<textarea class="whcw-input" id="whcw-remark" rows="2" placeholder="Any additional notes"></textarea>' +
       '<button class="whcw-btn" id="whcw-send">Submit · 提交</button>' +
       '<p class="whcw-ok" id="whcw-ok"></p>' +
       '<p class="whcw-err" id="whcw-err"></p>';
@@ -179,13 +194,14 @@
       var name = body.querySelector('#whcw-name').value.trim();
       var phone = body.querySelector('#whcw-phone').value.trim();
       var msg = body.querySelector('#whcw-msg').value.trim();
+      var remark = body.querySelector('#whcw-remark').value.trim();
       if (!name) { err.textContent = 'Please enter your name · 请填写联系人'; ok.textContent = ''; return; }
       if (!phone) { err.textContent = 'Please enter your phone · 请填写电话'; ok.textContent = ''; return; }
       if (!isPhone(phone)) { err.textContent = 'Invalid phone number · 电话号码格式不正确'; ok.textContent = ''; return; }
       btn.disabled = true; btn.textContent = 'Submitting… · 提交中';
       fetch(API.contact, {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: name, phone: phone, email: '', message: msg })
+        body: JSON.stringify({ name: name, phone: phone, email: '', message: msg, remark: remark, module: detectModule() })
       }).then(function (r) {
         if (!r.ok) throw new Error('HTTP ' + r.status);
         return r.json();
@@ -196,6 +212,7 @@
         body.querySelector('#whcw-name').value = '';
         body.querySelector('#whcw-phone').value = '';
         body.querySelector('#whcw-msg').value = '';
+        body.querySelector('#whcw-remark').value = '';
       }).catch(function () {
         // 后端不可达：降级提示直接致电
         err.textContent = '';
