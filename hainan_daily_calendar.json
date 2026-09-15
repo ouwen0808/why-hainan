@@ -2345,10 +2345,11 @@
       }
     },
     {
+      "day": 47,
       "stage": 3,
+      "emoji": "🛒",
       "title": "Shop & eat without leaving home: Taobao, JD, Meituan & Eleme",
       "title_cn": "足不出户购物点餐：淘宝、京东、美团、饿了么",
-      "emoji": "🛒",
       "pain": "China's e-commerce and food-delivery apps are powerful but Chinese-only, so ordering food or shopping online feels impossible for newcomers.",
       "pain_cn": "中国的电商与外卖 APP 功能强大却全是中文，新来的外籍人士在线购物、点餐寸步难行。",
       "solution": "Ouwen walks you through Taobao, JD, Meituan and Eleme in English — account signup, entering your address, paying with your linked international card, and tracking deliveries to your door, so everything you need comes to you.",
@@ -2358,7 +2359,12 @@
         "name_cn": "人民银行 — 外籍来华支付指南",
         "url": "https://www.pbc.gov.cn"
       },
-      "day": 47
+      "extras": {
+        "highlights": [],
+        "facts": [],
+        "tip": null,
+        "official_links": []
+      }
     }
   ]
 }
