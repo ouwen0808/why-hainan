@@ -181,7 +181,7 @@
 <nav class="nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">🌴 Why<span>Hainan</span></a>
-    <a href="daily-guide.html" class="nav-back">← All Guides<span class="zh-only"> · 返回每日指南</span></a>
+    <a href="daily-guide.html" class="nav-back"><span class="en">← All Guides</span><span class="zh-only">← 返回每日指南</span></a>
   </div>
 </nav>
 
@@ -190,7 +190,7 @@
 </div>
 
 <div class="footer">
-  Built by <strong>Ouwen<span class="zh-only">（欧闻）</span></strong> · Your full-cycle local partner in Hainan.<br>
+  Built by <strong><span class="en">Ouwen</span><span class="zh-only">（欧闻）</span></strong> · <span class="en">Your full-cycle local partner in Hainan.</span><span class="zh-only">您在海南的全周期本地伙伴。</span><br>
   Authoritative sources: <a href="https://en.hainan.gov.cn" target="_blank" rel="noopener">en.hainan.gov.cn</a> ·
   <a href="https://policy.hnftp.gov.cn" target="_blank" rel="noopener">policy.hnftp.gov.cn</a> ·
   <a href="https://www.pbc.gov.cn" target="_blank" rel="noopener">pbc.gov.cn</a>
@@ -247,7 +247,7 @@
 
   const item = calendar.find(c => c.day === targetDay);
   if (!item) {
-    wrap.innerHTML = `<div class="notfound"><span class="big">🤔</span><h2>Day Not Found</h2><p>Please go back and choose again.<span class="zh-only"> 请返回列表重新选择。</span></p><div class="back-all"><a href="daily-guide.html">← All Guides</a></div></div>`;
+    wrap.innerHTML = `<div class="notfound"><span class="big">🤔</span><h2><span class="en">Day Not Found</span><span class="zh-only">找不到这一天</span></h2><p><span class="en">Please go back and choose again.</span><span class="zh-only">请返回列表重新选择。</span></p><div class="back-all"><a href="daily-guide.html"><span class="en">← All Guides</span><span class="zh-only">← 返回每日指南</span></a></div></div>`;
     document.title = 'Guide Not Found — Ouwen × Hainan';
     return;
   }
@@ -277,10 +277,12 @@
     const cur = item.stage;
     let dots = nums.map(n => {
       const cls = n === cur ? 'active' : (n < cur ? 'done' : '');
-      const name = stages[String(n)] ? stages[String(n)].label : ('Stage ' + n);
-      return `<div style="flex:1"><div class="dot ${cls}"></div><div class="dot-txt">${name}</div></div>`;
+      const st = stages[String(n)];
+      const nameEn = st ? st.label : ('Stage ' + n);
+      const nameCn = st ? (st.cn || ('阶段 ' + n)) : ('阶段 ' + n);
+      return `<div style="flex:1"><div class="dot ${cls}"></div><div class="dot-txt"><span class="en">${nameEn}</span><span class="zh-only">${nameCn}</span></div></div>`;
     }).join('');
-    return `<div class="stage-rail"><div class="rail-label">🗺️ Your Hainan Journey<span class="zh-only"> · 你的海南之旅</span></div><div class="dots">${dots}</div></div>`;
+    return `<div class="stage-rail"><div class="rail-label">🗺️ <span class="en">Your Hainan Journey</span><span class="zh-only">你的海南之旅</span></div><div class="dots">${dots}</div></div>`;
   }
 
   // 关键要点
@@ -294,7 +296,7 @@
           ${h.cn ? '<div class="cn">' + h.cn + '</div>' : ''}
         </div>
       </div>`).join('');
-    return `<div class="highlights"><h3>💡 Key Points<span class="zh-only"> · 关键要点</span></h3><div class="hl-list">${items}</div></div>`;
+    return `<div class="highlights"><h3>💡 <span class="en">Key Points</span><span class="zh-only">关键要点</span></h3><div class="hl-list">${items}</div></div>`;
   }
 
   // 关键数字
@@ -306,14 +308,14 @@
         <span class="fc-en">${f.en}</span>
         ${f.cn ? '<span class="fc-cn">' + f.cn + '</span>' : ''}
       </div>`).join('');
-    return `<div class="facts"><h3>🔢 At a Glance<span class="zh-only"> · 关键数字</span></h3><div class="fact-chips">${chips}</div></div>`;
+    return `<div class="facts"><h3>🔢 <span class="en">At a Glance</span><span class="zh-only">关键数字</span></h3><div class="fact-chips">${chips}</div></div>`;
   }
 
   // 实用提示
   function tipBlock() {
     if (!ext.tip) return '';
     return `<div class="tip">
-      <div class="tip-label">⚡ Pro Tip<span class="zh-only"> · 欧闻提醒</span></div>
+      <div class="tip-label">⚡ <span class="en">Pro Tip</span><span class="zh-only">欧闻提醒</span></div>
       <div class="tip-en">${ext.tip.en}</div>
       ${ext.tip.cn ? '<div class="tip-cn">' + ext.tip.cn + '</div>' : ''}
     </div>`;
@@ -331,12 +333,12 @@
         </span>
         <span class="li-arrow">→</span>
       </a>`).join('');
-    return `<div class="links"><h3>🏛️ Official Links<span class="zh-only"> · 官方直达</span></h3><div style="display:flex;flex-direction:column;gap:10px;">${items}</div></div>`;
+    return `<div class="links"><h3>🏛️ <span class="en">Official Links</span><span class="zh-only">官方直达</span></h3><div style="display:flex;flex-direction:column;gap:10px;">${items}</div></div>`;
   }
 
-  function pagerLink(it, dir, label) {
-    if (!it) return `<span class="${dir}" style="flex:1;opacity:0.4;background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius);padding:18px 20px;">${dir === 'prev' ? 'Newest' : 'Oldest'}</span>`;
-    return `<a class="${dir}" href="daily-detail.html?day=${it.day}"><div class="dir">${label} · Day ${it.day}</div><div class="ttl">${it.emoji} ${it.title}</div></a>`;
+  function pagerLink(it, dir, labelEn, labelCn) {
+    if (!it) return `<span class="${dir}" style="flex:1;opacity:0.4;background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius);padding:18px 20px;"><span class="en">${dir === 'prev' ? 'Newest' : 'Oldest'}</span><span class="zh-only">${dir === 'prev' ? '已是最新' : '已是最早'}</span></span>`;
+    return `<a class="${dir}" href="daily-detail.html?day=${it.day}"><div class="dir"><span class="en">${labelEn} · Day ${it.day}</span><span class="zh-only">${labelCn} · 第 ${it.day} 天</span></div><div class="ttl">${it.emoji} <span class="en">${it.title}</span><span class="zh-only">${it.title_cn || ''}</span></div></a>`;
   }
 
   // 把长段英文 solution 拆成可读要点列表（按句号/分号智能切分）
@@ -380,19 +382,19 @@
         <span class="rec-day">Day ${c.day}</span>
       </a>`;
     }).join('');
-    return `<div class="related"><h3 class="related-head">🗂️ More in ${s.label || ('Stage ' + item.stage)}<span class="zh-only"> · 同阶段其他天</span></h3><div class="rec-grid">${cards}</div></div>`;
+    return `<div class="related"><h3 class="related-head">🗂️ <span class="en">More in ${s.label || ('Stage ' + item.stage)}</span><span class="zh-only">同阶段其他天</span></h3><div class="rec-grid">${cards}</div></div>`;
   }
 
   wrap.innerHTML = `
-    <div class="breadcrumb"><a href="daily-guide.html">Daily Guide<span class="zh-only"> · 每日指南</span></a> / Day ${item.day}</div>
+    <div class="breadcrumb"><a href="daily-guide.html"><span class="en">Daily Guide</span><span class="zh-only">每日指南</span></a> / Day ${item.day}</div>
     <article class="article">
       <div class="hero">
         <span class="article-emoji">${item.emoji}</span>
         <div class="article-meta">
           <span class="day-badge">Day ${item.day}</span>
-          <span class="stage-badge s${item.stage}">Stage ${item.stage} · ${s.label || ''} ${s.emoji || ''}</span>
+          <span class="stage-badge s${item.stage}"><span class="en">Stage ${item.stage} · ${s.label || ''}</span><span class="zh-only">阶段 ${item.stage} · ${s.cn || ''}</span> ${s.emoji || ''}</span>
         </div>
-        <h1>${item.title}</h1>
+        <h1><span class="en">${item.title}</span><span class="zh-only">${item.title_cn || ''}</span></h1>
         ${item.title_cn ? '<div class="cn-title">' + item.title_cn + '</div>' : ''}
       </div>
 
@@ -400,15 +402,14 @@
 
       <div class="body">
         <div class="block pain">
-          <div class="block-head"><div class="block-icon">😣</div><h2>The Pain Point<span class="zh-only"> · 痛点</span></h2></div>
+          <div class="block-head"><div class="block-icon">😣</div><h2><span class="en">The Pain Point</span><span class="zh-only">痛点</span></h2></div>
           <div class="pain-card">
-            <p>${item.pain}</p>
-            ${item.pain_cn ? '<div class="cn-line">' + item.pain_cn + '</div>' : ''}
+            <p><span class="en">${item.pain}</span>${item.pain_cn ? '<div class="cn-line">' + item.pain_cn + '</div>' : ''}</p>
           </div>
         </div>
 
         <div class="block solution">
-          <div class="block-head"><div class="block-icon">✅</div><h2>Ouwen's Solution<span class="zh-only"> · 欧闻方案</span></h2></div>
+          <div class="block-head"><div class="block-icon">✅</div><h2><span class="en">Ouwen's Solution</span><span class="zh-only">欧闻方案</span></h2></div>
           <div class="solution-card">
             ${solutionBlock()}
           </div>
@@ -422,8 +423,8 @@
 
         <div class="divider"></div>
         <div class="source-box">
-          <div class="label">🔗 Authoritative Source<span class="official-tag">✓ Official</span><span class="zh-only" style="margin-left:8px;">权威来源</span></div>
-          <div class="src-name">${item.source.name}</div>
+          <div class="label">🔗 <span class="en">Authoritative Source</span><span class="zh-only">权威来源</span><span class="official-tag"><span class="en">✓ Official</span><span class="zh-only">✓ 官方</span></span></div>
+          <div class="src-name"><span class="en">${item.source.name}</span><span class="zh-only">${item.source.name_cn || item.source.name}</span></div>
           ${item.source.name_cn ? '<div class="src-cn">' + item.source.name_cn + '</div>' : ''}
           ${item.source.url ? '<a class="src-url" href="' + item.source.url + '" target="_blank" rel="noopener">' + item.source.url + '</a>' : ''}
         </div>
@@ -431,13 +432,13 @@
     </article>
 
     <div class="pager">
-      ${pagerLink(prevItem, 'prev', '↑ Newer')}
-      ${pagerLink(nextItem, 'next', '↓ Older')}
+      ${pagerLink(prevItem, 'prev', '↑ Newer', '↑ 更新的')}
+      ${pagerLink(nextItem, 'next', '↓ Older', '↓ 更早的')}
     </div>
 
     ${sameStageBlock()}
 
-    <div class="back-all"><a href="daily-guide.html">← Back to All Guides<span class="zh-only"> · 返回全部指南</span></a></div>
+    <div class="back-all"><a href="daily-guide.html"><span class="en">← Back to All Guides</span><span class="zh-only">← 返回全部指南</span></a></div>
   `;
 })();
 </script>
