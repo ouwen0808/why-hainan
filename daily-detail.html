@@ -6,6 +6,7 @@
 <meta name="description" content="Ouwen × Hainan — Daily guide detail. Authoritative source, decoded pain point and solution.">
 <title>Ouwen × Hainan — Daily Guide Detail</title>
 <script src="config.js"></script>
+<script src="lang.js"></script>
 <style>
   :root {
     --gold: #c8963e; --gold-light: #e8c97a;
@@ -180,7 +181,7 @@
 <nav class="nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">🌴 Why<span>Hainan</span></a>
-    <a href="daily-guide.html" class="nav-back">← 返回每日指南 · All Guides</a>
+    <a href="daily-guide.html" class="nav-back">← All Guides<span class="zh-only"> · 返回每日指南</span></a>
   </div>
 </nav>
 
@@ -189,7 +190,7 @@
 </div>
 
 <div class="footer">
-  Built by <strong>Ouwen (欧闻)</strong> · Your full-cycle local partner in Hainan.<br>
+  Built by <strong>Ouwen<span class="zh-only">（欧闻）</span></strong> · Your full-cycle local partner in Hainan.<br>
   Authoritative sources: <a href="https://en.hainan.gov.cn" target="_blank" rel="noopener">en.hainan.gov.cn</a> ·
   <a href="https://policy.hnftp.gov.cn" target="_blank" rel="noopener">policy.hnftp.gov.cn</a> ·
   <a href="https://www.pbc.gov.cn" target="_blank" rel="noopener">pbc.gov.cn</a>
@@ -246,7 +247,7 @@
 
   const item = calendar.find(c => c.day === targetDay);
   if (!item) {
-    wrap.innerHTML = `<div class="notfound"><span class="big">🤔</span><h2>找不到这一天</h2><p>Day not found. 请返回列表重新选择。</p><div class="back-all"><a href="daily-guide.html">← 返回每日指南</a></div></div>`;
+    wrap.innerHTML = `<div class="notfound"><span class="big">🤔</span><h2>Day Not Found</h2><p>Please go back and choose again.<span class="zh-only"> 请返回列表重新选择。</span></p><div class="back-all"><a href="daily-guide.html">← All Guides</a></div></div>`;
     document.title = 'Guide Not Found — Ouwen × Hainan';
     return;
   }
@@ -279,7 +280,7 @@
       const name = stages[String(n)] ? stages[String(n)].label : ('Stage ' + n);
       return `<div style="flex:1"><div class="dot ${cls}"></div><div class="dot-txt">${name}</div></div>`;
     }).join('');
-    return `<div class="stage-rail"><div class="rail-label">🗺️ 你的海南之旅 · Your Hainan Journey</div><div class="dots">${dots}</div></div>`;
+    return `<div class="stage-rail"><div class="rail-label">🗺️ Your Hainan Journey<span class="zh-only"> · 你的海南之旅</span></div><div class="dots">${dots}</div></div>`;
   }
 
   // 关键要点
@@ -293,7 +294,7 @@
           ${h.cn ? '<div class="cn">' + h.cn + '</div>' : ''}
         </div>
       </div>`).join('');
-    return `<div class="highlights"><h3>💡 关键要点 · Key Points</h3><div class="hl-list">${items}</div></div>`;
+    return `<div class="highlights"><h3>💡 Key Points<span class="zh-only"> · 关键要点</span></h3><div class="hl-list">${items}</div></div>`;
   }
 
   // 关键数字
@@ -305,14 +306,14 @@
         <span class="fc-en">${f.en}</span>
         ${f.cn ? '<span class="fc-cn">' + f.cn + '</span>' : ''}
       </div>`).join('');
-    return `<div class="facts"><h3>🔢 关键数字 · At a Glance</h3><div class="fact-chips">${chips}</div></div>`;
+    return `<div class="facts"><h3>🔢 At a Glance<span class="zh-only"> · 关键数字</span></h3><div class="fact-chips">${chips}</div></div>`;
   }
 
   // 实用提示
   function tipBlock() {
     if (!ext.tip) return '';
     return `<div class="tip">
-      <div class="tip-label">⚡ 欧闻提醒 · Pro Tip</div>
+      <div class="tip-label">⚡ Pro Tip<span class="zh-only"> · 欧闻提醒</span></div>
       <div class="tip-en">${ext.tip.en}</div>
       ${ext.tip.cn ? '<div class="tip-cn">' + ext.tip.cn + '</div>' : ''}
     </div>`;
@@ -330,11 +331,11 @@
         </span>
         <span class="li-arrow">→</span>
       </a>`).join('');
-    return `<div class="links"><h3>🏛️ 官方直达 · Official Links</h3><div style="display:flex;flex-direction:column;gap:10px;">${items}</div></div>`;
+    return `<div class="links"><h3>🏛️ Official Links<span class="zh-only"> · 官方直达</span></h3><div style="display:flex;flex-direction:column;gap:10px;">${items}</div></div>`;
   }
 
   function pagerLink(it, dir, label) {
-    if (!it) return `<span class="${dir}" style="flex:1;opacity:0.4;background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius);padding:18px 20px;">${dir === 'prev' ? '已是最新' : '已是最早'}</span>`;
+    if (!it) return `<span class="${dir}" style="flex:1;opacity:0.4;background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius);padding:18px 20px;">${dir === 'prev' ? 'Newest' : 'Oldest'}</span>`;
     return `<a class="${dir}" href="daily-detail.html?day=${it.day}"><div class="dir">${label} · Day ${it.day}</div><div class="ttl">${it.emoji} ${it.title}</div></a>`;
   }
 
@@ -379,11 +380,11 @@
         <span class="rec-day">Day ${c.day}</span>
       </a>`;
     }).join('');
-    return `<div class="related"><h3 class="related-head">🗂️ 同阶段其他天 · More in ${s.label || ('Stage ' + item.stage)}</h3><div class="rec-grid">${cards}</div></div>`;
+    return `<div class="related"><h3 class="related-head">🗂️ More in ${s.label || ('Stage ' + item.stage)}<span class="zh-only"> · 同阶段其他天</span></h3><div class="rec-grid">${cards}</div></div>`;
   }
 
   wrap.innerHTML = `
-    <div class="breadcrumb"><a href="daily-guide.html">每日指南</a> / Day ${item.day}</div>
+    <div class="breadcrumb"><a href="daily-guide.html">Daily Guide<span class="zh-only"> · 每日指南</span></a> / Day ${item.day}</div>
     <article class="article">
       <div class="hero">
         <span class="article-emoji">${item.emoji}</span>
@@ -399,7 +400,7 @@
 
       <div class="body">
         <div class="block pain">
-          <div class="block-head"><div class="block-icon">😣</div><h2>痛点 · The Pain Point</h2></div>
+          <div class="block-head"><div class="block-icon">😣</div><h2>The Pain Point<span class="zh-only"> · 痛点</span></h2></div>
           <div class="pain-card">
             <p>${item.pain}</p>
             ${item.pain_cn ? '<div class="cn-line">' + item.pain_cn + '</div>' : ''}
@@ -407,7 +408,7 @@
         </div>
 
         <div class="block solution">
-          <div class="block-head"><div class="block-icon">✅</div><h2>欧闻方案 · Ouwen's Solution</h2></div>
+          <div class="block-head"><div class="block-icon">✅</div><h2>Ouwen's Solution<span class="zh-only"> · 欧闻方案</span></h2></div>
           <div class="solution-card">
             ${solutionBlock()}
           </div>
@@ -421,7 +422,7 @@
 
         <div class="divider"></div>
         <div class="source-box">
-          <div class="label">🔗 权威来源 · Authoritative Source<span class="official-tag">✓ 官方</span></div>
+          <div class="label">🔗 Authoritative Source<span class="official-tag">✓ Official</span><span class="zh-only" style="margin-left:8px;">权威来源</span></div>
           <div class="src-name">${item.source.name}</div>
           ${item.source.name_cn ? '<div class="src-cn">' + item.source.name_cn + '</div>' : ''}
           ${item.source.url ? '<a class="src-url" href="' + item.source.url + '" target="_blank" rel="noopener">' + item.source.url + '</a>' : ''}
@@ -430,13 +431,13 @@
     </article>
 
     <div class="pager">
-      ${pagerLink(prevItem, 'prev', '↑ 更新的 · Newer')}
-      ${pagerLink(nextItem, 'next', '↓ 更早的 · Older')}
+      ${pagerLink(prevItem, 'prev', '↑ Newer')}
+      ${pagerLink(nextItem, 'next', '↓ Older')}
     </div>
 
     ${sameStageBlock()}
 
-    <div class="back-all"><a href="daily-guide.html">← 返回全部指南 · Back to All Guides</a></div>
+    <div class="back-all"><a href="daily-guide.html">← Back to All Guides<span class="zh-only"> · 返回全部指南</span></a></div>
   `;
 })();
 </script>
