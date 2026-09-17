@@ -6,6 +6,7 @@
 <meta name="description" content="Ouwen daily guide for foreigners in Hainan — 4 stages, 28 days, authoritative sources.">
 <title>Ouwen × Hainan — Daily Guide for Foreigners</title>
 <script src="config.js"></script>
+<script src="lang.js"></script>
 <style>
   :root {
     --gold: #c8963e; --gold-light: #e8c97a;
@@ -159,13 +160,13 @@
 <!-- Nav（与首页一致，可跳转回首页） -->
 <nav class="nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">🌴 Why<span>Hainan</span><span style="font-size:0.7em;color:var(--gray-500);margin-left:6px;">为什么选海南</span></a>
+    <a href="index.html" class="nav-logo">🌴 Why<span>Hainan</span><span class="zh-only" style="font-size:0.7em;color:var(--gray-500);margin-left:6px;">为什么选海南</span></a>
     <ul class="nav-links">
-      <li><a href="index.html#policy">Policy 政策</a></li>
-      <li><a href="index.html#living">Living 生活</a></li>
-      <li><a href="index.html#pathways">Pathways 路径</a></li>
-      <li><a href="daily-guide.html">Daily Guide 每日指南</a></li>
-      <li><a href="index.html#cta" class="nav-cta">Get Started 开始</a></li>
+      <li><a href="index.html#policy">Policy <span class="zh-only">政策</span></a></li>
+      <li><a href="index.html#living">Living <span class="zh-only">生活</span></a></li>
+      <li><a href="index.html#pathways">Pathways <span class="zh-only">路径</span></a></li>
+      <li><a href="daily-guide.html">Daily Guide <span class="zh-only">每日指南</span></a></li>
+      <li><a href="index.html#cta" class="nav-cta">Get Started <span class="zh-only">开始</span></a></li>
     </ul>
   </div>
 </nav>
@@ -194,11 +195,11 @@
 <div class="search-bar">
   <div class="search-inner">
     <span class="icon">🔍</span>
-    <input type="text" id="searchInput" class="search-input" placeholder="搜索关键词（英文/中文）—— 签证、租房、支付、医疗、税务…" autocomplete="off">
+    <input type="text" id="searchInput" class="search-input" placeholder="Search keywords — visa, rent, payment, healthcare, tax…" autocomplete="off">
     <button class="search-clear" id="searchClear" aria-label="清空搜索">✕</button>
   </div>
 </div>
-<div class="search-hint">支持搜索标题、痛点、方案、来源 · Search titles, pain points, solutions &amp; sources</div>
+<div class="search-hint">Search titles, pain points, solutions &amp; sources<span class="zh-only"> · 支持搜索标题、痛点、方案、来源</span></div>
 
 <div class="stage-tabs" id="stageTabs"></div>
 
@@ -211,7 +212,7 @@
 </div>
 
 <div class="footer">
-  Built by <strong>Ouwen (欧闻)</strong> · Your full-cycle local partner in Hainan.<br>
+  Built by <strong>Ouwen<span class="zh-only">（欧闻）</span></strong> · Your full-cycle local partner in Hainan.<br>
   Authoritative sources: <a href="https://en.hainan.gov.cn" target="_blank" rel="noopener">en.hainan.gov.cn</a> ·
   <a href="https://policy.hnftp.gov.cn" target="_blank" rel="noopener">policy.hnftp.gov.cn</a> ·
   <a href="https://www.pbc.gov.cn" target="_blank" rel="noopener">pbc.gov.cn</a>
@@ -262,12 +263,12 @@
 
   // Today card
   const st = stages[String(today.stage)];
-  document.getElementById('todayStage').textContent = `${st.emoji} Stage ${today.stage} — ${st.label} · ${st.cn}`;
+  document.getElementById('todayStage').textContent = `${st.emoji} Stage ${today.stage} — ${st.label}`;
   document.getElementById('todayTitle').innerHTML = `<span class="emoji">${today.emoji}</span> ${today.title}<div class="cn-title">${today.title_cn || ''}</div>`;
   document.getElementById('todayPain').innerHTML = `${today.pain}${today.pain_cn ? '<div class="cn-line">' + today.pain_cn + '</div>' : ''}`;
   document.getElementById('todaySol').innerHTML = `${today.solution}${today.solution_cn ? '<div class="cn-line">' + today.solution_cn + '</div>' : ''}`;
   document.getElementById('todaySource').innerHTML =
-    `<span class="official">✓ 权威来源</span> Source: <a href="${today.source.url}" target="_blank" rel="noopener">${today.source.name}</a>${today.source.name_cn ? ' · ' + today.source.name_cn : ''}`;
+    `<span class="official">✓ Official Source</span> Source: <a href="${today.source.url}" target="_blank" rel="noopener">${today.source.name}</a>${today.source.name_cn ? ' <span class="zh-only">· ' + today.source.name_cn + '</span>' : ''}`;
 
   // Stage tabs
   const tabsEl = document.getElementById('stageTabs');
@@ -289,7 +290,7 @@
   const allTab = document.createElement('button');
   allTab.className = 'stage-tab active';
   allTab.dataset.stage = 'all';
-  allTab.innerHTML = `<span class="st-emoji">📚</span><span class="st-num">Full Journey</span><div class="st-label">All 28 Days</div><div class="st-cn">完整旅程</div>`;
+  allTab.innerHTML = `<span class="st-emoji">📚</span><span class="st-num">Full Journey</span><div class="st-label">All ${calendar.length} Days</div><div class="st-cn">完整旅程</div>`;
   allTab.addEventListener('click', () => filterByStage('all', allTab));
   tabsEl.prepend(allTab);
 
@@ -299,7 +300,7 @@
     if (items.length === 0) {
       const empty = document.createElement('div');
       empty.className = 'no-results';
-      empty.innerHTML = `<span class="big">🔍</span>没有找到匹配的结果<br>No results found for "<strong></strong>"`;
+      empty.innerHTML = `<span class="big">🔍</span>No results found for "<strong></strong>"<span class="zh-only"><br>没有找到匹配的结果</span>`;
       empty.querySelector('strong').textContent = searchQuery || '';
       feed.appendChild(empty);
     } else {
@@ -317,10 +318,10 @@
                 <span class="stage-badge s${item.stage}">Stage ${item.stage} · ${s.label}</span>
               </div>
               <h4>${item.title}${item.title_cn ? '<div class="cn-title">' + item.title_cn + '</div>' : ''}</h4>
-              <div class="row"><b class="pain">痛点</b><span>${item.pain}${item.pain_cn ? '<div class="cn-line">' + item.pain_cn + '</div>' : ''}</span></div>
-              <div class="row"><b class="sol">方案</b><span>${item.solution}${item.solution_cn ? '<div class="cn-line">' + item.solution_cn + '</div>' : ''}</span></div>
-              <div class="src">🔗 <a href="${item.source.url}" target="_blank" rel="noopener">${item.source.name}</a>${item.source.name_cn ? ' · ' + item.source.name_cn : ''}</div>
-              <div class="card-cta">查看详情 · View details</div>
+              <div class="row"><b class="pain">Pain</b><span>${item.pain}${item.pain_cn ? '<div class="cn-line">' + item.pain_cn + '</div>' : ''}</span></div>
+              <div class="row"><b class="sol">Solution</b><span>${item.solution}${item.solution_cn ? '<div class="cn-line">' + item.solution_cn + '</div>' : ''}</span></div>
+              <div class="src">🔗 <a href="${item.source.url}" target="_blank" rel="noopener">${item.source.name}</a>${item.source.name_cn ? ' <span class="zh-only">· ' + item.source.name_cn + '</span>' : ''}</div>
+              <div class="card-cta">View details<span class="zh-only"> · 查看详情</span></div>
             </div>
           </div>`;
         card.addEventListener('click', () => {
@@ -354,13 +355,13 @@
     renderFeed(items);
     // 更新标题
     if (searchQuery.trim()) {
-      const stageLabel = activeStage === 'all' ? '全部' : `Stage ${activeStage}`;
-      document.getElementById('feedTitle').textContent = `搜索结果："${searchQuery.trim()}"（${stageLabel}）`;
+      const stageLabel = activeStage === 'all' ? 'All' : `Stage ${activeStage}`;
+      document.getElementById('feedTitle').textContent = `Search: "${searchQuery.trim()}" (${stageLabel})`;
     } else if (activeStage === 'all') {
-      document.getElementById('feedTitle').textContent = 'All Guides — Full 28-Day Journey';
+      document.getElementById('feedTitle').textContent = `All Guides — ${calendar.length}-Day Journey`;
     } else {
       const s = stages[String(activeStage)];
-      document.getElementById('feedTitle').textContent = `Stage ${activeStage} — ${s.label} (${s.cn})`;
+      document.getElementById('feedTitle').textContent = `Stage ${activeStage} — ${s.label}`;
     }
   }
 
