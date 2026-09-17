@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>发现海南 · Discover Hainan — 旅游 · 学习 · 工作 · 生活</title>
+<title>Discover Hainan — Tourism · Study · Work · Life</title>
 <script src="config.js"></script>
+<script src="lang.js"></script>
 <style>
   :root {
     --gold: #c8963e; --gold-light: #e8c97a;
@@ -155,10 +156,10 @@
 <body>
 
 <!-- 返回首页导航 -->
-<a href="index.html" class="home-nav"><span class="hn-arrow">←</span> Why Hainan <span style="opacity:0.65;font-size:0.78rem;">为什么选海南</span></a>
+    <a href="index.html" class="home-nav"><span class="hn-arrow">←</span> Why Hainan <span class="zh-only" style="opacity:0.65;font-size:0.78rem;">为什么选海南</span></a>
 
 <form class="global-search" action="daily-guide.html" method="get">
-  <input type="text" name="q" placeholder="搜索指南 · Search guides…" autocomplete="off">
+  <input type="text" name="q" placeholder="Search guides…" autocomplete="off">
   <button type="submit" aria-label="搜索">🔍</button>
 </form>
 
@@ -168,7 +169,7 @@
   <div class="slide active" data-index="0">
     <div class="slide-bg" style="background:linear-gradient(160deg,#0f172a,#0d3b3b,#0f766e)"></div>
     <div class="slide-content">
-      <div class="badge"><span class="dot"></span> Hainan Free Trade Port · 2026 · 海南自由贸易港</div>
+      <div class="badge"><span class="dot"></span> Hainan Free Trade Port · 2026<span class="zh-only"> · 海南自由贸易港</span></div>
       <h1 class="slide-title">Discover <em>Hainan</em></h1>
       <div class="slide-title-cn">发现海南</div>
       <p class="slide-sub">China's only tropical island province. The world's largest Free Trade Port.<br>86-country visa-free. 15% tax. Zero tariffs.</p>
@@ -187,7 +188,7 @@
   <div class="slide" data-index="1">
     <div class="slide-bg" style="background-image:url('img_0154faecdd9673aa.png')"></div>
     <div class="slide-content">
-      <div class="badge"><span class="dot"></span> 01 — Tourism · 旅游</div>
+      <div class="badge"><span class="dot"></span> 01 — Tourism<span class="zh-only"> · 旅游</span></div>
       <span class="emoji-main">🏝️</span>
       <h2 class="slide-title">Arrive Without a <em>Visa</em></h2>
       <div class="slide-title-cn">免签入境</div>
@@ -199,7 +200,7 @@
         <li class="en">15-day cruise visa-free<span class="cn">邮轮 15 天免签</span></li>
         <li class="en">25°C year-round paradise<span class="cn">全年 25°C 天堂</span></li>
       </ul>
-      <a href="https://en.hnftp.gov.cn" target="_blank" class="cta-btn">Plan Your Trip → 规划行程</a>
+      <a href="https://en.hnftp.gov.cn" target="_blank" class="cta-btn">Plan Your Trip<span class="zh-only"> → 规划行程</span></a>
     </div>
   </div>
 
@@ -207,7 +208,7 @@
   <div class="slide" data-index="2">
     <div class="slide-bg" style="background-image:url('img_0e8fca3c517df7ad.png')"></div>
     <div class="slide-content">
-      <div class="badge">02 — Study · 学习</div>
+      <div class="badge">02 — Study<span class="zh-only"> · 学习</span></div>
       <span class="emoji-main">🎓</span>
       <h2 class="slide-title">Learn in <em>Paradise</em></h2>
       <div class="slide-title-cn">在热带天堂求学</div>
@@ -219,7 +220,7 @@
         <li class="en">International student support<span class="cn">国际学生支持</span></li>
         <li class="en">Tropical island campus<span class="cn">热带海岛校园</span></li>
       </ul>
-      <a href="https://www.hainanu.edu.cn" target="_blank" class="cta-btn">Explore Programmes → 了解课程</a>
+      <a href="https://www.hainanu.edu.cn" target="_blank" class="cta-btn">Explore Programmes<span class="zh-only"> → 了解课程</span></a>
     </div>
   </div>
 
@@ -227,7 +228,7 @@
   <div class="slide" data-index="3">
     <div class="slide-bg" style="background-image:url('img_d17c9e65f87275aa.png')"></div>
     <div class="slide-content">
-      <div class="badge"><span class="dot"></span> 03 — Work · 工作</div>
+      <div class="badge"><span class="dot"></span> 03 — Work<span class="zh-only"> · 工作</span></div>
       <span class="emoji-main">💼</span>
       <h2 class="slide-title"><em>15%</em> Tax. One Island.</h2>
       <div class="slide-title-cn">15% 个税封顶，一岛尽享</div>
@@ -245,7 +246,7 @@
   <div class="slide" data-index="4">
     <div class="slide-bg" style="background-image:url('img_e8e884c8789ab1a4.png')"></div>
     <div class="slide-content">
-      <div class="badge">04 — Life · 生活</div>
+      <div class="badge">04 — Life<span class="zh-only"> · 生活</span></div>
       <span class="emoji-main">🏡</span>
       <h2 class="slide-title">Make It <em>Home</em></h2>
       <div class="slide-title-cn">在此安家</div>
@@ -257,7 +258,7 @@
         <li class="en">International schools<span class="cn">国际学校</span></li>
         <li class="en">Family reunion residence permits<span class="cn">家庭团聚居留许可</span></li>
       </ul>
-      <a href="https://en.hnftp.gov.cn" target="_blank" class="cta-btn">Start Your Journey → 开启旅程</a>
+      <a href="https://en.hnftp.gov.cn" target="_blank" class="cta-btn">Start Your Journey<span class="zh-only"> → 开启旅程</span></a>
     </div>
   </div>
 
@@ -276,8 +277,8 @@
         <div class="stat"><div class="num">💼</div><div class="label">Work</div><div class="label-cn">工作</div></div>
         <div class="stat"><div class="num">🏡</div><div class="label">Life</div><div class="label-cn">生活</div></div>
       </div>
-      <a href="https://fdb56b09.why-hainan.pages.dev" target="_blank" class="cta-btn">Visit WhyHainan.com → 访问网站</a>
-      <div style="margin-top:20px;font-size:0.8rem;opacity:0.4;">Share with anyone who should know about Hainan 🌴 分享给每一位应该了解海南的人</div>
+      <a href="https://fdb56b09.why-hainan.pages.dev" target="_blank" class="cta-btn">Visit WhyHainan.com<span class="zh-only"> → 访问网站</span></a>
+      <div style="margin-top:20px;font-size:0.8rem;opacity:0.4;">Share with anyone who should know about Hainan 🌴<span class="zh-only"> 分享给每一位应该了解海南的人</span></div>
     </div>
   </div>
 </div>
@@ -292,6 +293,26 @@
   var dots = document.getElementById('dots');
   var progress = document.getElementById('progress');
   var autoTimer = null;
+
+  function splitCta(t) {
+    if (!t) return '';
+    // cta_text 可能是 "英文 → 中文" 混排，拆出中文用 zh-only 包裹
+    var idx = t.indexOf('→');
+    if (idx > -1) {
+      var en = t.slice(0, idx).trim();
+      var cn = t.slice(idx + 1).trim();
+      return en + (cn ? ' <span class="zh-only">→ ' + cn + '</span>' : '');
+    }
+    // 也可能用空格/其他分隔：找到第一个中文区段
+    var m = t.match(/[\u4e00-\u9fff]/);
+    if (m) {
+      var i = m.index;
+      var enPart = t.slice(0, i).trim();
+      var cnPart = t.slice(i).trim();
+      return enPart + (cnPart ? ' <span class="zh-only">' + cnPart + '</span>' : '');
+    }
+    return t;
+  }
 
   function renderSlides(list) {
     slidesEl.innerHTML = '';
@@ -310,8 +331,8 @@
       var checks = (s.checks || []).map(function (c) {
         return '<li class="en">' + c.item_en + '<span class="cn">' + c.item_cn + '</span></li>';
       }).join('');
-      var cta = s.cta_url ? '<a href="' + s.cta_url + '" target="_blank" class="cta-btn">' + (s.cta_text || '') + '</a>' : '';
-      var badge = s.badge_en ? '<div class="badge"><span class="dot"></span> ' + s.badge_en + (s.badge_cn ? ' · ' + s.badge_cn : '') + '</div>' : '';
+      var cta = s.cta_url ? '<a href="' + s.cta_url + '" target="_blank" class="cta-btn">' + splitCta(s.cta_text) + '</a>' : '';
+      var badge = s.badge_en ? '<div class="badge"><span class="dot"></span> ' + s.badge_en + (s.badge_cn ? '<span class="zh-only"> · ' + s.badge_cn + '</span>' : '') + '</div>' : '';
       var tag = (s.slide_index === 0) ? 'h1' : 'h2';
       slide.innerHTML = bg +
         '<div class="slide-content">' + badge +
