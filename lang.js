@@ -1,12 +1,15 @@
 /**
- * Why Hainan 全局语言切换
- * 默认英文（隐藏所有中文对照），导航右侧注入「EN / 中文」切换按钮。
- * 中文态 = 中英对照（显示中文；英文为主内容保持不变）。
+ * Why Hainan 全局语言切换（双向）
+ *  - 英文态（默认）：隐藏所有中文，只显示英文 + 数字/emoji
+ *  - 中文态：隐藏所有英文，只显示中文 + 数字/emoji
  *
  * 用法：页面在 config.js 之后引入 <script src="lang.js"></script>
  *  - 语言记忆在 localStorage 的 wh_lang（'en' | 'zh'）
- *  - 切换后触发 window 的 'whlangchange' 事件（detail.lang），供动态渲染监听重渲染
+ *  - 切换后触发 window 的 'whlangchange' 事件（detail.lang）
  *  - window.WH_LANG = { get, set, toggle, isZh }
+ *
+ * 约定：英文主体内容加 class="en"；中文内容用 class="cn"/"zh-only"
+ * （"cn" 系列为动态字段中文；"zh-only" 为静态内联中文）。数字与 emoji 不加类，两种语言都显示。
  */
 (function (global) {
   var KEY = 'wh_lang';
@@ -48,13 +51,22 @@
 
   function toggle() { set(lang === 'zh' ? 'en' : 'zh'); }
 
-  // 注入 CSS：英文态隐藏所有中文对照元素
-  var HIDE_SELECTORS = [
-    '.cn', '.cn-line', '.cn-title', '.cn-block', '.cn-block::before',
+  // 中文相关选择器（英文态隐藏）
+  var CN_SELECTORS = [
+    '.cn', '.cn-line', '.cn-title', '.cn-block',
     '.st-cn', '.label-cn', '.slide-title-cn', '.slide-sub-cn',
-    '.fc-cn', '.li-cn', '.rec-cn', '.src-cn', '.tip-cn', '.zh-only'
+    '.fc-cn', '.li-cn', '.rec-cn', '.src-cn', '.tip-cn',
+    '.zh-only'
   ];
-  var css = 'html.lang-en ' + HIDE_SELECTORS.join(', html.lang-en ') + ' { display: none !important; }';
+  var css = 'html.lang-en ' + CN_SELECTORS.join(', html.lang-en ') + ' { display: none !important; }';
+
+  // 英文主体（中文态隐藏）——覆盖通用 .en 及各页不规范命名的英文 class
+  var EN_SELECTORS = [
+    '.en', '.fc-en', '.li-en', '.tip-en', '.rec-title', '.sol-list'
+  ];
+  css += '\nhtml.lang-zh ' + EN_SELECTORS.join(', html.lang-zh ') + ' { display: none !important; }';
+
+  // 切换按钮样式
   css += '\n.wh-lang-switch { display: inline-flex; gap: 4px; margin-left: 16px; flex-shrink: 0; }';
   css += '\n.wh-lang-switch button { background: transparent; border: 1px solid #e2e8f0; color: #334155; font-size: 0.78rem; font-weight: 700; padding: 5px 12px; border-radius: 16px; cursor: pointer; transition: all .15s; font-family: inherit; }';
   css += '\n.wh-lang-switch button:hover { border-color: #0d9488; color: #0d9488; }';
@@ -70,7 +82,6 @@
     document.head.appendChild(style);
   }
 
-  // 注入切换按钮到导航右侧
   function injectToggle() {
     var navInner = document.querySelector('.nav-inner');
     var host;
@@ -78,7 +89,6 @@
     if (navInner) {
       host = navInner;
     } else {
-      // 兜底（如 showcase 无 .nav-inner）：固定定位右上角
       var body = document.body;
       if (!body) return;
       host = document.createElement('div');
