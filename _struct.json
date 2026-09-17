@@ -1,0 +1,129 @@
+{
+  "keys": [
+    "stages",
+    "policyCards",
+    "statCards",
+    "heroStats",
+    "livingCards",
+    "pathways",
+    "slides",
+    "quickGuide",
+    "quotes",
+    "footerLinks"
+  ],
+  "policyCards": {
+    "id": 1,
+    "tag_en": "Entry",
+    "tag_cn": "入境",
+    "tag_color": "teal",
+    "big_number": "1111",
+    "number_color": "teal",
+    "title_en": "Visa-Free Countries",
+    "title_cn": "免签国家",
+    "content_en": "Citizens from 86 nations can enter Hainan without a visa for up to <strong>30 days</strong> — for tourism, business, family visits, medical treatment, exhibitions, and sports.",
+    "content_cn": "86 国公民可免签入境海南，最长 <strong>30 天</strong>，限旅游、商务、探亲、医疗、会展、体育。",
+    "sort_order": 1,
+    "is_active": 1
+  },
+  "livingCards": {
+    "id": 1,
+    "emoji": "🏥",
+    "title_en": "International Healthcare",
+    "title_cn": "国际医疗",
+    "content_en": "74+ hospitals with international departments, English-speaking staff, and direct-bill insurance. Haikou & Sanya lead with dedicated international medical centres.",
+    "content_cn": "74+ 家医院设有国际部，英文服务、保险直付。海口、三亚设专门国际医疗中心。",
+    "sort_order": 1,
+    "is_active": 1
+  },
+  "heroStats": {
+    "id": 5,
+    "section": "hero",
+    "number": "86",
+    "number_color": "teal",
+    "label_en": "Countries Visa-Free",
+    "label_cn": "免签国家",
+    "sort_order": 1,
+    "is_active": 1
+  },
+  "statCards": {
+    "id": 1,
+    "section": "numbers",
+    "number": "+59%",
+    "number_color": "teal",
+    "label_en": "More foreign visitors Q1 2025 vs Q1 2024",
+    "label_cn": "外国游客增长 2025一季度 vs 2024一季度",
+    "sort_order": 1,
+    "is_active": 1
+  },
+  "quotes": {
+    "id": 1,
+    "content_en": "Hainan is not just an island — it's China's vision of an open, globally-connected future. Come see why the world is choosing Hainan.",
+    "content_cn": "海南不仅仅是一座岛屿——它是中国对开放、全球互联未来的愿景。来看看为什么世界都在选择海南。",
+    "cite_en": "Hainan Free Trade Port Administration",
+    "cite_cn": "海南自由贸易港管理局",
+    "is_active": 1,
+    "sort_order": 1
+  },
+  "pathway": [
+    "id",
+    "path_num",
+    "emoji",
+    "title_en",
+    "title_cn",
+    "desc_en",
+    "desc_cn",
+    "visual_style",
+    "sort_order",
+    "is_active",
+    "items"
+  ],
+  "pathwayItem": [
+    "id",
+    "pathway_id",
+    "item_en",
+    "item_cn",
+    "sort_order"
+  ],
+  "footerLinks": {
+    "id": 1,
+    "label_en": "Official FTP Portal",
+    "label_cn": "官方门户",
+    "url": "https://en.hnftp.gov.cn",
+    "sort_order": 1,
+    "is_active": 1
+  },
+  "slides": [
+    "id",
+    "slide_index",
+    "badge_en",
+    "badge_cn",
+    "emoji",
+    "title_en",
+    "title_cn",
+    "sub_en",
+    "sub_cn",
+    "bg_type",
+    "bg_value",
+    "cta_text",
+    "cta_url",
+    "is_active",
+    "sort_order",
+    "stats",
+    "checks"
+  ],
+  "quickGuide": [
+    "id",
+    "title_en",
+    "title_cn",
+    "sort_order",
+    "is_active",
+    "items"
+  ],
+  "quickGuideItem": [
+    "id",
+    "section_id",
+    "content_en",
+    "content_cn",
+    "sort_order"
+  ]
+}
