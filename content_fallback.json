@@ -47,8 +47,8 @@
       "number_color": "teal",
       "title_en": "Visa-Free Countries",
       "title_cn": "免签国家",
-      "content_en": "Citizens from 86 nations can enter Hainan without a visa for up to <strong>30 days</strong> — for tourism, business, family visits, medical treatment, exhibitions, and sports.",
-      "content_cn": "86 国公民可免签入境海南，最长 <strong>30 天</strong>，限旅游、商务、探亲、医疗、会展、体育。",
+      "content_en": "Citizens from 61 eligible countries/regions can enter Hainan visa-free for up to <strong>30 days</strong> — for tourism, business, family visits, medical treatment, exhibitions, and sports. Work and study require separate procedures.",
+      "content_cn": "61 个适用国家/地区的普通护照持有人可免签入境海南，最长 <strong>30 天</strong>，限旅游、商务、探亲、医疗、会展、体育；工作、学习需另行办理手续。",
       "sort_order": 1,
       "is_active": 1
     },
@@ -127,7 +127,7 @@
     {
       "id": 5,
       "section": "hero",
-      "number": "86",
+      "number": "61",
       "number_color": "teal",
       "label_en": "Countries Visa-Free",
       "label_cn": "免签国家",
@@ -214,8 +214,8 @@
       "emoji": "🏝️",
       "title_en": "Discover Paradise",
       "title_cn": "发现天堂",
-      "desc_en": "No visa needed for 86 nationalities. Fly direct to Haikou, Sanya, or Bo'ao. Use 144-hour transit from Hong Kong & Macau — or join a cruise with 15-day visa-free access.",
-      "desc_cn": "86 个国籍免签。直飞海口、三亚或博鳌。经港澳 144 小时过境，或乘邮轮享 15 天免签。",
+      "desc_en": "No visa needed for 61 nationalities. Fly direct to Haikou, Sanya, or Bo'ao. Use 144-hour transit from Hong Kong & Macau — or join a cruise with 15-day visa-free access.",
+      "desc_cn": "61 个国籍免签。直飞海口、三亚或博鳌。经港澳 144 小时过境，或乘邮轮享 15 天免签。",
       "visual_style": "default",
       "sort_order": 1,
       "is_active": 1,
@@ -223,8 +223,8 @@
         {
           "id": 1,
           "pathway_id": 1,
-          "item_en": "86-country visa-free entry (30 days)",
-          "item_cn": "86 国免签入境（30 天）",
+          "item_en": "61-country visa-free entry (30 days)",
+          "item_cn": "61 国免签入境（30 天）",
           "sort_order": 1
         },
         {
@@ -386,8 +386,8 @@
       "emoji": "🌴",
       "title_en": "Discover <em>Hainan</em>",
       "title_cn": "发现海南",
-      "sub_en": "China’s only tropical island province. The world’s largest Free Trade Port.<br>86-country visa-free. 15% tax. Zero tariffs.",
-      "sub_cn": "中国唯一的热带岛屿省份，全球最大的自由贸易港。<br>86 国免签 · 15% 个税封顶 · 零关税。",
+      "sub_en": "China’s only tropical island province. The world’s largest Free Trade Port.<br>61-country visa-free. 15% tax. Zero tariffs.",
+      "sub_cn": "中国唯一的热带岛屿省份，全球最大的自由贸易港。<br>61 国免签 · 15% 个税封顶 · 零关税。",
       "bg_type": "gradient",
       "bg_value": "linear-gradient(160deg,#0f172a,#0d3b3b,#0f766e)",
       "cta_text": null,
@@ -398,7 +398,7 @@
         {
           "id": 1,
           "slide_id": 1,
-          "number": "86",
+          "number": "61",
           "label_en": "Visa-Free",
           "label_cn": "免签国",
           "sort_order": 1
@@ -438,8 +438,8 @@
       "emoji": "🏝️",
       "title_en": "Arrive Without a <em>Visa</em>",
       "title_cn": "免签入境",
-      "sub_en": "86 countries. 30 days. No paperwork. Just your passport.<br>Three international airports. Cruise ships welcome. 1,900km of coastline.",
-      "sub_cn": "86 国免签 30 天，无需繁琐手续，一本护照即可。<br>三大国际机场、邮轮直达、1900 公里海岸线。",
+      "sub_en": "61 countries. 30 days. No paperwork. Just your passport.<br>Three international airports. Cruise ships welcome. 1,900km of coastline.",
+      "sub_cn": "61 国免签 30 天，无需繁琐手续，一本护照即可。<br>三大国际机场、邮轮直达、1900 公里海岸线。",
       "bg_type": "image",
       "bg_value": "img_0154faecdd9673aa.png",
       "cta_text": "Plan Your Trip → 规划行程",
@@ -451,8 +451,8 @@
         {
           "id": 1,
           "slide_id": 2,
-          "item_en": "86-country visa-free (30 days)",
-          "item_cn": "86 国免签 30 天",
+          "item_en": "61-country visa-free (30 days)",
+          "item_cn": "61 国免签 30 天",
           "sort_order": 1
         },
         {
@@ -626,8 +626,8 @@
       "emoji": "🌴",
       "title_en": "Why <em>Hainan</em>?",
       "title_cn": "为什么是海南？",
-      "sub_en": "86 countries visa-free. Zero tariffs. 15% tax cap.<br>One tropical island. Four paths. Infinite opportunities.",
-      "sub_cn": "86 国免签、零关税、15% 个税封顶。<br>一座热带岛屿，四条路径，无限机遇。",
+      "sub_en": "61 countries visa-free. Zero tariffs. 15% tax cap.<br>One tropical island. Four paths. Infinite opportunities.",
+      "sub_cn": "61 国免签、零关税、15% 个税封顶。<br>一座热带岛屿，四条路径，无限机遇。",
       "bg_type": "gradient",
       "bg_value": "linear-gradient(160deg,#0f766e,#0d3b3b,#0f172a)",
       "cta_text": "Visit WhyHainan.com → 访问网站",
@@ -682,8 +682,8 @@
         {
           "id": 1,
           "section_id": 1,
-          "content_en": "<strong>86 countries</strong> can enter Hainan <strong>visa-free for up to 30 days</strong> — for tourism, business, family visits, medical treatment, exhibitions & sports.",
-          "content_cn": "86 国可免签入境海南，最长 30 天，限旅游/商务/探亲/医疗/会展/体育。",
+          "content_en": "<strong>61 countries</strong> can enter Hainan <strong>visa-free for up to 30 days</strong> — for tourism, business, family visits, medical treatment, exhibitions & sports.",
+          "content_cn": "61 国可免签入境海南，最长 30 天，限旅游/商务/探亲/医疗/会展/体育。",
           "sort_order": 1
         },
         {
