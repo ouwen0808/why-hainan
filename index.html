@@ -153,6 +153,37 @@
   .policy-card h3 .cn { display: block; font-size: 0.88rem; font-weight: 600; color: var(--gray-500); }
   .policy-card p { font-size: 0.9rem; color: var(--gray-500); line-height: 1.7; margin-top: 8px; }
 
+  /* Eligibility / Status split */
+  .eligibility { background: var(--white); }
+  .elig-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .elig-card {
+    background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius);
+    padding: 32px; transition: all 0.25s; position: relative; overflow: hidden;
+  }
+  .elig-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: transparent; }
+  .elig-card .elig-tag {
+    display: inline-block; font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.5px; padding: 3px 10px; border-radius: 12px; margin-bottom: 14px;
+  }
+  .elig-card.pre .elig-tag { background: #dbeafe; color: #1d4ed8; }
+  .elig-card.in .elig-tag { background: #ccfbf1; color: #0f766e; }
+  .elig-card h3 { font-size: 1.25rem; font-weight: 800; color: var(--navy); margin-bottom: 4px; }
+  .elig-card h3 .cn { display: block; font-size: 0.9rem; font-weight: 600; color: var(--gray-500); margin-top: 2px; }
+  .elig-card p { font-size: 0.9rem; color: var(--gray-500); line-height: 1.7; margin: 10px 0 16px; }
+  .elig-card .elig-list { list-style: none; margin: 0 0 18px; }
+  .elig-card .elig-list li { padding: 5px 0; font-size: 0.88rem; color: var(--gray-700); display: flex; align-items: center; gap: 8px; }
+  .elig-card .elig-list li::before { content: '✓'; color: var(--teal); font-weight: 700; }
+  .elig-card.pre .elig-list li::before { color: #3b82f6; }
+  .elig-cta {
+    display: inline-flex; align-items: center; gap: 6px; text-decoration: none; font-weight: 700;
+    font-size: 0.9rem; padding: 10px 20px; border-radius: 22px; transition: all 0.2s;
+  }
+  .elig-card.pre .elig-cta { background: #3b82f6; color: #fff; }
+  .elig-card.pre .elig-cta:hover { background: #2563eb; }
+  .elig-card.in .elig-cta { background: var(--teal); color: #fff; }
+  .elig-card.in .elig-cta:hover { background: var(--teal-dark); }
+  @media (max-width: 860px) { .elig-grid { grid-template-columns: 1fr; } }
+
   /* Quote */
   .quote { background: var(--navy); color: #fff; text-align: center; padding: 80px 24px; }
   .quote blockquote { font-size: clamp(1.1rem, 2.5vw, 1.5rem); font-weight: 500; max-width: 700px; margin: 0 auto 12px; line-height: 1.7; font-style: italic; opacity: 0.9; }
@@ -229,6 +260,7 @@
       <li><a href="#living"><span class="en">Living</span> <span class="zh-only">生活</span></a></li>
       <li><a href="#pathways"><span class="en">Pathways</span> <span class="zh-only">路径</span></a></li>
       <li><a href="daily-guide.html"><span class="en">Daily Guide</span> <span class="zh-only">每日指南</span></a></li>
+      <li><a href="faq.html"><span class="en">FAQ</span> <span class="zh-only">常见问题</span></a></li>
       <li><a href="#cta" class="nav-cta"><span class="en">Get Started</span> <span class="zh-only">开始</span></a></li>
     </ul>
   </div>
@@ -237,22 +269,58 @@
 <!-- Hero -->
 <section class="hero">
   <div class="container hero-inner">
-    <div class="hero-badge"><span class="dot"></span> <span class="en">Visa-Free Entry for 61 Countries</span><span class="zh-only"> · 61 国免签现已开放</span></div>
+    <div class="hero-badge"><span class="dot"></span> <span class="en">Check Your Eligibility — Visa-Free for 61 Countries</span><span class="zh-only"> · 先核对资格 · 61 国免签</span></div>
     <h1><span class="en">Your <em>Tropical</em> Future Starts Here</span><span class="cn">你的热带未来，从这里开始</span></h1>
     <p class="en">
       Hainan is China's only tropical island province — and the world's largest Free Trade Port.
-      With visa-free entry for 61 countries, a 15% income tax cap for qualified talent, and zero tariffs on eligible goods, it's the most open gateway to Asia.
+      Visa-free entry for 61 countries, a 15% income tax cap for qualified talent, and zero tariffs on eligible goods — each with clear rules. See if you qualify.
     </p>
     <p class="cn">
       海南是中国唯一的热带岛屿省份，也是全球最大的自由贸易港。
-      61 国免签入境、高端人才 15% 个税封顶、合格商品零关税——这里是通往亚洲最开放的门户。
+      61 国免签入境、高端人才 15% 个税封顶、合格商品零关税——每项都有明确规则，先看看你是否符合。
     </p>
     <div class="hero-btns">
-      <a href="#policy" class="btn btn-primary"><span class="en">Explore Policies</span> <span class="zh-only">→ 了解政策</span></a>
+      <a href="#eligibility" class="btn btn-primary"><span class="en">Check My Eligibility</span> <span class="zh-only">→ 核对我的资格</span></a>
       <a href="#pathways" class="btn btn-outline"><span class="en">How to Get Here</span> <span class="zh-only">如何抵达</span></a>
     </div>
     <div class="stats" id="heroStats">
       <!-- 由后端 API 动态填充 -->
+    </div>
+  </div>
+</section>
+
+<!-- Eligibility / Status split -->
+<section class="eligibility" id="eligibility">
+  <div class="container">
+    <div class="section-label"><span class="en">Start Here</span><span class="cn">从这里开始</span></div>
+    <h2 class="section-title"><span class="en">Which Stage Are You At?</span><span class="cn">你处于哪个阶段？</span></h2>
+    <p class="section-sub en">Policies depend on your situation. Choose where you are — the rules, documents and next steps are different for each.</p>
+    <p class="section-sub cn">政策取决于你的具体情况。选择你所在阶段——每个阶段的规则、文件与下一步都不同。</p>
+    <div class="elig-grid">
+      <div class="elig-card pre">
+        <span class="elig-tag"><span class="en">Pre-arrival</span><span class="zh-only">来琼前</span></span>
+        <h3><span class="en">Planning to Come</span><span class="cn">计划来海南</span></h3>
+        <p class="en">Visa eligibility, entry ports, flights, first-30-days essentials — everything before you board.</p>
+        <p class="cn">签证资格、入境口岸、航班、落地后 30 天必备——登机前的一切。</p>
+        <ul class="elig-list">
+          <li><span class="en">Do I qualify for visa-free entry?</span><span class="zh-only">我是否符合免签？</span></li>
+          <li><span class="en">Which port do I fly into?</span><span class="zh-only">从哪个口岸入境？</span></li>
+          <li><span class="en">Payments &amp; SIM before landing</span><span class="zh-only">落地前的支付与手机卡</span></li>
+        </ul>
+        <a href="#policy" class="elig-cta"><span class="en">Check Eligibility →</span><span class="zh-only">核对资格 →</span></a>
+      </div>
+      <div class="elig-card in">
+        <span class="elig-tag"><span class="en">In-Hainan</span><span class="zh-only">在琼</span></span>
+        <h3><span class="en">Already in Hainan</span><span class="cn">已在海南</span></h3>
+        <p class="en">Residence registration, banking, SIM, renting, healthcare — settle in smoothly.</p>
+        <p class="cn">住宿登记、银行开户、手机卡、租房、就医——平稳安家。</p>
+        <ul class="elig-list">
+          <li><span class="en">Register residence at police station</span><span class="zh-only">派出所办理住宿登记</span></li>
+          <li><span class="en">Open a bank account &amp; get a SIM</span><span class="zh-only">开户与办卡</span></li>
+          <li><span class="en">Find housing &amp; healthcare</span><span class="zh-only">租房与就医</span></li>
+        </ul>
+        <a href="daily-guide.html" class="elig-cta"><span class="en">Daily Guide →</span><span class="zh-only">每日指南 →</span></a>
+      </div>
     </div>
   </div>
 </section>
@@ -321,14 +389,18 @@
     <h2><span class="en">Ready to Discover Hainan?</span><span class="zh-only">准备好探索海南了吗？</span></h2>
     <p class="en">61 countries visa-free. Zero tariffs on eligible goods. 15% tax for qualified talent. One tropical island. Your next chapter starts here.</p>
     <p class="cn">61 国免签、合格商品零关税、高端人才 15% 个税。一座热带岛屿，你的新篇章从这里开始。</p>
-    <a href="#policy" class="btn btn-primary" style="font-size:1.05rem;padding:16px 36px;"><span class="en">Explore Policies</span> <span class="zh-only">→ 了解政策</span></a>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="#eligibility" class="btn btn-primary" style="font-size:1.05rem;padding:16px 36px;"><span class="en">Check My Eligibility</span> <span class="zh-only">→ 核对我的资格</span></a>
+      <a href="hainan-quick-guide.html" class="btn btn-outline" style="font-size:1.05rem;padding:16px 36px;"><span class="en">Download Checklist</span> <span class="zh-only">下载清单</span></a>
+      <a href="faq.html" class="btn btn-outline" style="font-size:1.05rem;padding:16px 36px;"><span class="en">Read FAQ</span> <span class="zh-only">常见问题</span></a>
+    </div>
   </div>
 </section>
 
 <!-- Footer -->
 <footer>
   <div class="footer-inner">
-    <span>© 2026 <span class="en">Why Hainan. Built for the world.</span><span class="zh-only">为世界而建</span></span>
+    <span>© 2026 <span class="en">Why Hainan. Built for the world.</span><span class="zh-only">为世界而建</span> · <a href="faq.html" style="color:rgba(255,255,255,0.45);text-decoration:none;"><span class="en">Disclaimer</span><span class="zh-only">免责声明</span></a></span>
     <ul class="footer-links" id="footerLinks">
       <!-- 由后端 API 动态填充 -->
     </ul>
