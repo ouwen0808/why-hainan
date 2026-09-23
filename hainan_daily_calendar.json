@@ -2389,10 +2389,11 @@
       }
     },
     {
+      "day": 49,
       "stage": 2,
+      "emoji": "📦",
       "title": "Moving to Hainan? Your personal effects can enter duty-free.",
       "title_cn": "搬来海南？你的自用物品可免税入境",
-      "emoji": "📦",
       "pain": "You packed your whole life to move to Hainan, but nobody told you whether your personal belongings — furniture, electronics, household goods — will be taxed at the border.",
       "pain_cn": "你打包了全部家当搬来海南，却没人告诉你家具、电器、家居用品这些个人物品入境到底要不要缴税。",
       "solution": "If you hold a long-term residence permit and will stay in China continuously for over a year, your first shipment of personal effects (motor vehicles excluded) is duty-free — declare it online through the customs 'single window' module with no paper documents needed. Ouwen checks your eligibility and walks you through the whole declaration.",
@@ -2402,7 +2403,12 @@
         "name_cn": "海南自由贸易港",
         "url": "https://www.hnftp.gov.cn/xwzx/ywsd/202604/t20260410_4058150.html"
       },
-      "day": 49
+      "extras": {
+        "highlights": [],
+        "facts": [],
+        "tip": null,
+        "official_links": []
+      }
     }
   ]
 }
