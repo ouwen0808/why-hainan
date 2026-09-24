@@ -70,7 +70,7 @@
   var ZH_CSS = [
     'html.lang-zh body { letter-spacing: 0.005em; }',
     // 标题
-    'html.lang-zh .hero h1 .cn { font-size: clamp(1.5rem, 3vw, 2rem) !important; line-height: 1.35 !important; letter-spacing: 4px; }',
+    'html.lang-zh .hero h1 .cn { font-size: clamp(1.6rem, 3.4vw, 2.2rem) !important; line-height: 1.35 !important; letter-spacing: 4px; font-weight: 800; }',
     'html.lang-zh .section-title .cn { font-size: clamp(1.35rem, 2.4vw, 1.7rem) !important; line-height: 1.45 !important; }',
     'html.lang-zh .card h3 .cn { font-size: 0.95rem !important; line-height: 1.5 !important; }',
     'html.lang-zh .policy-card h3 .cn { font-size: 0.95rem !important; line-height: 1.5 !important; }',
