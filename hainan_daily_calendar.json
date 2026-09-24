@@ -2409,6 +2409,22 @@
         "tip": null,
         "official_links": []
       }
+    },
+    {
+      "stage": 4,
+      "emoji": "🏙️",
+      "title": "Haikou Jiangdong New Area: rent + living subsidies for foreign talent",
+      "title_cn": "海口江东新区：外籍人才可享租房+生活补贴",
+      "pain": "You've settled in Hainan but housing and daily living costs still pinch — and you don't know which district-level subsidies you actually qualify for.",
+      "pain_cn": "已在海南安家，但租房和生活成本仍感吃力，也不清楚自己到底符合哪些区级补贴。",
+      "solution": "Haikou's Jiangdong New Area now offers foreign talent a concrete package: up to ¥1,500/month rent subsidy plus ¥1,000/month living subsidy for A-class talent (¥1,000 + ¥500 for B-class) for up to 3 years, a 7–14 day free talent apartment and 3–12 months free co-working space to get you started, and easier 1–5 year residence permits for long-term workers. Ouwen checks which talent tier you fall into, assembles your application, and files it with the district so the cash actually lands in your account.",
+      "solution_cn": "海口江东新区现为外籍人才提供实打实的政策包：A类人才每月最高1500元租房补贴+1000元生活补贴（B类为1000元+500元），最长可享3年；起步阶段还有7–14天免费人才公寓和3–12个月免费创业工位；长期工作者更可便捷申办1–5年居留许可。欧闻帮你判定所属人才类别、备齐材料并向园区递交申请，让补贴真正落到你账上。",
+      "source": {
+        "name": "Haikou Municipal Government",
+        "name_cn": "海口市人民政府",
+        "url": "https://www.haikou.gov.cn/zfdt/hkyw/202512/t1490348.shtml"
+      },
+      "day": 50
     }
   ]
 }
