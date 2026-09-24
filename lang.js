@@ -66,6 +66,37 @@
   ];
   css += '\nhtml.lang-zh ' + EN_SELECTORS.join(', html.lang-zh ') + ' { display: none !important; }';
 
+  // 中文态排版增强：提升字号、优化行高与对比度，避免中文页面过空
+  var ZH_CSS = [
+    'html.lang-zh body { letter-spacing: 0.005em; }',
+    // 标题
+    'html.lang-zh .hero h1 .cn { font-size: clamp(1.5rem, 3vw, 2rem) !important; line-height: 1.35 !important; letter-spacing: 4px; }',
+    'html.lang-zh .section-title .cn { font-size: clamp(1.35rem, 2.4vw, 1.7rem) !important; line-height: 1.45 !important; }',
+    'html.lang-zh .card h3 .cn { font-size: 0.95rem !important; line-height: 1.5 !important; }',
+    'html.lang-zh .policy-card h3 .cn { font-size: 0.95rem !important; line-height: 1.5 !important; }',
+    'html.lang-zh .elig-card h3 .cn { font-size: 0.98rem !important; line-height: 1.5 !important; }',
+    'html.lang-zh .path-text h2 .cn { font-size: 1.2rem !important; line-height: 1.45 !important; }',
+    // 正文
+    'html.lang-zh .hero p.cn { font-size: 1.05rem !important; color: rgba(255,255,255,0.82) !important; line-height: 1.85 !important; }',
+    'html.lang-zh .section-sub.cn { font-size: 1.02rem !important; line-height: 1.8 !important; }',
+    'html.lang-zh .card p.cn { font-size: 0.95rem !important; line-height: 1.8 !important; }',
+    'html.lang-zh .policy-card p.cn { font-size: 0.95rem !important; line-height: 1.8 !important; }',
+    'html.lang-zh .elig-card p.cn { font-size: 0.95rem !important; line-height: 1.8 !important; }',
+    'html.lang-zh .path-text p.cn { font-size: 0.95rem !important; line-height: 1.85 !important; }',
+    'html.lang-zh .cta-section p.cn { font-size: 1.02rem !important; opacity: 0.85; line-height: 1.8 !important; }',
+    'html.lang-zh .quote .cn { font-size: 1.1rem !important; opacity: 0.85; line-height: 1.9 !important; }',
+    'html.lang-zh .quote { padding: 72px 24px !important; }',
+    'html.lang-zh .quote blockquote { font-size: clamp(1.05rem, 2vw, 1.25rem) !important; }',
+    'html.lang-zh .path-list li { align-items: flex-start !important; line-height: 1.7 !important; }',
+    'html.lang-zh .path-list li::before { line-height: 1.7 !important; }',
+    'html.lang-zh .path-list li .cn { line-height: 1.7 !important; }',
+    // 标签 / 统计
+    'html.lang-zh .stat .label-cn { font-size: 0.85rem !important; }',
+    'html.lang-zh .num-card .l.cn { font-size: 0.88rem !important; line-height: 1.7 !important; }',
+    'html.lang-zh .section-label .cn { letter-spacing: 3px; }'
+  ].join('\n');
+  css += '\n' + ZH_CSS;
+
   // 切换按钮样式
   css += '\n.wh-lang-switch { display: inline-flex; gap: 4px; margin-left: 16px; flex-shrink: 0; }';
   css += '\n.wh-lang-switch button { background: transparent; border: 1px solid #e2e8f0; color: #334155; font-size: 0.78rem; font-weight: 700; padding: 5px 12px; border-radius: 16px; cursor: pointer; transition: all .15s; font-family: inherit; }';
