@@ -1,0 +1,11 @@
+﻿const d = require('./content_fallback.json');
+console.log('===== statCards[0] 完整字段 =====');
+console.log(JSON.stringify(d.statCards[0], null, 2));
+console.log('===== heroStats[0] 完整字段 =====');
+console.log(JSON.stringify(d.heroStats[0], null, 2));
+console.log('===== quickGuide[0] 完整字段 =====');
+console.log(JSON.stringify(d.quickGuide[0], null, 2));
+console.log('===== footerLinks[0] 完整字段 =====');
+console.log(JSON.stringify(d.footerLinks[0], null, 2));
+console.log('===== quotes[0] 完整字段 =====');
+console.log(JSON.stringify(d.quotes[0], null, 2));
