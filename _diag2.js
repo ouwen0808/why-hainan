@@ -1,0 +1,22 @@
+﻿const d = require('./content_fallback.json');
+// 打印几个代表性卡片的完整中英文，供判断改写方向
+console.log('===== policyCards[0] =====');
+console.log('title_en:', d.policyCards[0].title_en, '| title_cn:', d.policyCards[0].title_cn);
+console.log('content_en:', d.policyCards[0].content_en);
+console.log('content_cn:', d.policyCards[0].content_cn);
+console.log('===== livingCards[0] =====');
+console.log('title_en:', d.livingCards[0].title_en, '| title_cn:', d.livingCards[0].title_cn);
+console.log('content_en:', d.livingCards[0].content_en);
+console.log('content_cn:', d.livingCards[0].content_cn);
+console.log('===== pathways[0] =====');
+console.log('title_en:', d.pathways[0].title_en, '| title_cn:', d.pathways[0].title_cn);
+console.log('desc_en:', d.pathways[0].desc_en);
+console.log('desc_cn:', d.pathways[0].desc_cn);
+console.log('items:', JSON.stringify(d.pathways[0].items));
+console.log('===== slides[0] =====');
+console.log('title_en:', d.slides[0].title_en, '| title_cn:', d.slides[0].title_cn);
+console.log('sub_en:', d.slides[0].sub_en);
+console.log('sub_cn:', d.slides[0].sub_cn);
+console.log('===== quotes[0] =====');
+console.log('content_en:', d.quotes[0].content_en);
+console.log('content_cn:', d.quotes[0].content_cn);
