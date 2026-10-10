@@ -2411,6 +2411,7 @@
       }
     },
     {
+      "day": 50,
       "stage": 4,
       "emoji": "🏙️",
       "title": "Haikou Jiangdong New Area: rent + living subsidies for foreign talent",
@@ -2424,7 +2425,12 @@
         "name_cn": "海口市人民政府",
         "url": "https://www.haikou.gov.cn/zfdt/hkyw/202512/t1490348.shtml"
       },
-      "day": 50
+      "extras": {
+        "highlights": [],
+        "facts": [],
+        "tip": null,
+        "official_links": []
+      }
     }
   ]
 }
