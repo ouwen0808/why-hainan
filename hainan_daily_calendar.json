@@ -2447,6 +2447,68 @@
         "name_cn": "海南省人民政府 — 税务局通告",
         "url": "https://www.hainan.gov.cn/hainan/tingju/202605/40889e7bedec41988995577237b44af0.shtml"
       }
+    },
+    {
+      "stage": 4,
+      "emoji": "📜",
+      "title": "Your overseas qualification now counts: 105 credentials from 22 countries recognized.",
+      "title_cn": "海外职业资格获认可：22 国 105 项可直接认定",
+      "pain": "Your hard-earned foreign degree or professional title isn't recognized here, blocking you from practising, being promoted, or claiming tax and talent perks.",
+      "pain_cn": "辛苦取得的海外学历或职业资格在这里不被认可，导致无法执业、无法晋升，也无法申请税收与人才优惠。",
+      "solution": "Your professional qualifications no longer go to waste in Hainan. Under the Three-Year Action Plan for Optimizing Foreign-Related Services and Enhancing the International Business Environment in Hainan Province (released April 6, 2026), Hainan now recognizes 105 overseas professional credentials from 22 countries — plus the Hong Kong, Macao and Taiwan regions — as equivalent to local professional titles. The three pilot industries are health care, finance and big data, so doctors, nurses, accountants, financial analysts and data scientists are the first to benefit. The process is designed to be fast and fair: instead of sitting an oral defense, you apply online and go through an employer-review — your employer submits your credentials and the authority certifies the title directly.\n\nHere is the practical path. Step one: confirm your credential is on the 105-item list (check the Hainan Free Trade Port International Services portal). Step two: gather your documents — your original degree or professional certificate, a notarized and legalized translation if it was issued outside China, and your employment contract or job offer in a recognized industry. Step three: have your Hainan employer submit the application through the online system, attaching the employer-review letter. Step four: wait for the certification — because the oral defense is waived, this is much quicker than the traditional title review. Step five: once certified, your recognized title unlocks downstream benefits, including eligibility for Hainan's 15% personal income tax cap and high-level talent (A/B/C) classification.\n\nA few cautions. Recognition covers professional titles, not regulated practice licenses — if your field requires a separate practising license (such as certain medical roles), you may still need to pass the relevant licensing exam or registration. Also, the 105-credential list is industry-specific and will expand over time, so check whether your exact credential and issuing country are covered before relying on it. If your credential is not yet on the list, Ouwen tracks list updates and can help you prepare an equivalency case under the general talent-recognition rules. Ouwen's Policy Expert verifies your credential against the 105-item list, prepares the translation and notarization, drafts the employer-review submission, and follows the application to the certified title — so your years of study and work finally count here.",
+      "solution_cn": "你的职业资格在海南不再白费。根据海南省《优化涉外服务与提升国际营商环境三年行动计划》（2026 年 4 月 6 日发布），海南现已将来自 22 个国家（含港澳台地区）的 105 项海外职业资格认定为与本地专业职称相当。首批试点行业为医疗健康、金融和大数据，因此医生、护士、会计师、金融分析师、数据科学家等将最先受益。流程设计得快速且公平：无需参加答辩，改为线上申请加用人单位审核——由你的雇主提交材料，主管部门直接认定职称。\n\n具体操作路径如下。第一步，确认你的资格证书在 105 项名单内（可在海南自贸港国际服务门户查询）。第二步，备齐材料：学历或职业资格证书原件、境外签发的需提供经公证和领事认证的翻译件，以及你在认可行业内的劳动合同或录用通知。第三步，由你的海南雇主通过线上系统提交申请，并附上单位审核意见。第四步，等待认定结果——由于免除答辩，办理周期比传统职称评审大幅缩短。第五步，获得认定后，该职称将解锁后续福利，包括符合海南 15% 个人所得税优惠和高层次人才（A/B/C）分类的资格。\n\n几点提醒：认定覆盖的是专业职称，而非执业资格——若你的领域需要单独的执业许可（如部分医疗岗位），可能仍需通过相应的执业考试或注册。此外，105 项名单按行业划分并会逐步扩容，使用前务必核对你的具体证书与签发国是否在列。若你的证书尚未入选，欧闻会持续跟踪名单更新，并协助你按一般人才认定规则准备等效认定材料。欧闻「政策专家」会帮你核对证书是否在 105 项名单内、代办翻译与公证、起草单位审核申报材料，并跟进直至拿到认定职称——让你多年的求学与工作经验在这里真正发挥作用。",
+      "source": {
+        "name": "Hainan Free Trade Port (English) — Three-Year Action Plan",
+        "name_cn": "海南自由贸易港（英文版）——优化涉外服务三年行动计划",
+        "url": "https://en.hnftp.gov.cn/News2024/202604/t20260430_3492427.html"
+      },
+      "extras": {
+        "highlights": [
+          {
+            "en": "105 overseas professional credentials from 22 countries are now recognized as local professional titles in health care, finance and big data.",
+            "cn": "22 国的 105 项海外职业资格现可在医疗、金融、大数据行业认定为本地职称。"
+          },
+          {
+            "en": "No oral defense — certification is done via online application plus employer review.",
+            "cn": "无需答辩——线上申请 + 用人单位审核即可直接认定。"
+          },
+          {
+            "en": "A recognized title unlocks the 15% personal income tax cap and A/B/C talent classification.",
+            "cn": "认定职称后可解锁 15% 个税优惠与 A/B/C 高层次人才分类。"
+          }
+        ],
+        "facts": [
+          {
+            "en": "105 credentials, 22 countries + HK/Macau/Taiwan",
+            "cn": "105 项资格、22 国 + 港澳台"
+          },
+          {
+            "en": "3 pilot industries: health care, finance, big data",
+            "cn": "3 大试点行业：医疗、金融、大数据"
+          },
+          {
+            "en": "Released April 6, 2026",
+            "cn": "2026 年 4 月 6 日发布"
+          }
+        ],
+        "tip": {
+          "en": "Have your employer confirm the credential is on the 105-item list and submit the online employer-review application — the waived oral defense makes this the fastest title route in China.",
+          "cn": "请雇主先确认证书在 105 项名单内，再提交线上单位审核申请——免除答辩使其成为国内最快的职称认定通道。"
+        },
+        "official_links": [
+          {
+            "label_en": "Hainan FTP — Three-Year Action Plan (English)",
+            "label_cn": "海南自贸港——优化涉外服务三年行动计划（英文）",
+            "url": "https://en.hnftp.gov.cn/News2024/202604/t20260430_3492427.html"
+          },
+          {
+            "label_en": "Hainan FTP International Service Portal",
+            "label_cn": "海南自贸港国际服务门户",
+            "url": "https://en.hainan.gov.cn"
+          }
+        ]
+      },
+      "day": 52
     }
   ]
 }
