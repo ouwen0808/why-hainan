@@ -14,7 +14,7 @@
  */
 (function (global) {
   // SYNC_TUNNEL_URL —— 隧道地址（自动同步脚本会替换此行常量值）
-  var TUNNEL = 'https://fisher-ripe-explosion-pounds.trycloudflare.com';
+  var TUNNEL = 'https://literally-lesson-geometry-precious.trycloudflare.com';
 
   var qs = new URLSearchParams(window.location.search).get('api');
 
